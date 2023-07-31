@@ -1,9 +1,12 @@
-import React from 'react';
 import { render } from '@testing-library/react';
+import React from 'react';
 
+import CheckCircle from '../src/SystemIcons/CheckCircle';
+import EyeOff from '../src/SystemIcons/EyeOff';
+import EyeOn from '../src/SystemIcons/EyeOn';
 import Search from '../src/SystemIcons/Search';
 
-const IconsArr = [Search];
+const IconsArr = [Search, EyeOn, EyeOff, CheckCircle];
 
 describe('Render', () => {
   for (const Icon of IconsArr) {
