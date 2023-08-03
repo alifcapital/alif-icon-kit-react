@@ -30,6 +30,7 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "lint-fix": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix --rule \"react/no-unknown-property: ['error']\" --no-error-on-unmatched-pattern",
     "format": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx,css,scss}\"",
     "test": "jest --silent --config jestconfig.json",
     "prepare": "husky install"

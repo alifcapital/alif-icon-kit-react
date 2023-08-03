@@ -33,7 +33,6 @@ import LedtDown from './NavigationIcons/LedtDown';
 import RightTop from './NavigationIcons/RightTop';
 import TrendingUp from './NavigationIcons/TrendingUp';
 
-import CheckCircle from './SystemIcons/CheckCircle';
 import EyeOff from './SystemIcons/EyeOff';
 import EyeOn from './SystemIcons/EyeOn';
 import Search from './SystemIcons/Search';
@@ -62,7 +61,7 @@ import MapPin from './SystemIcons/MapPin';
 import Menu from './SystemIcons/Menu';
 import Move from './SystemIcons/Move';
 import Navigation from './SystemIcons/Navigation';
-import Paperclip from './SystemIcons/Paperclip';
+import PaperClip from './SystemIcons/Paperclip';
 import PlusRect from './SystemIcons/PlusRect';
 import Plus from './SystemIcons/Plus';
 import RefreshCw from './SystemIcons/RefreshCw';
@@ -74,9 +73,45 @@ import Star from './SystemIcons/Star';
 import Tune from './SystemIcons/Tune';
 import Unlock from './SystemIcons/Unlock';
 
+import BonusLarge from './MapIcons/BonusLarge';
+import BonusMedium from './MapIcons/BonusMedium';
+import BonusSmall from './MapIcons/BonusSmall';
+import CashoutLarge from './MapIcons/CashoutLarge';
+import CashoutMedium from './MapIcons/CashoutMedium';
+import CashoutSmall from './MapIcons/CashoutSmall';
+import CheckCircle from './MapIcons/Check';
+import CloseCircle from './MapIcons/Close';
+import DontWorkLarge from './MapIcons/DontWorkLarge';
+import DontWorkMedium from './MapIcons/DontWorkMedium';
+import DontWorkSmall from './MapIcons/DontWorkSmall';
+import TerminalLarge from './MapIcons/TerminalLarge';
+import TerminalMedium from './MapIcons/TerminalMedium';
+import TerminalSmall from './MapIcons/TerminalSmall';
+
+import Clothing from './SalomIcons/Clothing';
+import ConstructionMaterials from './SalomIcons/ConstructionMaterials';
+import Food from './SalomIcons/Food';
+import Fridge from './SalomIcons/Fridge';
+import Jewelry from './SalomIcons/Jewelry';
+import PhonesAndAccessories from './SalomIcons/PhonesAndAccessories';
+import Furniture from './SalomIcons/Furniture';
+
+import OneSomoni from './DepositIcons/OneSomoni';
+import DepositReplenishment from './DepositIcons/DepositReplenishment';
+import IncomeSharing from './DepositIcons/IncomeSharing';
+import Insurance from './DepositIcons/Insurance';
+import Investments from './DepositIcons/Investments';
+import Npl from './DepositIcons/Npl';
+
+import BuyCar from './AutoCreditIcons/BuyCar';
+import DocumentExecution from './AutoCreditIcons/DocumentExecution';
+import Form from './AutoCreditIcons/Form';
+import AutoCreditMoney from './AutoCreditIcons/Money';
+import Time from './AutoCreditIcons/Time';
+import Valuation from './AutoCreditIcons/Valuation';
+
 // System Icons
 export {
-  CheckCircle,
   EyeOff,
   EyeOn,
   Search,
@@ -105,7 +140,7 @@ export {
   Menu,
   Move,
   Navigation,
-  Paperclip,
+  PaperClip,
   PlusRect,
   Plus,
   RefreshCw,
@@ -117,6 +152,7 @@ export {
   Tune,
   Unlock,
 };
+
 // Navigation Icons
 export {
   ArrowDown,
@@ -157,3 +193,30 @@ export {
   WalletTransfer,
   Wallet,
 };
+
+// Map Icons
+export {
+  BonusLarge,
+  BonusMedium,
+  BonusSmall,
+  CashoutLarge,
+  CashoutMedium,
+  CashoutSmall,
+  CheckCircle,
+  CloseCircle,
+  DontWorkLarge,
+  DontWorkMedium,
+  DontWorkSmall,
+  TerminalLarge,
+  TerminalMedium,
+  TerminalSmall,
+};
+
+// Salom Icons
+export { Clothing, ConstructionMaterials, Food, Fridge, Jewelry, PhonesAndAccessories, Furniture };
+
+// Deposit Icons
+export { OneSomoni, DepositReplenishment, IncomeSharing, Insurance, Investments, Npl };
+
+//AutoCredit Icons
+export { BuyCar, DocumentExecution, Form, AutoCreditMoney, Time, Valuation };
