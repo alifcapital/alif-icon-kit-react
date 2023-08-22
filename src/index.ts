@@ -32,6 +32,10 @@ import ChevronUp from './NavigationIcons/ChevronUp';
 import LedtDown from './NavigationIcons/LedtDown';
 import RightTop from './NavigationIcons/RightTop';
 import TrendingUp from './NavigationIcons/TrendingUp';
+import LeftPrev from './NavigationIcons/LeftPrev';
+import RightNext from './NavigationIcons/RightNext';
+import SelectHideTop from './NavigationIcons/SelectHideTop';
+import SelectOpenDown from './NavigationIcons/SelectOpenDown';
 
 import EyeOff from './SystemIcons/EyeOff';
 import EyeOn from './SystemIcons/EyeOn';
@@ -166,6 +170,10 @@ export {
   LedtDown,
   RightTop,
   TrendingUp,
+  LeftPrev,
+  RightNext,
+  SelectHideTop,
+  SelectOpenDown,
 };
 
 // Finance Icons
