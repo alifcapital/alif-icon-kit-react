@@ -1,6 +1,6 @@
 {
   "name": "alif-icon-kit-react",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Alif icon kit for React",
   "type": "module",
   "files": [
@@ -24,7 +24,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/alifcapital/alif-icon-kit-react.git"
+    "url": "git+https://github.com/alifcapital/alif-icon-kit-react.git"
   },
   "scripts": {
     "dev": "vite --host",
@@ -40,7 +40,8 @@
   "keywords": [
     "icon",
     "react",
-    "typescript",
+    "icon kit",
+    "alif icon kit",
     "design system"
   ],
   "bugs": {
