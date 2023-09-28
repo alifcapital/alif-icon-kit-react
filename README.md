@@ -4,10 +4,10 @@
 
 *Inside you React/Next.js project run:*
 
-	yarn add https://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:x-oauth-basic@github.com/alifcapital/alif-icon-kit-react.git
+	yarn add alif-icon-kit-react
 *or*
 
-    npm install https://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:x-oauth-basic@github.com/alifcapital/alif-icon-kit-react.git
+    npm i alif-icon-kit-react
 
 *Then inside you project import necessary icon:*
 
