@@ -2,11 +2,14 @@ import React from 'react';
 
 import { IIconProps } from '../types';
 
-const Telegram: React.FC<IIconProps> = ({
-  width = '40',
-  height = '40',
-}) => (
-  <svg width={width} height={height} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+const Telegram: React.FC<IIconProps> = ({ width = '40', height = '40' }) => (
+  <svg
+    width={width}
+    height={height}
+    viewBox="0 0 40 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <g clipPath="url(#clip0_2070_395)">
       <path
         d="M20.4961 40C31.5418 40 40.4961 31.0457 40.4961 20C40.4961 8.9543 31.5418 0 20.4961 0C9.4504 0 0.496094 8.9543 0.496094 20C0.496094 31.0457 9.4504 40 20.4961 40Z"
