@@ -114,6 +114,15 @@ import AutoCreditMoney from './AutoCreditIcons/Money';
 import Time from './AutoCreditIcons/Time';
 import Valuation from './AutoCreditIcons/Valuation';
 
+import VKontakte from './SocialNetworkIcons/VKontakte';
+import LinkedIn from './SocialNetworkIcons/LinkedIn';
+import Facebook from './SocialNetworkIcons/Facebook';
+import Telegram from './SocialNetworkIcons/Telegram';
+import Instagram from './SocialNetworkIcons/Instagram';
+import Odnoklassniki from './SocialNetworkIcons/Odnoklassniki';
+import Twitter from './SocialNetworkIcons/Twitter';
+import YouTube from './SocialNetworkIcons/YouTube';
+
 // System Icons
 export {
   EyeOff,
@@ -228,3 +237,6 @@ export { OneSomoni, DepositReplenishment, IncomeSharing, Insurance, Investments,
 
 //AutoCredit Icons
 export { BuyCar, DocumentExecution, Form, AutoCreditMoney, Time, Valuation };
+
+// SocialNetwork Icons
+export { VKontakte, LinkedIn, Facebook, Telegram, Instagram, Odnoklassniki, Twitter, YouTube };
