@@ -115,6 +115,8 @@ import Instagram from '../src/SocialNetworkIcons/Instagram';
 import Odnoklassniki from '../src/SocialNetworkIcons/Odnoklassniki';
 import Twitter from '../src/SocialNetworkIcons/Twitter';
 import YouTube from '../src/SocialNetworkIcons/YouTube';
+import AppleAppStore from '../src/AppStoreIcons/AppleAppStore';
+import GooglePlay from '../src/AppStoreIcons/GooglePlay';
 
 const IconsWithProps = [
   EyeOff,
@@ -233,6 +235,8 @@ const IconsWithoutProps = [
   Odnoklassniki,
   Twitter,
   YouTube,
+  AppleAppStore,
+  GooglePlay,
 ];
 
 describe('Render', () => {
