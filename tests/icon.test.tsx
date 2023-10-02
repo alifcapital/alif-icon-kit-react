@@ -107,6 +107,16 @@ import Form from '../src/AutoCreditIcons/Form';
 import AutoCreditMoney from '../src/AutoCreditIcons/Money';
 import Time from '../src/AutoCreditIcons/Time';
 import Valuation from '../src/AutoCreditIcons/Valuation';
+import VKontakte from '../src/SocialNetworkIcons/VKontakte';
+import LinkedIn from '../src/SocialNetworkIcons/LinkedIn';
+import Facebook from '../src/SocialNetworkIcons/Facebook';
+import Telegram from '../src/SocialNetworkIcons/Telegram';
+import Instagram from '../src/SocialNetworkIcons/Instagram';
+import Odnoklassniki from '../src/SocialNetworkIcons/Odnoklassniki';
+import Twitter from '../src/SocialNetworkIcons/Twitter';
+import YouTube from '../src/SocialNetworkIcons/YouTube';
+import AppleAppStore from '../src/AppStoreIcons/AppleAppStore';
+import GooglePlay from '../src/AppStoreIcons/GooglePlay';
 
 const IconsWithProps = [
   EyeOff,
@@ -217,6 +227,16 @@ const IconsWithoutProps = [
   AutoCreditMoney,
   Time,
   Valuation,
+  VKontakte,
+  LinkedIn,
+  Facebook,
+  Telegram,
+  Instagram,
+  Odnoklassniki,
+  Twitter,
+  YouTube,
+  AppleAppStore,
+  GooglePlay,
 ];
 
 describe('Render', () => {
