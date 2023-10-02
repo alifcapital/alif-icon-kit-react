@@ -2,10 +2,16 @@ import React from 'react';
 
 import { IIconProps } from '../types';
 
-const Odnoklassniki: React.FC<IIconProps> = () => (
-  <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+const Odnoklassniki: React.FC<IIconProps> = ({ width = '41', height = '40' }) => (
+  <svg
+    width={width}
+    height={height}
+    viewBox="0 0 41 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <g id="Frame 230">
-      <rect x="0.16272" width="40" height="40" rx="8" fill="#111111" />
+      <rect x="0.16272" width={width} height={height} rx="8" fill="#111111" />
       <g id="Group">
         <g id="Vector">
           <path

@@ -2,8 +2,14 @@ import React from 'react';
 
 import { IIconProps } from '../types';
 
-const Facebook: React.FC<IIconProps> = () => (
-  <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+const Facebook: React.FC<IIconProps> = ({ width = '41', height = '40' }) => (
+  <svg
+    width={width}
+    height={height}
+    viewBox="0 0 41 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <g id="Frame 235" clipPath="url(#clip0_2149_382)">
       <g id="Group 71">
         <path
@@ -20,7 +26,7 @@ const Facebook: React.FC<IIconProps> = () => (
     </g>
     <defs>
       <clipPath id="clip0_2149_382">
-        <rect width="40" height="40" fill="white" transform="translate(0.829468)" />
+        <rect width={width} height={height} fill="white" transform="translate(0.829468)" />
       </clipPath>
     </defs>
   </svg>
