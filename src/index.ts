@@ -76,6 +76,8 @@ import Slash from './SystemIcons/Slash';
 import Star from './SystemIcons/Star';
 import Tune from './SystemIcons/Tune';
 import Unlock from './SystemIcons/Unlock';
+import Bell from './SystemIcons/Bell';
+import User from './SystemIcons/User';
 
 import BonusLarge from './MapIcons/BonusLarge';
 import BonusMedium from './MapIcons/BonusMedium';
@@ -167,6 +169,8 @@ export {
   Star,
   Tune,
   Unlock,
+  User,
+  Bell,
 };
 
 // Navigation Icons
