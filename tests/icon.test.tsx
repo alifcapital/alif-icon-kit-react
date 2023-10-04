@@ -73,6 +73,7 @@ import Visa from '../src/FinanceIcons/Visa';
 import WalletPlus from '../src/FinanceIcons/WalletPlus';
 import WalletTransfer from '../src/FinanceIcons/WalletTransfer';
 import Wallet from '../src/FinanceIcons/Wallet';
+import Bell from '../src/SystemIcons/Bell';
 
 import BonusLarge from '../src/MapIcons/BonusLarge';
 import BonusMedium from '../src/MapIcons/BonusMedium';
@@ -117,6 +118,7 @@ import Twitter from '../src/SocialNetworkIcons/Twitter';
 import YouTube from '../src/SocialNetworkIcons/YouTube';
 import AppleAppStore from '../src/AppStoreIcons/AppleAppStore';
 import GooglePlay from '../src/AppStoreIcons/GooglePlay';
+import User from '../src/SystemIcons/User';
 
 const IconsWithProps = [
   EyeOff,
@@ -191,6 +193,7 @@ const IconsWithProps = [
   WalletPlus,
   WalletTransfer,
   Wallet,
+  Bell,
 ];
 
 const IconsWithoutProps = [
@@ -237,6 +240,7 @@ const IconsWithoutProps = [
   YouTube,
   AppleAppStore,
   GooglePlay,
+  User,
 ];
 
 describe('Render', () => {
