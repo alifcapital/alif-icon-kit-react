@@ -1,4 +1,4 @@
-import Z1 from "react";
+import j1 from "react";
 var z = { exports: {} }, E = {};
 /**
  * @license React
@@ -9,21 +9,21 @@ var z = { exports: {} }, E = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var g1;
-function H2() {
-  if (g1)
+var Z1;
+function n2() {
+  if (Z1)
     return E;
-  g1 = 1;
-  var r = Z1, l = Symbol.for("react.element"), i = Symbol.for("react.fragment"), Z = Object.prototype.hasOwnProperty, b = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, D = { key: !0, ref: !0, __self: !0, __source: !0 };
+  Z1 = 1;
+  var H = j1, l = Symbol.for("react.element"), i = Symbol.for("react.fragment"), j = Object.prototype.hasOwnProperty, b = H.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, D = { key: !0, ref: !0, __self: !0, __source: !0 };
   function F(M, h, m) {
-    var p, v = {}, g = null, A = null;
-    m !== void 0 && (g = "" + m), h.key !== void 0 && (g = "" + h.key), h.ref !== void 0 && (A = h.ref);
+    var p, x = {}, Z = null, A = null;
+    m !== void 0 && (Z = "" + m), h.key !== void 0 && (Z = "" + h.key), h.ref !== void 0 && (A = h.ref);
     for (p in h)
-      Z.call(h, p) && !D.hasOwnProperty(p) && (v[p] = h[p]);
+      j.call(h, p) && !D.hasOwnProperty(p) && (x[p] = h[p]);
     if (M && M.defaultProps)
       for (p in h = M.defaultProps, h)
-        v[p] === void 0 && (v[p] = h[p]);
-    return { $$typeof: l, type: M, key: g, ref: A, props: v, _owner: b.current };
+        x[p] === void 0 && (x[p] = h[p]);
+    return { $$typeof: l, type: M, key: Z, ref: A, props: x, _owner: b.current };
   }
   return E.Fragment = i, E.jsx = F, E.jsxs = F, E;
 }
@@ -37,54 +37,54 @@ var N = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var j1;
+var g1;
 function s2() {
-  return j1 || (j1 = 1, process.env.NODE_ENV !== "production" && function() {
-    var r = Z1, l = Symbol.for("react.element"), i = Symbol.for("react.portal"), Z = Symbol.for("react.fragment"), b = Symbol.for("react.strict_mode"), D = Symbol.for("react.profiler"), F = Symbol.for("react.provider"), M = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), m = Symbol.for("react.suspense"), p = Symbol.for("react.suspense_list"), v = Symbol.for("react.memo"), g = Symbol.for("react.lazy"), A = Symbol.for("react.offscreen"), X = Symbol.iterator, m1 = "@@iterator";
+  return g1 || (g1 = 1, process.env.NODE_ENV !== "production" && function() {
+    var H = j1, l = Symbol.for("react.element"), i = Symbol.for("react.portal"), j = Symbol.for("react.fragment"), b = Symbol.for("react.strict_mode"), D = Symbol.for("react.profiler"), F = Symbol.for("react.provider"), M = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), m = Symbol.for("react.suspense"), p = Symbol.for("react.suspense_list"), x = Symbol.for("react.memo"), Z = Symbol.for("react.lazy"), A = Symbol.for("react.offscreen"), X = Symbol.iterator, m1 = "@@iterator";
     function k1(e) {
       if (e === null || typeof e != "object")
         return null;
-      var t = X && e[X] || e[m1];
-      return typeof t == "function" ? t : null;
+      var r = X && e[X] || e[m1];
+      return typeof r == "function" ? r : null;
     }
-    var k = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    var k = H.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     function u(e) {
       {
-        for (var t = arguments.length, n = new Array(t > 1 ? t - 1 : 0), H = 1; H < t; H++)
-          n[H - 1] = arguments[H];
-        R1("error", e, n);
+        for (var r = arguments.length, t = new Array(r > 1 ? r - 1 : 0), n = 1; n < r; n++)
+          t[n - 1] = arguments[n];
+        R1("error", e, t);
       }
     }
-    function R1(e, t, n) {
+    function R1(e, r, t) {
       {
-        var H = k.ReactDebugCurrentFrame, a = H.getStackAddendum();
-        a !== "" && (t += "%s", n = n.concat([a]));
-        var d = n.map(function(o) {
+        var n = k.ReactDebugCurrentFrame, a = n.getStackAddendum();
+        a !== "" && (r += "%s", t = t.concat([a]));
+        var d = t.map(function(o) {
           return String(o);
         });
-        d.unshift("Warning: " + t), Function.prototype.apply.call(console[e], console, d);
+        d.unshift("Warning: " + r), Function.prototype.apply.call(console[e], console, d);
       }
     }
     var y1 = !1, F1 = !1, _1 = !1, B1 = !1, E1 = !1, Q;
     Q = Symbol.for("react.module.reference");
     function N1(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === Z || e === D || E1 || e === b || e === m || e === p || B1 || e === A || y1 || F1 || _1 || typeof e == "object" && e !== null && (e.$$typeof === g || e.$$typeof === v || e.$$typeof === F || e.$$typeof === M || e.$$typeof === h || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === j || e === D || E1 || e === b || e === m || e === p || B1 || e === A || y1 || F1 || _1 || typeof e == "object" && e !== null && (e.$$typeof === Z || e.$$typeof === x || e.$$typeof === F || e.$$typeof === M || e.$$typeof === h || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
       e.$$typeof === Q || e.getModuleId !== void 0));
     }
-    function b1(e, t, n) {
-      var H = e.displayName;
-      if (H)
-        return H;
-      var a = t.displayName || t.name || "";
-      return a !== "" ? n + "(" + a + ")" : n;
+    function b1(e, r, t) {
+      var n = e.displayName;
+      if (n)
+        return n;
+      var a = r.displayName || r.name || "";
+      return a !== "" ? t + "(" + a + ")" : t;
     }
     function C1(e) {
       return e.displayName || "Context";
     }
-    function w(e) {
+    function v(e) {
       if (e == null)
         return null;
       if (typeof e.tag == "number" && u("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
@@ -92,7 +92,7 @@ function s2() {
       if (typeof e == "string")
         return e;
       switch (e) {
-        case Z:
+        case j:
           return "Fragment";
         case i:
           return "Portal";
@@ -108,20 +108,20 @@ function s2() {
       if (typeof e == "object")
         switch (e.$$typeof) {
           case M:
-            var t = e;
-            return C1(t) + ".Consumer";
+            var r = e;
+            return C1(r) + ".Consumer";
           case F:
-            var n = e;
-            return C1(n._context) + ".Provider";
+            var t = e;
+            return C1(t._context) + ".Provider";
           case h:
             return b1(e, e.render, "ForwardRef");
-          case v:
-            var H = e.displayName || null;
-            return H !== null ? H : w(e.type) || "Memo";
-          case g: {
+          case x:
+            var n = e.displayName || null;
+            return n !== null ? n : v(e.type) || "Memo";
+          case Z: {
             var a = e, d = a._payload, o = a._init;
             try {
-              return w(o(d));
+              return v(o(d));
             } catch (s) {
               return null;
             }
@@ -129,14 +129,14 @@ function s2() {
         }
       return null;
     }
-    var j = Object.assign, _ = 0, e1, l1, r1, i1, t1, n1, H1;
+    var g = Object.assign, _ = 0, e1, l1, H1, i1, r1, t1, n1;
     function s1() {
     }
     s1.__reactDisabledLog = !0;
     function D1() {
       {
         if (_ === 0) {
-          e1 = console.log, l1 = console.info, r1 = console.warn, i1 = console.error, t1 = console.group, n1 = console.groupCollapsed, H1 = console.groupEnd;
+          e1 = console.log, l1 = console.info, H1 = console.warn, i1 = console.error, r1 = console.group, t1 = console.groupCollapsed, n1 = console.groupEnd;
           var e = {
             configurable: !0,
             enumerable: !0,
@@ -165,26 +165,26 @@ function s2() {
             writable: !0
           };
           Object.defineProperties(console, {
-            log: j({}, e, {
+            log: g({}, e, {
               value: e1
             }),
-            info: j({}, e, {
+            info: g({}, e, {
               value: l1
             }),
-            warn: j({}, e, {
-              value: r1
+            warn: g({}, e, {
+              value: H1
             }),
-            error: j({}, e, {
+            error: g({}, e, {
               value: i1
             }),
-            group: j({}, e, {
+            group: g({}, e, {
+              value: r1
+            }),
+            groupCollapsed: g({}, e, {
               value: t1
             }),
-            groupCollapsed: j({}, e, {
+            groupEnd: g({}, e, {
               value: n1
-            }),
-            groupEnd: j({}, e, {
-              value: H1
             })
           });
         }
@@ -192,14 +192,14 @@ function s2() {
       }
     }
     var q = k.ReactCurrentDispatcher, I;
-    function S(e, t, n) {
+    function S(e, r, t) {
       {
         if (I === void 0)
           try {
             throw Error();
           } catch (a) {
-            var H = a.stack.trim().match(/\n( *(at )?)/);
-            I = H && H[1] || "";
+            var n = a.stack.trim().match(/\n( *(at )?)/);
+            I = n && n[1] || "";
           }
         return `
 ` + I + e;
@@ -210,22 +210,22 @@ function s2() {
       var S1 = typeof WeakMap == "function" ? WeakMap : Map;
       W = new S1();
     }
-    function o1(e, t) {
+    function o1(e, r) {
       if (!e || U)
         return "";
       {
-        var n = W.get(e);
-        if (n !== void 0)
-          return n;
+        var t = W.get(e);
+        if (t !== void 0)
+          return t;
       }
-      var H;
+      var n;
       U = !0;
       var a = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
       var d;
       d = q.current, q.current = null, D1();
       try {
-        if (t) {
+        if (r) {
           var o = function() {
             throw Error();
           };
@@ -236,30 +236,30 @@ function s2() {
           }), typeof Reflect == "object" && Reflect.construct) {
             try {
               Reflect.construct(o, []);
-            } catch (V) {
-              H = V;
+            } catch (w) {
+              n = w;
             }
             Reflect.construct(e, [], o);
           } else {
             try {
               o.call();
-            } catch (V) {
-              H = V;
+            } catch (w) {
+              n = w;
             }
             e.call(o.prototype);
           }
         } else {
           try {
             throw Error();
-          } catch (V) {
-            H = V;
+          } catch (w) {
+            n = w;
           }
           e();
         }
-      } catch (V) {
-        if (V && H && typeof V.stack == "string") {
-          for (var s = V.stack.split(`
-`), f = H.stack.split(`
+      } catch (w) {
+        if (w && n && typeof w.stack == "string") {
+          for (var s = w.stack.split(`
+`), f = n.stack.split(`
 `), L = s.length - 1, c = f.length - 1; L >= 1 && c >= 0 && s[L] !== f[c]; )
             c--;
           for (; L >= 1 && c >= 0; L--, c--)
@@ -267,9 +267,9 @@ function s2() {
               if (L !== 1 || c !== 1)
                 do
                   if (L--, c--, c < 0 || s[L] !== f[c]) {
-                    var x = `
+                    var V = `
 ` + s[L].replace(" at new ", " at ");
-                    return e.displayName && x.includes("<anonymous>") && (x = x.replace("<anonymous>", e.displayName)), typeof e == "function" && W.set(e, x), x;
+                    return e.displayName && V.includes("<anonymous>") && (V = V.replace("<anonymous>", e.displayName)), typeof e == "function" && W.set(e, V), V;
                   }
                 while (L >= 1 && c >= 0);
               break;
@@ -281,14 +281,14 @@ function s2() {
       var y = e ? e.displayName || e.name : "", M1 = y ? S(y) : "";
       return typeof e == "function" && W.set(e, M1), M1;
     }
-    function W1(e, t, n) {
+    function W1(e, r, t) {
       return o1(e, !1);
     }
     function T1(e) {
-      var t = e.prototype;
-      return !!(t && t.isReactComponent);
+      var r = e.prototype;
+      return !!(r && r.isReactComponent);
     }
-    function T(e, t, n) {
+    function T(e, r, t) {
       if (e == null)
         return "";
       if (typeof e == "function")
@@ -305,12 +305,12 @@ function s2() {
         switch (e.$$typeof) {
           case h:
             return W1(e.render);
-          case v:
-            return T(e.type, t, n);
-          case g: {
-            var H = e, a = H._payload, d = H._init;
+          case x:
+            return T(e.type, r, t);
+          case Z: {
+            var n = e, a = n._payload, d = n._init;
             try {
-              return T(d(a), t, n);
+              return T(d(a), r, t);
             } catch (o) {
             }
           }
@@ -320,12 +320,12 @@ function s2() {
     var O = Object.prototype.hasOwnProperty, a1 = {}, d1 = k.ReactDebugCurrentFrame;
     function P(e) {
       if (e) {
-        var t = e._owner, n = T(e.type, e._source, t ? t.type : null);
-        d1.setExtraStackFrame(n);
+        var r = e._owner, t = T(e.type, e._source, r ? r.type : null);
+        d1.setExtraStackFrame(t);
       } else
         d1.setExtraStackFrame(null);
     }
-    function O1(e, t, n, H, a) {
+    function O1(e, r, t, n, a) {
       {
         var d = Function.call.bind(O);
         for (var o in e)
@@ -333,14 +333,14 @@ function s2() {
             var s = void 0;
             try {
               if (typeof e[o] != "function") {
-                var f = Error((H || "React class") + ": " + n + " type `" + o + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[o] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                var f = Error((n || "React class") + ": " + t + " type `" + o + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[o] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
                 throw f.name = "Invariant Violation", f;
               }
-              s = e[o](t, o, H, n, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+              s = e[o](r, o, n, t, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
             } catch (L) {
               s = L;
             }
-            s && !(s instanceof Error) && (P(a), u("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", H || "React class", n, o, typeof s), P(null)), s instanceof Error && !(s.message in a1) && (a1[s.message] = !0, P(a), u("Failed %s type: %s", n, s.message), P(null));
+            s && !(s instanceof Error) && (P(a), u("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", n || "React class", t, o, typeof s), P(null)), s instanceof Error && !(s.message in a1) && (a1[s.message] = !0, P(a), u("Failed %s type: %s", t, s.message), P(null));
           }
       }
     }
@@ -350,14 +350,14 @@ function s2() {
     }
     function q1(e) {
       {
-        var t = typeof Symbol == "function" && Symbol.toStringTag, n = t && e[Symbol.toStringTag] || e.constructor.name || "Object";
-        return n;
+        var r = typeof Symbol == "function" && Symbol.toStringTag, t = r && e[Symbol.toStringTag] || e.constructor.name || "Object";
+        return t;
       }
     }
     function I1(e) {
       try {
         return L1(e), !1;
-      } catch (t) {
+      } catch (r) {
         return !0;
       }
     }
@@ -377,56 +377,56 @@ function s2() {
     Y = {};
     function $1(e) {
       if (O.call(e, "ref")) {
-        var t = Object.getOwnPropertyDescriptor(e, "ref").get;
-        if (t && t.isReactWarning)
+        var r = Object.getOwnPropertyDescriptor(e, "ref").get;
+        if (r && r.isReactWarning)
           return !1;
       }
       return e.ref !== void 0;
     }
     function Y1(e) {
       if (O.call(e, "key")) {
-        var t = Object.getOwnPropertyDescriptor(e, "key").get;
-        if (t && t.isReactWarning)
+        var r = Object.getOwnPropertyDescriptor(e, "key").get;
+        if (r && r.isReactWarning)
           return !1;
       }
       return e.key !== void 0;
     }
-    function G1(e, t) {
-      if (typeof e.ref == "string" && B.current && t && B.current.stateNode !== t) {
-        var n = w(B.current.type);
-        Y[n] || (u('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', w(B.current.type), e.ref), Y[n] = !0);
+    function G1(e, r) {
+      if (typeof e.ref == "string" && B.current && r && B.current.stateNode !== r) {
+        var t = v(B.current.type);
+        Y[t] || (u('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', v(B.current.type), e.ref), Y[t] = !0);
       }
     }
-    function J1(e, t) {
+    function J1(e, r) {
       {
-        var n = function() {
-          h1 || (h1 = !0, u("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", t));
+        var t = function() {
+          h1 || (h1 = !0, u("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
         };
-        n.isReactWarning = !0, Object.defineProperty(e, "key", {
-          get: n,
+        t.isReactWarning = !0, Object.defineProperty(e, "key", {
+          get: t,
           configurable: !0
         });
       }
     }
-    function K1(e, t) {
+    function K1(e, r) {
       {
-        var n = function() {
-          u1 || (u1 = !0, u("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", t));
+        var t = function() {
+          u1 || (u1 = !0, u("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
         };
-        n.isReactWarning = !0, Object.defineProperty(e, "ref", {
-          get: n,
+        t.isReactWarning = !0, Object.defineProperty(e, "ref", {
+          get: t,
           configurable: !0
         });
       }
     }
-    var z1 = function(e, t, n, H, a, d, o) {
+    var z1 = function(e, r, t, n, a, d, o) {
       var s = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: l,
         // Built-in properties that belong on the element
         type: e,
-        key: t,
-        ref: n,
+        key: r,
+        ref: t,
         props: o,
         // Record the component responsible for creating this element.
         _owner: d
@@ -440,7 +440,7 @@ function s2() {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: H
+        value: n
       }), Object.defineProperty(s, "_source", {
         configurable: !1,
         enumerable: !1,
@@ -448,12 +448,12 @@ function s2() {
         value: a
       }), Object.freeze && (Object.freeze(s.props), Object.freeze(s)), s;
     };
-    function X1(e, t, n, H, a) {
+    function X1(e, r, t, n, a) {
       {
         var d, o = {}, s = null, f = null;
-        n !== void 0 && (c1(n), s = "" + n), Y1(t) && (c1(t.key), s = "" + t.key), $1(t) && (f = t.ref, G1(t, a));
-        for (d in t)
-          O.call(t, d) && !U1.hasOwnProperty(d) && (o[d] = t[d]);
+        t !== void 0 && (c1(t), s = "" + t), Y1(r) && (c1(r.key), s = "" + r.key), $1(r) && (f = r.ref, G1(r, a));
+        for (d in r)
+          O.call(r, d) && !U1.hasOwnProperty(d) && (o[d] = r[d]);
         if (e && e.defaultProps) {
           var L = e.defaultProps;
           for (d in L)
@@ -463,14 +463,14 @@ function s2() {
           var c = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
           s && J1(o, c), f && K1(o, c);
         }
-        return z1(e, s, f, a, H, B.current, o);
+        return z1(e, s, f, a, n, B.current, o);
       }
     }
     var G = k.ReactCurrentOwner, f1 = k.ReactDebugCurrentFrame;
     function R(e) {
       if (e) {
-        var t = e._owner, n = T(e.type, e._source, t ? t.type : null);
-        f1.setExtraStackFrame(n);
+        var r = e._owner, t = T(e.type, e._source, r ? r.type : null);
+        f1.setExtraStackFrame(t);
       } else
         f1.setExtraStackFrame(null);
     }
@@ -482,7 +482,7 @@ function s2() {
     function p1() {
       {
         if (G.current) {
-          var e = w(G.current.type);
+          var e = v(G.current.type);
           if (e)
             return `
 
@@ -494,48 +494,48 @@ Check the render method of \`` + e + "`.";
     function Q1(e) {
       {
         if (e !== void 0) {
-          var t = e.fileName.replace(/^.*[\\\/]/, ""), n = e.lineNumber;
+          var r = e.fileName.replace(/^.*[\\\/]/, ""), t = e.lineNumber;
           return `
 
-Check your code at ` + t + ":" + n + ".";
+Check your code at ` + r + ":" + t + ".";
         }
         return "";
       }
     }
-    var x1 = {};
+    var V1 = {};
     function C2(e) {
       {
-        var t = p1();
-        if (!t) {
-          var n = typeof e == "string" ? e : e.displayName || e.name;
-          n && (t = `
+        var r = p1();
+        if (!r) {
+          var t = typeof e == "string" ? e : e.displayName || e.name;
+          t && (r = `
 
-Check the top-level render call using <` + n + ">.");
+Check the top-level render call using <` + t + ">.");
         }
-        return t;
+        return r;
       }
     }
-    function v1(e, t) {
+    function x1(e, r) {
       {
         if (!e._store || e._store.validated || e.key != null)
           return;
         e._store.validated = !0;
-        var n = C2(t);
-        if (x1[n])
+        var t = C2(r);
+        if (V1[t])
           return;
-        x1[n] = !0;
-        var H = "";
-        e && e._owner && e._owner !== G.current && (H = " It was passed a child from " + w(e._owner.type) + "."), R(e), u('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', n, H), R(null);
+        V1[t] = !0;
+        var n = "";
+        e && e._owner && e._owner !== G.current && (n = " It was passed a child from " + v(e._owner.type) + "."), R(e), u('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', t, n), R(null);
       }
     }
-    function w1(e, t) {
+    function v1(e, r) {
       {
         if (typeof e != "object")
           return;
         if ($(e))
-          for (var n = 0; n < e.length; n++) {
-            var H = e[n];
-            K(H) && v1(H, t);
+          for (var t = 0; t < e.length; t++) {
+            var n = e[t];
+            K(n) && x1(n, r);
           }
         else if (K(e))
           e._store && (e._store.validated = !0);
@@ -543,48 +543,48 @@ Check the top-level render call using <` + n + ">.");
           var a = k1(e);
           if (typeof a == "function" && a !== e.entries)
             for (var d = a.call(e), o; !(o = d.next()).done; )
-              K(o.value) && v1(o.value, t);
+              K(o.value) && x1(o.value, r);
         }
       }
     }
     function e2(e) {
       {
-        var t = e.type;
-        if (t == null || typeof t == "string")
+        var r = e.type;
+        if (r == null || typeof r == "string")
           return;
-        var n;
-        if (typeof t == "function")
-          n = t.propTypes;
-        else if (typeof t == "object" && (t.$$typeof === h || // Note: Memo only checks outer props here.
+        var t;
+        if (typeof r == "function")
+          t = r.propTypes;
+        else if (typeof r == "object" && (r.$$typeof === h || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        t.$$typeof === v))
-          n = t.propTypes;
+        r.$$typeof === x))
+          t = r.propTypes;
         else
           return;
-        if (n) {
-          var H = w(t);
-          O1(n, e.props, "prop", H, e);
-        } else if (t.PropTypes !== void 0 && !J) {
+        if (t) {
+          var n = v(r);
+          O1(t, e.props, "prop", n, e);
+        } else if (r.PropTypes !== void 0 && !J) {
           J = !0;
-          var a = w(t);
+          var a = v(r);
           u("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", a || "Unknown");
         }
-        typeof t.getDefaultProps == "function" && !t.getDefaultProps.isReactClassApproved && u("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+        typeof r.getDefaultProps == "function" && !r.getDefaultProps.isReactClassApproved && u("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
     function l2(e) {
       {
-        for (var t = Object.keys(e.props), n = 0; n < t.length; n++) {
-          var H = t[n];
-          if (H !== "children" && H !== "key") {
-            R(e), u("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", H), R(null);
+        for (var r = Object.keys(e.props), t = 0; t < r.length; t++) {
+          var n = r[t];
+          if (n !== "children" && n !== "key") {
+            R(e), u("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", n), R(null);
             break;
           }
         }
         e.ref !== null && (R(e), u("Invalid attribute `ref` supplied to `React.Fragment`."), R(null));
       }
     }
-    function V1(e, t, n, H, a, d) {
+    function w1(e, r, t, n, a, d) {
       {
         var o = N1(e);
         if (!o) {
@@ -593,43 +593,43 @@ Check the top-level render call using <` + n + ">.");
           var f = Q1(a);
           f ? s += f : s += p1();
           var L;
-          e === null ? L = "null" : $(e) ? L = "array" : e !== void 0 && e.$$typeof === l ? (L = "<" + (w(e.type) || "Unknown") + " />", s = " Did you accidentally export a JSX literal instead of a component?") : L = typeof e, u("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", L, s);
+          e === null ? L = "null" : $(e) ? L = "array" : e !== void 0 && e.$$typeof === l ? (L = "<" + (v(e.type) || "Unknown") + " />", s = " Did you accidentally export a JSX literal instead of a component?") : L = typeof e, u("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", L, s);
         }
-        var c = X1(e, t, n, a, d);
+        var c = X1(e, r, t, a, d);
         if (c == null)
           return c;
         if (o) {
-          var x = t.children;
-          if (x !== void 0)
-            if (H)
-              if ($(x)) {
-                for (var y = 0; y < x.length; y++)
-                  w1(x[y], e);
-                Object.freeze && Object.freeze(x);
+          var V = r.children;
+          if (V !== void 0)
+            if (n)
+              if ($(V)) {
+                for (var y = 0; y < V.length; y++)
+                  v1(V[y], e);
+                Object.freeze && Object.freeze(V);
               } else
                 u("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              w1(x, e);
+              v1(V, e);
         }
-        return e === Z ? l2(c) : e2(c), c;
+        return e === j ? l2(c) : e2(c), c;
       }
     }
-    function r2(e, t, n) {
-      return V1(e, t, n, !0);
+    function H2(e, r, t) {
+      return w1(e, r, t, !0);
     }
-    function i2(e, t, n) {
-      return V1(e, t, n, !1);
+    function i2(e, r, t) {
+      return w1(e, r, t, !1);
     }
-    var t2 = i2, n2 = r2;
-    N.Fragment = Z, N.jsx = t2, N.jsxs = n2;
+    var r2 = i2, t2 = H2;
+    N.Fragment = j, N.jsx = r2, N.jsxs = t2;
   }()), N;
 }
-process.env.NODE_ENV === "production" ? z.exports = H2() : z.exports = s2();
+process.env.NODE_ENV === "production" ? z.exports = n2() : z.exports = s2();
 var C = z.exports;
-const o2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+const o2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 24",
     fill: "none",
@@ -671,13 +671,13 @@ const o2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
 );
 o2.displayName = "Zp";
 const a2 = ({
-  width: r = "25",
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -694,10 +694,10 @@ const a2 = ({
   }
 );
 a2.displayName = "Analytics";
-const d2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+const d2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -715,13 +715,13 @@ const d2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
 );
 d2.displayName = "Bank";
 const L2 = ({
-  width: r = "25",
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 24",
     fill: "none",
@@ -750,10 +750,10 @@ const L2 = ({
   }
 );
 L2.displayName = "CardSalom";
-const c2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+const c2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -771,13 +771,13 @@ const c2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
 );
 c2.displayName = "Cash";
 const h2 = ({
-  width: r = "25",
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -795,13 +795,13 @@ const h2 = ({
 );
 h2.displayName = "CreditCard";
 const u2 = ({
-  width: r = "25",
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -819,13 +819,13 @@ const u2 = ({
 );
 u2.displayName = "CurrencyDollar";
 const f2 = ({
-  width: r = "25",
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -843,13 +843,13 @@ const f2 = ({
 );
 f2.displayName = "CurrencyLira";
 const p2 = ({
-  width: r = "25",
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -866,10 +866,10 @@ const p2 = ({
   }
 );
 p2.displayName = "CurrencyRuble";
-const x2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+const V2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -903,11 +903,11 @@ const x2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     ]
   }
 );
-x2.displayName = "Dollar";
-const v2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+V2.displayName = "Dollar";
+const x2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -923,11 +923,11 @@ const v2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-v2.displayName = "Merch";
-const w2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+x2.displayName = "Merch";
+const v2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -943,11 +943,11 @@ const w2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-w2.displayName = "Money";
-const V2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+v2.displayName = "Money";
+const w2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 24",
     fill: "none",
@@ -963,11 +963,11 @@ const V2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-V2.displayName = "Online";
-const M2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+w2.displayName = "Online";
+const M2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -984,14 +984,14 @@ const M2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
   }
 );
 M2.displayName = "Percent";
-const g2 = ({
-  width: r = "25",
+const Z2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 24",
     fill: "none",
@@ -1007,11 +1007,11 @@ const g2 = ({
     )
   }
 );
-g2.displayName = "SendCard";
-const j2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+Z2.displayName = "SendCard";
+const g2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -1027,15 +1027,15 @@ const j2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-j2.displayName = "SendDoc";
-const Z2 = ({
-  width: r = "25",
+g2.displayName = "SendDoc";
+const j2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -1051,15 +1051,15 @@ const Z2 = ({
     )
   }
 );
-Z2.displayName = "Terminal";
+j2.displayName = "Terminal";
 const m2 = ({
-  width: r = "25",
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -1076,10 +1076,10 @@ const m2 = ({
   }
 );
 m2.displayName = "Transfers";
-const k2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+const k2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -1097,13 +1097,13 @@ const k2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
 );
 k2.displayName = "Visa";
 const R2 = ({
-  width: r = "25",
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -1121,13 +1121,13 @@ const R2 = ({
 );
 R2.displayName = "WalletPlus";
 const y2 = ({
-  width: r = "25",
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -1144,10 +1144,10 @@ const y2 = ({
   }
 );
 y2.displayName = "WalletTransfer";
-const F2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+const F2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -1165,13 +1165,98 @@ const F2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
 );
 F2.displayName = "Wallet";
 const _2 = ({
-  width: r = "25",
+  width: H = "25",
+  height: l = "25",
+  color: i = "currentColor"
+}) => /* @__PURE__ */ C.jsxs(
+  "svg",
+  {
+    width: H,
+    height: l,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    children: [
+      /* @__PURE__ */ C.jsx("mask", { id: "path-1-inside-1_2769_3723", fill: "white", children: /* @__PURE__ */ C.jsx(
+        "path",
+        {
+          fillRule: "evenodd",
+          clipRule: "evenodd",
+          d: "M4.41465 8C4.264 8.42621 3.92621 8.764 3.5 8.91465V15.0854C3.92621 15.236 4.26401 15.5738 4.41465 16H19.5854C19.736 15.5738 20.0738 15.236 20.5 15.0854V8.91465C20.0738 8.764 19.736 8.42621 19.5854 8H4.41465ZM22.4913 16.3371C22.497 16.2777 22.5 16.2174 22.5 16.1565V7.84355C22.5 7.78259 22.497 7.72232 22.4913 7.66288C22.497 7.60937 22.5 7.55504 22.5 7.5C22.5 6.67157 21.8284 6 21 6C20.945 6 20.8906 6.00296 20.8371 6.00874C20.7777 6.00296 20.7174 6 20.6565 6H3.34355C3.28259 6 3.22232 6.00296 3.16288 6.00874C3.10938 6.00296 3.05503 6 3 6C2.17157 6 1.5 6.67157 1.5 7.5C1.5 7.55503 1.50296 7.60938 1.50874 7.66288C1.50296 7.72232 1.5 7.78259 1.5 7.84355V16.1565C1.5 16.2174 1.50296 16.2777 1.50874 16.3371C1.50296 16.3906 1.5 16.445 1.5 16.5C1.5 17.3284 2.17157 18 3 18C3.05503 18 3.10938 17.997 3.16288 17.9913C3.22232 17.997 3.28259 18 3.34355 18H20.6565C20.7174 18 20.7777 17.997 20.8371 17.9913C20.8906 17.997 20.945 18 21 18C21.8284 18 22.5 17.3284 22.5 16.5C22.5 16.445 22.497 16.3906 22.4913 16.3371ZM6 13.125C6.62132 13.125 7.125 12.6213 7.125 12C7.125 11.3787 6.62132 10.875 6 10.875C5.37868 10.875 4.875 11.3787 4.875 12C4.875 12.6213 5.37868 13.125 6 13.125ZM19.125 12C19.125 12.6213 18.6213 13.125 18 13.125C17.3787 13.125 16.875 12.6213 16.875 12C16.875 11.3787 17.3787 10.875 18 10.875C18.6213 10.875 19.125 11.3787 19.125 12ZM13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12ZM15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+        }
+      ) }),
+      /* @__PURE__ */ C.jsx(
+        "path",
+        {
+          fillRule: "evenodd",
+          clipRule: "evenodd",
+          d: "M4.41465 8C4.264 8.42621 3.92621 8.764 3.5 8.91465V15.0854C3.92621 15.236 4.26401 15.5738 4.41465 16H19.5854C19.736 15.5738 20.0738 15.236 20.5 15.0854V8.91465C20.0738 8.764 19.736 8.42621 19.5854 8H4.41465ZM22.4913 16.3371C22.497 16.2777 22.5 16.2174 22.5 16.1565V7.84355C22.5 7.78259 22.497 7.72232 22.4913 7.66288C22.497 7.60937 22.5 7.55504 22.5 7.5C22.5 6.67157 21.8284 6 21 6C20.945 6 20.8906 6.00296 20.8371 6.00874C20.7777 6.00296 20.7174 6 20.6565 6H3.34355C3.28259 6 3.22232 6.00296 3.16288 6.00874C3.10938 6.00296 3.05503 6 3 6C2.17157 6 1.5 6.67157 1.5 7.5C1.5 7.55503 1.50296 7.60938 1.50874 7.66288C1.50296 7.72232 1.5 7.78259 1.5 7.84355V16.1565C1.5 16.2174 1.50296 16.2777 1.50874 16.3371C1.50296 16.3906 1.5 16.445 1.5 16.5C1.5 17.3284 2.17157 18 3 18C3.05503 18 3.10938 17.997 3.16288 17.9913C3.22232 17.997 3.28259 18 3.34355 18H20.6565C20.7174 18 20.7777 17.997 20.8371 17.9913C20.8906 17.997 20.945 18 21 18C21.8284 18 22.5 17.3284 22.5 16.5C22.5 16.445 22.497 16.3906 22.4913 16.3371ZM6 13.125C6.62132 13.125 7.125 12.6213 7.125 12C7.125 11.3787 6.62132 10.875 6 10.875C5.37868 10.875 4.875 11.3787 4.875 12C4.875 12.6213 5.37868 13.125 6 13.125ZM19.125 12C19.125 12.6213 18.6213 13.125 18 13.125C17.3787 13.125 16.875 12.6213 16.875 12C16.875 11.3787 17.3787 10.875 18 10.875C18.6213 10.875 19.125 11.3787 19.125 12ZM13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12ZM15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z",
+          fill: i
+        }
+      ),
+      /* @__PURE__ */ C.jsx(
+        "path",
+        {
+          d: "M3.5 8.91465L2.83351 7.02897L1.5 7.50029V8.91465H3.5ZM4.41465 8V6H3.0003L2.52897 7.33351L4.41465 8ZM3.5 15.0854H1.5V16.4997L2.83351 16.971L3.5 15.0854ZM4.41465 16L2.52897 16.6665L3.0003 18H4.41465V16ZM19.5854 16V18H20.9997L21.471 16.6665L19.5854 16ZM20.5 15.0854L21.1665 16.971L22.5 16.4997V15.0854H20.5ZM20.5 8.91465H22.5V7.5003L21.1665 7.02897L20.5 8.91465ZM19.5854 8L21.471 7.33351L20.9997 6H19.5854V8ZM22.4913 16.3371L20.5007 16.1435L20.4808 16.3478L20.5028 16.5518L22.4913 16.3371ZM22.4913 7.66288L20.5028 7.44816L20.4808 7.6522L20.5007 7.85647L22.4913 7.66288ZM20.8371 6.00874L20.6435 7.99935L20.8478 8.01922L21.0518 7.99718L20.8371 6.00874ZM3.16288 6.00874L2.94817 7.99718L3.15222 8.01922L3.3565 7.99935L3.16288 6.00874ZM1.50874 7.66288L3.49935 7.8565L3.51922 7.65222L3.49718 7.44817L1.50874 7.66288ZM1.50874 16.3371L3.49718 16.5518L3.51922 16.3478L3.49935 16.1435L1.50874 16.3371ZM3.16288 17.9913L3.35651 16.0007L3.15223 15.9808L2.94818 16.0028L3.16288 17.9913ZM20.8371 17.9913L21.0518 16.0028L20.8478 15.9808L20.6435 16.0007L20.8371 17.9913ZM4.16649 10.8003C5.1624 10.4483 5.94832 9.6624 6.30033 8.66649L2.52897 7.33351C2.57969 7.19001 2.69001 7.07969 2.83351 7.02897L4.16649 10.8003ZM5.5 15.0854V8.91465H1.5V15.0854H5.5ZM6.30033 15.3335C5.94832 14.3376 5.1624 13.5517 4.16649 13.1997L2.83351 16.971C2.69001 16.9203 2.57969 16.81 2.52897 16.6665L6.30033 15.3335ZM19.5854 14H4.41465V18H19.5854V14ZM21.471 16.6665C21.4203 16.81 21.31 16.9203 21.1665 16.971L19.8335 13.1997C18.8376 13.5517 18.0517 14.3376 17.6997 15.3335L21.471 16.6665ZM18.5 8.91465V15.0854H22.5V8.91465H18.5ZM17.6997 8.66649C18.0517 9.6624 18.8376 10.4483 19.8335 10.8003L21.1665 7.02897C21.31 7.07969 21.4203 7.19002 21.471 7.33351L17.6997 8.66649ZM4.41465 10H19.5854V6H4.41465V10ZM20.5 16.1565C20.5 16.1526 20.5002 16.1483 20.5007 16.1435L24.4819 16.5307C24.4939 16.4071 24.5 16.2822 24.5 16.1565H20.5ZM20.5 7.84355V16.1565H24.5V7.84355H20.5ZM20.5007 7.85647C20.5002 7.85171 20.5 7.84737 20.5 7.84355H24.5C24.5 7.7178 24.4939 7.59292 24.4819 7.46928L20.5007 7.85647ZM20.5 7.5C20.5 7.48316 20.5009 7.46582 20.5028 7.44816L24.4797 7.87759C24.4932 7.75292 24.5 7.62691 24.5 7.5H20.5ZM21 8C20.7239 8 20.5 7.77614 20.5 7.5H24.5C24.5 5.567 22.933 4 21 4V8ZM21.0518 7.99718C21.0342 7.99909 21.0168 8 21 8V4C20.8731 4 20.7471 4.00684 20.6224 4.0203L21.0518 7.99718ZM20.6565 8C20.6527 8 20.6483 7.99981 20.6435 7.99935L21.0307 4.01813C20.9071 4.0061 20.7822 4 20.6565 4V8ZM3.34355 8H20.6565V4H3.34355V8ZM3.3565 7.99935C3.35169 7.99981 3.34734 8 3.34355 8V4C3.21783 4 3.09295 4.0061 2.96925 4.01814L3.3565 7.99935ZM3 8C2.98318 8 2.96584 7.99909 2.94817 7.99718L3.37759 4.0203C3.25291 4.00684 3.12689 4 3 4V8ZM3.5 7.5C3.5 7.77614 3.27614 8 3 8V4C1.067 4 -0.5 5.567 -0.5 7.5H3.5ZM3.49718 7.44817C3.49909 7.46584 3.5 7.48317 3.5 7.5H-0.5C-0.5 7.62689 -0.493163 7.75291 -0.479701 7.87759L3.49718 7.44817ZM3.5 7.84355C3.5 7.84734 3.49981 7.85169 3.49935 7.8565L-0.481865 7.46925C-0.493896 7.59295 -0.5 7.71783 -0.5 7.84355H3.5ZM3.5 16.1565V7.84355H-0.5V16.1565H3.5ZM3.49935 16.1435C3.49981 16.1483 3.5 16.1527 3.5 16.1565H-0.5C-0.5 16.2822 -0.493896 16.4071 -0.481865 16.5307L3.49935 16.1435ZM3.5 16.5C3.5 16.5168 3.49909 16.5342 3.49718 16.5518L-0.479701 16.1224C-0.493163 16.2471 -0.5 16.3731 -0.5 16.5H3.5ZM3 16C3.27614 16 3.5 16.2239 3.5 16.5H-0.5C-0.5 18.433 1.067 20 3 20V16ZM2.94818 16.0028C2.96584 16.0009 2.98317 16 3 16V20C3.1269 20 3.25291 19.9932 3.37757 19.9797L2.94818 16.0028ZM3.34355 16C3.34733 16 3.35168 16.0002 3.35651 16.0007L2.96924 19.9819C3.09295 19.9939 3.21784 20 3.34355 20V16ZM20.6565 16H3.34355V20H20.6565V16ZM20.6435 16.0007C20.6483 16.0002 20.6527 16 20.6565 16V20C20.7822 20 20.907 19.9939 21.0308 19.9819L20.6435 16.0007ZM21 16C21.0168 16 21.0342 16.0009 21.0518 16.0028L20.6224 19.9797C20.7471 19.9932 20.8731 20 21 20V16ZM20.5 16.5C20.5 16.2239 20.7239 16 21 16V20C22.933 20 24.5 18.433 24.5 16.5H20.5ZM20.5028 16.5518C20.5009 16.5342 20.5 16.5168 20.5 16.5H24.5C24.5 16.3731 24.4932 16.2471 24.4797 16.1224L20.5028 16.5518ZM5.125 12C5.125 11.5168 5.51675 11.125 6 11.125V15.125C7.72589 15.125 9.125 13.7259 9.125 12H5.125ZM6 12.875C5.51675 12.875 5.125 12.4832 5.125 12H9.125C9.125 10.2741 7.72589 8.875 6 8.875V12.875ZM6.875 12C6.875 12.4832 6.48325 12.875 6 12.875V8.875C4.27411 8.875 2.875 10.2741 2.875 12H6.875ZM6 11.125C6.48325 11.125 6.875 11.5168 6.875 12H2.875C2.875 13.7259 4.27411 15.125 6 15.125V11.125ZM18 15.125C19.7259 15.125 21.125 13.7259 21.125 12H17.125C17.125 11.5168 17.5168 11.125 18 11.125V15.125ZM14.875 12C14.875 13.7259 16.2741 15.125 18 15.125V11.125C18.4832 11.125 18.875 11.5168 18.875 12H14.875ZM18 8.875C16.2741 8.875 14.875 10.2741 14.875 12H18.875C18.875 12.4832 18.4832 12.875 18 12.875V8.875ZM21.125 12C21.125 10.2741 19.7259 8.875 18 8.875V12.875C17.5168 12.875 17.125 12.4832 17.125 12H21.125ZM12 15C13.6569 15 15 13.6569 15 12H11C11 11.4477 11.4477 11 12 11V15ZM9 12C9 13.6569 10.3431 15 12 15V11C12.5523 11 13 11.4477 13 12H9ZM12 9C10.3431 9 9 10.3431 9 12H13C13 12.5523 12.5523 13 12 13V9ZM15 12C15 10.3431 13.6569 9 12 9V13C11.4477 13 11 12.5523 11 12H15ZM12 17C14.7614 17 17 14.7614 17 12H13C13 12.5523 12.5523 13 12 13V17ZM7 12C7 14.7614 9.23858 17 12 17V13C11.4477 13 11 12.5523 11 12H7ZM12 7C9.23858 7 7 9.23858 7 12H11C11 11.4477 11.4477 11 12 11V7ZM17 12C17 9.23858 14.7614 7 12 7V11C12.5523 11 13 11.4477 13 12H17Z",
+          fill: i,
+          mask: "url(#path-1-inside-1_2769_3723)"
+        }
+      )
+    ]
+  }
+);
+_2.displayName = "Banknote";
+const B2 = ({
+  width: H = "25",
+  height: l = "25",
+  color: i = "currentColor"
+}) => /* @__PURE__ */ C.jsxs(
+  "svg",
+  {
+    width: H,
+    height: l,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    children: [
+      /* @__PURE__ */ C.jsx("mask", { id: "path-1-inside-1_2769_3745", fill: "white", children: /* @__PURE__ */ C.jsx(
+        "path",
+        {
+          fillRule: "evenodd",
+          clipRule: "evenodd",
+          d: "M8.07982 6H3.34355C3.28259 6 3.22232 6.00296 3.16288 6.00874C3.10938 6.00296 3.05503 6 3 6C2.17157 6 1.5 6.67157 1.5 7.5C1.5 7.55503 1.50296 7.60938 1.50874 7.66288C1.50296 7.72232 1.5 7.78259 1.5 7.84355V16.1565C1.5 16.2174 1.50296 16.2777 1.50874 16.3371C1.50296 16.3906 1.5 16.445 1.5 16.5C1.5 17.3284 2.17157 18 3 18C3.05503 18 3.10938 17.997 3.16288 17.9913C3.22232 17.997 3.28259 18 3.34355 18H12.5093L11.7711 16H4.41465C4.26401 15.5738 3.92621 15.236 3.5 15.0854V8.91465C3.92621 8.764 4.264 8.42621 4.41465 8H8.81807L8.07982 6ZM9.62022 10.1731C9.23125 10.679 9 11.3125 9 12C9 13.4436 10.0197 14.6491 11.3781 14.9355L9.62022 10.1731ZM14.0756 14.1661L12.1704 9.00476C13.748 9.09309 15 10.4003 15 12C15 12.8515 14.6453 13.6201 14.0756 14.1661ZM14.7525 16H19.5854C19.736 15.5738 20.0738 15.236 20.5 15.0854V8.91465C20.0738 8.764 19.736 8.42621 19.5854 8H11.7995L11.0613 6H20.6565C20.7174 6 20.7777 6.00296 20.8371 6.00874C20.8906 6.00296 20.945 6 21 6C21.8284 6 22.5 6.67157 22.5 7.5C22.5 7.55504 22.497 7.60937 22.4913 7.66288C22.497 7.72232 22.5 7.78259 22.5 7.84355V16.1565C22.5 16.2174 22.497 16.2777 22.4913 16.3371C22.497 16.3906 22.5 16.445 22.5 16.5C22.5 17.3284 21.8284 18 21 18C20.945 18 20.8906 17.997 20.8371 17.9913C20.7777 17.997 20.7174 18 20.6565 18H15.4908L14.7525 16ZM7.125 12C7.125 12.6213 6.62132 13.125 6 13.125C5.37868 13.125 4.875 12.6213 4.875 12C4.875 11.3787 5.37868 10.875 6 10.875C6.62132 10.875 7.125 11.3787 7.125 12ZM18 13.125C18.6213 13.125 19.125 12.6213 19.125 12C19.125 11.3787 18.6213 10.875 18 10.875C17.3787 10.875 16.875 11.3787 16.875 12C16.875 12.6213 17.3787 13.125 18 13.125Z"
+        }
+      ) }),
+      /* @__PURE__ */ C.jsx(
+        "path",
+        {
+          fillRule: "evenodd",
+          clipRule: "evenodd",
+          d: "M8.07982 6H3.34355C3.28259 6 3.22232 6.00296 3.16288 6.00874C3.10938 6.00296 3.05503 6 3 6C2.17157 6 1.5 6.67157 1.5 7.5C1.5 7.55503 1.50296 7.60938 1.50874 7.66288C1.50296 7.72232 1.5 7.78259 1.5 7.84355V16.1565C1.5 16.2174 1.50296 16.2777 1.50874 16.3371C1.50296 16.3906 1.5 16.445 1.5 16.5C1.5 17.3284 2.17157 18 3 18C3.05503 18 3.10938 17.997 3.16288 17.9913C3.22232 17.997 3.28259 18 3.34355 18H12.5093L11.7711 16H4.41465C4.26401 15.5738 3.92621 15.236 3.5 15.0854V8.91465C3.92621 8.764 4.264 8.42621 4.41465 8H8.81807L8.07982 6ZM9.62022 10.1731C9.23125 10.679 9 11.3125 9 12C9 13.4436 10.0197 14.6491 11.3781 14.9355L9.62022 10.1731ZM14.0756 14.1661L12.1704 9.00476C13.748 9.09309 15 10.4003 15 12C15 12.8515 14.6453 13.6201 14.0756 14.1661ZM14.7525 16H19.5854C19.736 15.5738 20.0738 15.236 20.5 15.0854V8.91465C20.0738 8.764 19.736 8.42621 19.5854 8H11.7995L11.0613 6H20.6565C20.7174 6 20.7777 6.00296 20.8371 6.00874C20.8906 6.00296 20.945 6 21 6C21.8284 6 22.5 6.67157 22.5 7.5C22.5 7.55504 22.497 7.60937 22.4913 7.66288C22.497 7.72232 22.5 7.78259 22.5 7.84355V16.1565C22.5 16.2174 22.497 16.2777 22.4913 16.3371C22.497 16.3906 22.5 16.445 22.5 16.5C22.5 17.3284 21.8284 18 21 18C20.945 18 20.8906 17.997 20.8371 17.9913C20.7777 17.997 20.7174 18 20.6565 18H15.4908L14.7525 16ZM7.125 12C7.125 12.6213 6.62132 13.125 6 13.125C5.37868 13.125 4.875 12.6213 4.875 12C4.875 11.3787 5.37868 10.875 6 10.875C6.62132 10.875 7.125 11.3787 7.125 12ZM18 13.125C18.6213 13.125 19.125 12.6213 19.125 12C19.125 11.3787 18.6213 10.875 18 10.875C17.3787 10.875 16.875 11.3787 16.875 12C16.875 12.6213 17.3787 13.125 18 13.125Z",
+          fill: i
+        }
+      ),
+      /* @__PURE__ */ C.jsx(
+        "path",
+        {
+          d: "M8.07982 6L9.95608 5.30743L9.47348 4H8.07982V6ZM3.16288 6.00874L2.94817 7.99718L3.15222 8.01922L3.3565 7.99935L3.16288 6.00874ZM1.50874 7.66288L3.49935 7.8565L3.51922 7.65222L3.49718 7.44817L1.50874 7.66288ZM1.50874 16.3371L3.49718 16.5518L3.51922 16.3478L3.49935 16.1435L1.50874 16.3371ZM3.16288 17.9913L3.35651 16.0007L3.15223 15.9808L2.94818 16.0028L3.16288 17.9913ZM12.5093 18V20H15.3795L14.3856 17.3074L12.5093 18ZM11.7711 16L13.6473 15.3074L13.1647 14H11.7711V16ZM4.41465 16L2.52897 16.6665L3.0003 18H4.41465V16ZM3.5 15.0854H1.5V16.4997L2.83351 16.971L3.5 15.0854ZM3.5 8.91465L2.83351 7.02897L1.5 7.50029V8.91465H3.5ZM4.41465 8V6H3.0003L2.52897 7.33351L4.41465 8ZM8.81807 8V10H11.6882L10.6943 7.30743L8.81807 8ZM9.62022 10.1731L11.4965 9.48053L10.2422 6.08269L8.03465 8.95409L9.62022 10.1731ZM11.3781 14.9355L10.9656 16.8925L14.508 17.6392L13.2544 14.2429L11.3781 14.9355ZM12.1704 9.00476L12.2822 7.00789L9.23849 6.83745L10.2941 9.69733L12.1704 9.00476ZM14.0756 14.1661L12.1993 14.8587L13.2562 17.7218L15.4595 15.61L14.0756 14.1661ZM14.7525 16V14H11.8824L12.8763 16.6926L14.7525 16ZM19.5854 16V18H20.9997L21.471 16.6665L19.5854 16ZM20.5 15.0854L21.1665 16.971L22.5 16.4997V15.0854H20.5ZM20.5 8.91465H22.5V7.5003L21.1665 7.02897L20.5 8.91465ZM19.5854 8L21.471 7.33351L20.9997 6H19.5854V8ZM11.7995 8L9.92326 8.69257L10.4059 10H11.7995V8ZM11.0613 6V4H8.19112L9.18501 6.69257L11.0613 6ZM20.8371 6.00874L20.6435 7.99935L20.8478 8.01922L21.0518 7.99718L20.8371 6.00874ZM22.4913 7.66288L20.5028 7.44816L20.4808 7.6522L20.5007 7.85647L22.4913 7.66288ZM22.4913 16.3371L20.5007 16.1435L20.4808 16.3478L20.5028 16.5518L22.4913 16.3371ZM20.8371 17.9913L21.0518 16.0028L20.8478 15.9808L20.6435 16.0007L20.8371 17.9913ZM15.4908 18L13.6145 18.6926L14.0971 20H15.4908V18ZM8.07982 4H3.34355V8H8.07982V4ZM3.34355 4C3.21783 4 3.09295 4.0061 2.96925 4.01814L3.3565 7.99935C3.35169 7.99981 3.34734 8 3.34355 8V4ZM3.37759 4.0203C3.25291 4.00684 3.12689 4 3 4V8C2.98318 8 2.96584 7.99909 2.94817 7.99718L3.37759 4.0203ZM3 4C1.067 4 -0.5 5.567 -0.5 7.5H3.5C3.5 7.77614 3.27614 8 3 8V4ZM-0.5 7.5C-0.5 7.62689 -0.493163 7.75291 -0.479701 7.87759L3.49718 7.44817C3.49909 7.46584 3.5 7.48317 3.5 7.5H-0.5ZM-0.481865 7.46925C-0.493896 7.59295 -0.5 7.71783 -0.5 7.84355H3.5C3.5 7.84734 3.49981 7.85169 3.49935 7.8565L-0.481865 7.46925ZM-0.5 7.84355V16.1565H3.5V7.84355H-0.5ZM-0.5 16.1565C-0.5 16.2822 -0.493896 16.4071 -0.481865 16.5307L3.49935 16.1435C3.49981 16.1483 3.5 16.1527 3.5 16.1565H-0.5ZM-0.479701 16.1224C-0.493163 16.2471 -0.5 16.3731 -0.5 16.5H3.5C3.5 16.5168 3.49909 16.5342 3.49718 16.5518L-0.479701 16.1224ZM-0.5 16.5C-0.5 18.433 1.067 20 3 20V16C3.27614 16 3.5 16.2239 3.5 16.5H-0.5ZM3 20C3.1269 20 3.25291 19.9932 3.37757 19.9797L2.94818 16.0028C2.96584 16.0009 2.98317 16 3 16V20ZM2.96924 19.9819C3.09295 19.9939 3.21784 20 3.34355 20V16C3.34733 16 3.35168 16.0002 3.35651 16.0007L2.96924 19.9819ZM3.34355 20H12.5093V16H3.34355V20ZM14.3856 17.3074L13.6473 15.3074L9.89481 16.6926L10.6331 18.6926L14.3856 17.3074ZM4.41465 18H11.7711V14H4.41465V18ZM2.83351 16.971C2.69001 16.9203 2.57969 16.81 2.52897 16.6665L6.30033 15.3335C5.94832 14.3376 5.1624 13.5517 4.16649 13.1997L2.83351 16.971ZM1.5 8.91465V15.0854H5.5V8.91465H1.5ZM2.52897 7.33351C2.57969 7.19001 2.69001 7.07969 2.83351 7.02897L4.16649 10.8003C5.1624 10.4483 5.94832 9.6624 6.30033 8.66649L2.52897 7.33351ZM8.81807 6H4.41465V10H8.81807V6ZM10.6943 7.30743L9.95608 5.30743L6.20356 6.69257L6.94181 8.69257L10.6943 7.30743ZM11 12C11 11.7687 11.0761 11.5608 11.2058 11.3921L8.03465 8.95409C7.38639 9.79729 7 10.8564 7 12H11ZM11.7907 12.9785C11.3385 12.8832 11 12.4788 11 12H7C7 14.4084 8.70087 16.4151 10.9656 16.8925L11.7907 12.9785ZM13.2544 14.2429L11.4965 9.48053L7.74396 10.8657L9.50186 15.628L13.2544 14.2429ZM10.2941 9.69733L12.1993 14.8587L15.9518 13.4735L14.0467 8.31219L10.2941 9.69733ZM12.0586 11.0016C12.5827 11.031 13 11.4674 13 12H17C17 9.33322 14.9133 7.15521 12.2822 7.00789L12.0586 11.0016ZM13 12C13 12.2841 12.8842 12.5377 12.6917 12.7222L15.4595 15.61C16.4064 14.7024 17 13.4188 17 12H13ZM14.7525 18H19.5854V14H14.7525V18ZM21.471 16.6665C21.4203 16.81 21.31 16.9203 21.1665 16.971L19.8335 13.1997C18.8376 13.5517 18.0517 14.3376 17.6997 15.3335L21.471 16.6665ZM22.5 15.0854V8.91465H18.5V15.0854H22.5ZM21.1665 7.02897C21.31 7.07969 21.4203 7.19002 21.471 7.33351L17.6997 8.66649C18.0517 9.6624 18.8376 10.4483 19.8335 10.8003L21.1665 7.02897ZM19.5854 6H11.7995V10H19.5854V6ZM9.18501 6.69257L9.92326 8.69257L13.6758 7.30743L12.9375 5.30743L9.18501 6.69257ZM20.6565 4H11.0613V8H20.6565V4ZM21.0307 4.01813C20.9071 4.0061 20.7822 4 20.6565 4V8C20.6527 8 20.6483 7.99981 20.6435 7.99935L21.0307 4.01813ZM21 4C20.8731 4 20.7471 4.00684 20.6224 4.0203L21.0518 7.99718C21.0342 7.99909 21.0168 8 21 8V4ZM24.5 7.5C24.5 5.567 22.933 4 21 4V8C20.7239 8 20.5 7.77614 20.5 7.5H24.5ZM24.4797 7.87759C24.4932 7.75292 24.5 7.62691 24.5 7.5H20.5C20.5 7.48316 20.5009 7.46582 20.5028 7.44816L24.4797 7.87759ZM24.5 7.84355C24.5 7.7178 24.4939 7.59292 24.4819 7.46928L20.5007 7.85647C20.5002 7.85171 20.5 7.84737 20.5 7.84355H24.5ZM24.5 16.1565V7.84355H20.5V16.1565H24.5ZM24.4819 16.5307C24.4939 16.4071 24.5 16.2822 24.5 16.1565H20.5C20.5 16.1526 20.5002 16.1483 20.5007 16.1435L24.4819 16.5307ZM24.5 16.5C24.5 16.3731 24.4932 16.2471 24.4797 16.1224L20.5028 16.5518C20.5009 16.5342 20.5 16.5168 20.5 16.5H24.5ZM21 20C22.933 20 24.5 18.433 24.5 16.5H20.5C20.5 16.2239 20.7239 16 21 16V20ZM20.6224 19.9797C20.7471 19.9932 20.8731 20 21 20V16C21.0168 16 21.0342 16.0009 21.0518 16.0028L20.6224 19.9797ZM20.6565 20C20.7822 20 20.907 19.9939 21.0308 19.9819L20.6435 16.0007C20.6483 16.0002 20.6527 16 20.6565 16V20ZM15.4908 20H20.6565V16H15.4908V20ZM12.8763 16.6926L13.6145 18.6926L17.367 17.3074L16.6288 15.3074L12.8763 16.6926ZM6 15.125C7.72589 15.125 9.125 13.7259 9.125 12H5.125C5.125 11.5168 5.51675 11.125 6 11.125V15.125ZM2.875 12C2.875 13.7259 4.27411 15.125 6 15.125V11.125C6.48325 11.125 6.875 11.5168 6.875 12H2.875ZM6 8.875C4.27411 8.875 2.875 10.2741 2.875 12H6.875C6.875 12.4832 6.48325 12.875 6 12.875V8.875ZM9.125 12C9.125 10.2741 7.72589 8.875 6 8.875V12.875C5.51675 12.875 5.125 12.4832 5.125 12H9.125ZM17.125 12C17.125 11.5168 17.5168 11.125 18 11.125V15.125C19.7259 15.125 21.125 13.7259 21.125 12H17.125ZM18 12.875C17.5168 12.875 17.125 12.4832 17.125 12H21.125C21.125 10.2741 19.7259 8.875 18 8.875V12.875ZM18.875 12C18.875 12.4832 18.4832 12.875 18 12.875V8.875C16.2741 8.875 14.875 10.2741 14.875 12H18.875ZM18 11.125C18.4832 11.125 18.875 11.5168 18.875 12H14.875C14.875 13.7259 16.2741 15.125 18 15.125V11.125Z",
+          fill: i,
+          mask: "url(#path-1-inside-1_2769_3745)"
+        }
+      ),
+      /* @__PURE__ */ C.jsx("line", { x1: "7.93544", y1: "3.64653", x2: "14.1566", y2: "20.1103", stroke: i, strokeWidth: "2" })
+    ]
+  }
+);
+B2.displayName = "CrossedBanknote";
+const E2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1187,11 +1272,11 @@ const _2 = ({
     )
   }
 );
-_2.displayName = "ArrowDown";
-const B2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+E2.displayName = "ArrowDown";
+const N2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1207,15 +1292,15 @@ const B2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-B2.displayName = "ArrowUp";
-const E2 = ({
-  width: r = "25",
+N2.displayName = "ArrowUp";
+const b2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1231,15 +1316,15 @@ const E2 = ({
     )
   }
 );
-E2.displayName = "LeftArrow";
-const N2 = ({
-  width: r = "25",
+b2.displayName = "LeftArrow";
+const D2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1255,15 +1340,15 @@ const N2 = ({
     )
   }
 );
-N2.displayName = "RightArrow";
-const b2 = ({
-  width: r = "25",
+D2.displayName = "RightArrow";
+const A2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1280,15 +1365,15 @@ const b2 = ({
     )
   }
 );
-b2.displayName = "ChevronDown";
-const D2 = ({
-  width: r = "25",
+A2.displayName = "ChevronDown";
+const S2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1305,15 +1390,15 @@ const D2 = ({
     )
   }
 );
-D2.displayName = "ChevronLeft";
-const A2 = ({
-  width: r = "25",
+S2.displayName = "ChevronLeft";
+const W2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1330,15 +1415,15 @@ const A2 = ({
     )
   }
 );
-A2.displayName = "ChevronRight";
-const S2 = ({
-  width: r = "25",
+W2.displayName = "ChevronRight";
+const T2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1355,15 +1440,15 @@ const S2 = ({
     )
   }
 );
-S2.displayName = "ChevronDown";
-const W2 = ({
-  width: r = "25",
+T2.displayName = "ChevronDown";
+const O2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1379,15 +1464,15 @@ const W2 = ({
     )
   }
 );
-W2.displayName = "LedtDown";
-const T2 = ({
-  width: r = "25",
+O2.displayName = "LedtDown";
+const P2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1403,15 +1488,15 @@ const T2 = ({
     )
   }
 );
-T2.displayName = "RightTop";
-const O2 = ({
-  width: r = "25",
+P2.displayName = "RightTop";
+const q2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 26 25",
     fill: "none",
@@ -1427,15 +1512,15 @@ const O2 = ({
     )
   }
 );
-O2.displayName = "TrendingUp";
-const P2 = ({
-  width: r = "25",
+q2.displayName = "TrendingUp";
+const I2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1452,15 +1537,15 @@ const P2 = ({
     )
   }
 );
-P2.displayName = "ChevronLeftSmall";
-const q2 = ({
-  width: r = "25",
+I2.displayName = "ChevronLeftSmall";
+const U2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1477,15 +1562,15 @@ const q2 = ({
     )
   }
 );
-q2.displayName = "RightNext";
-const I2 = ({
-  width: r = "25",
+U2.displayName = "RightNext";
+const $2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1502,15 +1587,15 @@ const I2 = ({
     )
   }
 );
-I2.displayName = "SelectHideTop";
-const U2 = ({
-  width: r = "25",
+$2.displayName = "SelectHideTop";
+const Y2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1527,11 +1612,11 @@ const U2 = ({
     )
   }
 );
-U2.displayName = "SelectOpenDown";
-const $2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+Y2.displayName = "SelectOpenDown";
+const G2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1547,11 +1632,11 @@ const $2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-$2.displayName = "EyeOff";
-const Y2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+G2.displayName = "EyeOff";
+const J2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1567,11 +1652,11 @@ const Y2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-Y2.displayName = "EyeOn";
-const G2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+J2.displayName = "EyeOn";
+const K2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1587,11 +1672,11 @@ const G2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-G2.displayName = "Search";
-const J2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+K2.displayName = "Search";
+const z2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1607,15 +1692,15 @@ const J2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-J2.displayName = "Bill";
-const K2 = ({
-  width: r = "25",
+z2.displayName = "Bill";
+const X2 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 24",
     fill: "none",
@@ -1664,11 +1749,11 @@ const K2 = ({
     ]
   }
 );
-K2.displayName = "Calendar";
-const z2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+X2.displayName = "Calendar";
+const Q2 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1682,11 +1767,11 @@ const z2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-z2.displayName = "Chat";
-const X2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+Q2.displayName = "Chat";
+const C5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 24",
     fill: "none",
@@ -1702,11 +1787,11 @@ const X2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-X2.displayName = "Check";
-const Q2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+C5.displayName = "Check";
+const e5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1722,11 +1807,11 @@ const Q2 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-Q2.displayName = "Clock";
-const C9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+e5.displayName = "Clock";
+const l5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1755,11 +1840,11 @@ const C9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     ]
   }
 );
-C9.displayName = "Close";
-const e9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+l5.displayName = "Close";
+const H5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1775,11 +1860,11 @@ const e9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-e9.displayName = "Copy";
-const l9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+H5.displayName = "Copy";
+const i5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1795,11 +1880,11 @@ const l9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-l9.displayName = "Delete";
-const r9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+i5.displayName = "Delete";
+const r5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1815,15 +1900,15 @@ const r9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-r9.displayName = "Doc";
-const i9 = ({
-  width: r = "25",
+r5.displayName = "Doc";
+const t5 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1839,11 +1924,11 @@ const i9 = ({
     )
   }
 );
-i9.displayName = "DocEmpty";
-const t9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+t5.displayName = "DocEmpty";
+const n5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1859,11 +1944,11 @@ const t9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-t9.displayName = "Edit";
-const n9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+n5.displayName = "Edit";
+const s5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 24",
     fill: "none",
@@ -1879,15 +1964,15 @@ const n9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-n9.displayName = "Expand";
-const H9 = ({
-  width: r = "25",
+s5.displayName = "Expand";
+const o5 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 26 25",
     fill: "none",
@@ -1904,15 +1989,15 @@ const H9 = ({
     )
   }
 );
-H9.displayName = "EyeOffAlt";
-const s9 = ({
-  width: r = "25",
+o5.displayName = "EyeOffAlt";
+const a5 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1928,15 +2013,15 @@ const s9 = ({
     )
   }
 );
-s9.displayName = "GridView";
-const o9 = ({
-  width: r = "25",
+a5.displayName = "GridView";
+const d5 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1952,11 +2037,11 @@ const o9 = ({
     )
   }
 );
-o9.displayName = "HelpCircle";
-const a9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+d5.displayName = "HelpCircle";
+const L5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1975,11 +2060,11 @@ const a9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-a9.displayName = "Home";
-const d9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+L5.displayName = "Home";
+const c5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -1995,11 +2080,11 @@ const d9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-d9.displayName = "Info";
-const L9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+c5.displayName = "Info";
+const h5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 25",
     fill: "none",
@@ -2016,15 +2101,15 @@ const L9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-L9.displayName = "Link";
-const c9 = ({
-  width: r = "25",
+h5.displayName = "Link";
+const u5 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2041,11 +2126,11 @@ const c9 = ({
     )
   }
 );
-c9.displayName = "ListView";
-const h9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+u5.displayName = "ListView";
+const f5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 24",
     fill: "none",
@@ -2061,11 +2146,11 @@ const h9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-h9.displayName = "Lock";
-const u9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+f5.displayName = "Lock";
+const p5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2081,11 +2166,11 @@ const u9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-u9.displayName = "Mail";
-const f9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+p5.displayName = "Mail";
+const V5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2101,11 +2186,11 @@ const f9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-f9.displayName = "MapPin";
-const p9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+V5.displayName = "MapPin";
+const x5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2144,11 +2229,11 @@ const p9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     ]
   }
 );
-p9.displayName = "Menu";
-const x9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+x5.displayName = "Menu";
+const v5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2164,15 +2249,15 @@ const x9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-x9.displayName = "Move";
-const v9 = ({
-  width: r = "25",
+v5.displayName = "Move";
+const w5 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2188,15 +2273,15 @@ const v9 = ({
     )
   }
 );
-v9.displayName = "Navigation";
-const w9 = ({
-  width: r = "25",
+w5.displayName = "Navigation";
+const M5 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2212,15 +2297,15 @@ const w9 = ({
     )
   }
 );
-w9.displayName = "Paperclip";
-const V9 = ({
-  width: r = "25",
+M5.displayName = "Paperclip";
+const Z5 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2236,11 +2321,11 @@ const V9 = ({
     )
   }
 );
-V9.displayName = "PlusRect";
-const M9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+Z5.displayName = "PlusRect";
+const g5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2269,15 +2354,15 @@ const M9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     ]
   }
 );
-M9.displayName = "Plus";
-const g9 = ({
-  width: r = "25",
+g5.displayName = "Plus";
+const j5 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 26 25",
     fill: "none",
@@ -2293,11 +2378,11 @@ const g9 = ({
     )
   }
 );
-g9.displayName = "RefreshCw";
-const j9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+j5.displayName = "RefreshCw";
+const m5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2313,11 +2398,11 @@ const j9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-j9.displayName = "Refresh";
-const Z9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+m5.displayName = "Refresh";
+const k5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2333,15 +2418,15 @@ const Z9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-Z9.displayName = "Repeat";
-const m9 = ({
-  width: r = "25",
+k5.displayName = "Repeat";
+const R5 = ({
+  width: H = "25",
   height: l = "25",
   color: i = "currentColor"
 }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2370,11 +2455,11 @@ const m9 = ({
     ]
   }
 );
-m9.displayName = "Settings";
-const k9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+R5.displayName = "Settings";
+const y5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2390,11 +2475,11 @@ const k9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-k9.displayName = "Slash";
-const R9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+y5.displayName = "Slash";
+const F5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2410,11 +2495,11 @@ const R9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-R9.displayName = "Star";
-const y9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+F5.displayName = "Star";
+const _5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 25 25",
     fill: "none",
@@ -2430,11 +2515,11 @@ const y9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-y9.displayName = "Tune";
-const F9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
+_5.displayName = "Tune";
+const B5 = ({ width: H = "25", height: l = "25", color: i = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 24",
     fill: "none",
@@ -2450,12 +2535,12 @@ const F9 = ({ width: r = "25", height: l = "25", color: i = "currentColor" }) =>
     )
   }
 );
-F9.displayName = "Unlock";
-const _9 = ({ width: r = "24", height: l = "24", color: i = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+B5.displayName = "Unlock";
+const E5 = ({ width: H = "24", height: l = "24", color: i = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 24 24",
     strokeWidth: "2",
@@ -2469,17 +2554,17 @@ const _9 = ({ width: r = "24", height: l = "24", color: i = "currentColor" }) =>
     ]
   }
 );
-_9.displayName = "Bell";
-const B9 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+E5.displayName = "Bell";
+const N5 = ({ width: H = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 40 40",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: [
-      /* @__PURE__ */ C.jsx("rect", { width: r, height: l, rx: "20", fill: "#86E19F", fillOpacity: "0.16" }),
+      /* @__PURE__ */ C.jsx("rect", { width: H, height: l, rx: "20", fill: "#86E19F", fillOpacity: "0.16" }),
       /* @__PURE__ */ C.jsx(
         "path",
         {
@@ -2492,8 +2577,8 @@ const B9 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-B9.displayName = "User";
-const E9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+N5.displayName = "User";
+const b5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2511,8 +2596,8 @@ const E9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-E9.displayName = "BonusLarge";
-const N9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+b5.displayName = "BonusLarge";
+const D5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2530,8 +2615,8 @@ const N9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-N9.displayName = "BonusMedium";
-const b9 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+D5.displayName = "BonusMedium";
+const A5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     fillRule: "evenodd",
@@ -2540,8 +2625,8 @@ const b9 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewB
     fill: "#222222"
   }
 ) });
-b9.displayName = "BonusSmall";
-const D9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+A5.displayName = "BonusSmall";
+const S5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2559,8 +2644,8 @@ const D9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-D9.displayName = "CashoutLarge";
-const A9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+S5.displayName = "CashoutLarge";
+const W5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2578,8 +2663,8 @@ const A9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-A9.displayName = "CashoutMedium";
-const S9 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+W5.displayName = "CashoutMedium";
+const T5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     fillRule: "evenodd",
@@ -2588,8 +2673,8 @@ const S9 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewB
     fill: "#222222"
   }
 ) });
-S9.displayName = "CashoutSmall";
-const W9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+T5.displayName = "CashoutSmall";
+const O5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2608,8 +2693,8 @@ const W9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-W9.displayName = "Check";
-const T9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+O5.displayName = "Check";
+const P5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2627,8 +2712,8 @@ const T9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-T9.displayName = "Close";
-const O9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+P5.displayName = "Close";
+const q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2646,8 +2731,8 @@ const O9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-O9.displayName = "DontWorkMedium";
-const P9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+q5.displayName = "DontWorkMedium";
+const I5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2665,8 +2750,8 @@ const P9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-P9.displayName = "DontWorkLarge";
-const q9 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+I5.displayName = "DontWorkLarge";
+const U5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     fillRule: "evenodd",
@@ -2675,8 +2760,8 @@ const q9 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewB
     fill: "#222222"
   }
 ) });
-q9.displayName = "DontWorkSmall";
-const I9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+U5.displayName = "DontWorkSmall";
+const $5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2692,8 +2777,8 @@ const I9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-I9.displayName = "TerminalLarge";
-const U9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+$5.displayName = "TerminalLarge";
+const Y5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2709,16 +2794,16 @@ const U9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-U9.displayName = "TerminalMedium";
-const $9 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+Y5.displayName = "TerminalMedium";
+const G5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     d: "M6.875 3.14773V10H5.13636V3.14773H6.875ZM2.75 3.54545V2H9.25V3.54545H2.75Z",
     fill: "#222222"
   }
 ) });
-$9.displayName = "TerminalSmall";
-const Y9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+G5.displayName = "TerminalSmall";
+const J5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2747,8 +2832,8 @@ const Y9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   ),
   /* @__PURE__ */ C.jsx("path", { d: "M58.5566 28.312H35.2979", stroke: "#48587D", strokeWidth: "3.14286" })
 ] });
-Y9.displayName = "Clothing";
-const G9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+J5.displayName = "Clothing";
+const K5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2760,8 +2845,8 @@ const G9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "11", y: "14", width: "68.6075", height: "26.158", rx: "4.9998", fill: "#00AF66" }),
   /* @__PURE__ */ C.jsx("rect", { x: "40.3037", y: "65.563", width: "10", height: "20", rx: "2", fill: "#48587D" })
 ] });
-G9.displayName = "ConstructionMaterials";
-const J9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+K5.displayName = "ConstructionMaterials";
+const z5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2790,8 +2875,8 @@ const J9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-J9.displayName = "Food";
-const K9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+z5.displayName = "Food";
+const X5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "59.5586", y: "75.1758", width: "6.35318", height: "14.8241", rx: "2", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx(
     "rect",
@@ -2820,8 +2905,8 @@ const K9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "30", y: "19.7981", width: "4.0746", height: "10.1865", rx: "0.985807", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx("rect", { x: "30", y: "48.3206", width: "4.0746", height: "18.7988", rx: "0.985807", fill: "#ECF0F3" })
 ] });
-K9.displayName = "Fridge";
-const z9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+X5.displayName = "Fridge";
+const Q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2976,8 +3061,8 @@ const z9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-z9.displayName = "Jewelry";
-const X9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+Q5.displayName = "Jewelry";
+const C9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "rect",
     {
@@ -3002,8 +3087,8 @@ const X9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "26", y: "10.6721", width: "44", height: "61.1067", rx: "4.74376", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("rect", { x: "43.4473", y: "15.3491", width: "9.10702", height: "2.37188", rx: "1.18594", fill: "#48587D" })
 ] });
-X9.displayName = "PhonesAndAccessories";
-const Q9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+C9.displayName = "PhonesAndAccessories";
+const e9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "rect",
     {
@@ -3041,8 +3126,8 @@ const Q9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-Q9.displayName = "Furniture";
-const C5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+e9.displayName = "Furniture";
+const l9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("circle", { cx: "52", cy: "48", r: "40", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "40", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "36", stroke: "#00AF66", strokeWidth: "8" }),
@@ -3054,8 +3139,8 @@ const C5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-C5.displayName = "OneSomoni";
-const e5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+l9.displayName = "OneSomoni";
+const H9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "9", y: "14.6382", width: "78", height: "28", rx: "3.25", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("rect", { x: "16", y: "21.6382", width: "64", height: "14", rx: "3.25", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx(
@@ -3095,8 +3180,8 @@ const e5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-e5.displayName = "DepositReplenishment";
-const l5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+H9.displayName = "DepositReplenishment";
+const i9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsxs("g", { clipPath: "url(#clip0_4359_16588)", children: [
     /* @__PURE__ */ C.jsx("g", { filter: "url(#filter0_b_4359_16588)", children: /* @__PURE__ */ C.jsx(
       "circle",
@@ -3216,8 +3301,8 @@ const l5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     /* @__PURE__ */ C.jsx("clipPath", { id: "clip0_4359_16588", children: /* @__PURE__ */ C.jsx("rect", { width: "96", height: "96", fill: "white" }) })
   ] })
 ] });
-l5.displayName = "IncomeSharing";
-const r5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+i9.displayName = "IncomeSharing";
+const r9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3309,8 +3394,8 @@ const r5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   ) })
 ] });
-r5.displayName = "Insurance";
-const i5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+r9.displayName = "Insurance";
+const t9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "6", y: "20.6792", width: "84", height: "66.0984", rx: "5.36839", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx(
     "path",
@@ -3335,8 +3420,8 @@ const i5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-i5.displayName = "Investments";
-const t5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+t9.displayName = "Investments";
+const n9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3377,8 +3462,8 @@ const t5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-t5.displayName = "Npl";
-const n5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+n9.displayName = "Npl";
+const s9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3461,8 +3546,8 @@ const n5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "67.2734", y: "23.5952", width: "1.72622", height: "8.63111", rx: "0.863111", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("rect", { x: "63.8213", y: "27.0476", width: "8.63111", height: "1.72622", rx: "0.863111", fill: "#ECF0F3" })
 ] });
-n5.displayName = "BuyCar";
-const H5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+s9.displayName = "BuyCar";
+const o9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3518,8 +3603,8 @@ const H5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-H5.displayName = "DocumentExecution";
-const s5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+o9.displayName = "DocumentExecution";
+const a9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3575,8 +3660,8 @@ const s5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-s5.displayName = "Form";
-const o5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+a9.displayName = "Form";
+const d9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3617,8 +3702,8 @@ const o5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-o5.displayName = "Money";
-const a5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+d9.displayName = "Money";
+const L9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "40", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "36", stroke: "#00AF66", strokeWidth: "8" }),
   /* @__PURE__ */ C.jsx("rect", { x: "45", y: "24.6082", width: "6", height: "24", fill: "#00AF66" }),
@@ -3635,8 +3720,8 @@ const a5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-a5.displayName = "Time";
-const d5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+L9.displayName = "Time";
+const c9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "17.3555", y: "9.69482", width: "61.2883", height: "76.6104", rx: "7.66104", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx(
     "path",
@@ -3680,17 +3765,17 @@ const d5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   ),
   /* @__PURE__ */ C.jsx("rect", { x: "36", y: "5.8645", width: "24", height: "7.66104", rx: "2", fill: "#48587D" })
 ] });
-d5.displayName = "Valuation";
-const L5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+c9.displayName = "Valuation";
+const h9 = ({ width: H = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 41 40",
     fill: "none",
     children: [
-      /* @__PURE__ */ C.jsx("rect", { x: "0.496094", width: r, height: l, rx: "8", fill: "#111111" }),
+      /* @__PURE__ */ C.jsx("rect", { x: "0.496094", width: H, height: l, rx: "8", fill: "#111111" }),
       /* @__PURE__ */ C.jsx(
         "path",
         {
@@ -3701,17 +3786,17 @@ const L5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-L5.displayName = "VKontakte";
-const c5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
+h9.displayName = "VKontakte";
+const u9 = ({ width: H = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 41 40",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: /* @__PURE__ */ C.jsxs("g", { id: "Frame 233", children: [
-      /* @__PURE__ */ C.jsx("rect", { x: "0.16272", width: r, height: l, rx: "8", fill: "#111111" }),
+      /* @__PURE__ */ C.jsx("rect", { x: "0.16272", width: H, height: l, rx: "8", fill: "#111111" }),
       /* @__PURE__ */ C.jsx(
         "path",
         {
@@ -3723,11 +3808,11 @@ const c5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
     ] })
   }
 );
-c5.displayName = "LinkedIn";
-const h5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+u9.displayName = "LinkedIn";
+const f9 = ({ width: H = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 41 40",
     fill: "none",
@@ -3751,15 +3836,15 @@ const h5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
           }
         )
       ] }) }),
-      /* @__PURE__ */ C.jsx("defs", { children: /* @__PURE__ */ C.jsx("clipPath", { id: "clip0_2149_382", children: /* @__PURE__ */ C.jsx("rect", { width: r, height: l, fill: "white", transform: "translate(0.829468)" }) }) })
+      /* @__PURE__ */ C.jsx("defs", { children: /* @__PURE__ */ C.jsx("clipPath", { id: "clip0_2149_382", children: /* @__PURE__ */ C.jsx("rect", { width: H, height: l, fill: "white", transform: "translate(0.829468)" }) }) })
     ]
   }
 );
-h5.displayName = "Facebook";
-const u5 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+f9.displayName = "Facebook";
+const p9 = ({ width: H = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 40 40",
     fill: "none",
@@ -3781,21 +3866,21 @@ const u5 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
           }
         )
       ] }),
-      /* @__PURE__ */ C.jsx("defs", { children: /* @__PURE__ */ C.jsx("clipPath", { id: "clip0_2070_395", children: /* @__PURE__ */ C.jsx("rect", { width: r, height: l, fill: "white", transform: "translate(0.496094)" }) }) })
+      /* @__PURE__ */ C.jsx("defs", { children: /* @__PURE__ */ C.jsx("clipPath", { id: "clip0_2070_395", children: /* @__PURE__ */ C.jsx("rect", { width: H, height: l, fill: "white", transform: "translate(0.496094)" }) }) })
     ]
   }
 );
-u5.displayName = "Telegram";
-const f5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
+p9.displayName = "Telegram";
+const V9 = ({ width: H = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 41 40",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: /* @__PURE__ */ C.jsxs("g", { id: "Frame 231", children: [
-      /* @__PURE__ */ C.jsx("rect", { x: "0.496094", width: r, height: l, rx: "8", fill: "#111111" }),
+      /* @__PURE__ */ C.jsx("rect", { x: "0.496094", width: H, height: l, rx: "8", fill: "#111111" }),
       /* @__PURE__ */ C.jsx(
         "path",
         {
@@ -3809,17 +3894,17 @@ const f5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
     ] })
   }
 );
-f5.displayName = "Instagram";
-const p5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
+V9.displayName = "Instagram";
+const x9 = ({ width: H = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 41 40",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: /* @__PURE__ */ C.jsxs("g", { id: "Frame 230", children: [
-      /* @__PURE__ */ C.jsx("rect", { x: "0.16272", width: r, height: l, rx: "8", fill: "#111111" }),
+      /* @__PURE__ */ C.jsx("rect", { x: "0.16272", width: H, height: l, rx: "8", fill: "#111111" }),
       /* @__PURE__ */ C.jsx("g", { id: "Group", children: /* @__PURE__ */ C.jsxs("g", { id: "Vector", children: [
         /* @__PURE__ */ C.jsx(
           "path",
@@ -3843,17 +3928,17 @@ const p5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
     ] })
   }
 );
-p5.displayName = "Odnoklassniki";
-const x5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+x9.displayName = "Odnoklassniki";
+const v9 = ({ width: H = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 41 40",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: [
-      /* @__PURE__ */ C.jsx("rect", { x: "0.829468", width: r, height: l, rx: "20", fill: "#111111" }),
+      /* @__PURE__ */ C.jsx("rect", { x: "0.829468", width: H, height: l, rx: "20", fill: "#111111" }),
       /* @__PURE__ */ C.jsx(
         "path",
         {
@@ -3864,12 +3949,12 @@ const x5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-x5.displayName = "Twitter";
-const v5 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+v9.displayName = "Twitter";
+const w9 = ({ width: H = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 40 40",
     fill: "none",
@@ -3884,16 +3969,16 @@ const v5 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
         ),
         /* @__PURE__ */ C.jsx("path", { d: "M15.501 12.5V27.5L28.0049 20L15.501 12.5Z", fill: "white" })
       ] }),
-      /* @__PURE__ */ C.jsx("defs", { children: /* @__PURE__ */ C.jsx("clipPath", { id: "clip0_2223_720", children: /* @__PURE__ */ C.jsx("rect", { width: r, height: l, fill: "white", transform: "translate(0.496094)" }) }) })
+      /* @__PURE__ */ C.jsx("defs", { children: /* @__PURE__ */ C.jsx("clipPath", { id: "clip0_2223_720", children: /* @__PURE__ */ C.jsx("rect", { width: H, height: l, fill: "white", transform: "translate(0.496094)" }) }) })
     ]
   }
 );
-v5.displayName = "YouTube";
-const w5 = ({ width: r = "121", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+w9.displayName = "YouTube";
+const M9 = ({ width: H = "121", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 121 40",
     fill: "none",
@@ -3972,12 +4057,12 @@ const w5 = ({ width: r = "121", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-w5.displayName = "AppleAppStore";
-const V5 = ({ width: r = "136", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+M9.displayName = "AppleAppStore";
+const Z9 = ({ width: H = "136", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
-    width: r,
+    width: H,
     height: l,
     viewBox: "0 0 136 40",
     fill: "none",
@@ -4021,127 +4106,129 @@ const V5 = ({ width: r = "136", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-V5.displayName = "GooglePlay";
+Z9.displayName = "GooglePlay";
 export {
   a2 as Analytics,
-  w5 as AppleAppStore,
-  _2 as ArrowDown,
-  B2 as ArrowUp,
-  o5 as AutoCreditMoney,
+  M9 as AppleAppStore,
+  E2 as ArrowDown,
+  N2 as ArrowUp,
+  d9 as AutoCreditMoney,
   d2 as Bank,
-  _9 as Bell,
-  J2 as Bill,
-  E9 as BonusLarge,
-  N9 as BonusMedium,
-  b9 as BonusSmall,
-  n5 as BuyCar,
-  K2 as Calendar,
+  _2 as Banknote,
+  E5 as Bell,
+  z2 as Bill,
+  b5 as BonusLarge,
+  D5 as BonusMedium,
+  A5 as BonusSmall,
+  s9 as BuyCar,
+  X2 as Calendar,
   L2 as CardSalom,
   c2 as Cash,
-  D9 as CashoutLarge,
-  A9 as CashoutMedium,
-  S9 as CashoutSmall,
-  z2 as Chat,
-  X2 as Check,
-  W9 as CheckCircle,
-  b2 as ChevronDown,
-  D2 as ChevronLeft,
-  A2 as ChevronRight,
-  S2 as ChevronUp,
-  Q2 as Clock,
-  C9 as Close,
-  T9 as CloseCircle,
-  Y9 as Clothing,
-  G9 as ConstructionMaterials,
-  e9 as Copy,
+  S5 as CashoutLarge,
+  W5 as CashoutMedium,
+  T5 as CashoutSmall,
+  Q2 as Chat,
+  C5 as Check,
+  O5 as CheckCircle,
+  A2 as ChevronDown,
+  S2 as ChevronLeft,
+  W2 as ChevronRight,
+  T2 as ChevronUp,
+  e5 as Clock,
+  l5 as Close,
+  P5 as CloseCircle,
+  J5 as Clothing,
+  K5 as ConstructionMaterials,
+  H5 as Copy,
   h2 as CreditCard,
+  B2 as CrossedBanknote,
   u2 as CurrencyDollar,
   f2 as CurrencyLira,
   p2 as CurrencyRuble,
-  l9 as Delete,
-  e5 as DepositReplenishment,
-  r9 as Doc,
-  i9 as DocEmpty,
-  H5 as DocumentExecution,
-  x2 as Dollar,
-  O9 as DontWorkLarge,
-  P9 as DontWorkMedium,
-  q9 as DontWorkSmall,
-  t9 as Edit,
-  n9 as Expand,
-  $2 as EyeOff,
-  H9 as EyeOffAlt,
-  Y2 as EyeOn,
-  h5 as Facebook,
-  J9 as Food,
-  s5 as Form,
-  K9 as Fridge,
-  Q9 as Furniture,
-  V5 as GooglePlay,
-  s9 as GridView,
-  o9 as HelpCircle,
-  a9 as Home,
-  l5 as IncomeSharing,
-  d9 as Info,
-  f5 as Instagram,
-  r5 as Insurance,
-  i5 as Investments,
-  z9 as Jewelry,
-  W2 as LedtDown,
-  E2 as LeftArrow,
-  P2 as LeftPrev,
-  L9 as Link,
-  c5 as LinkedIn,
-  c9 as ListView,
-  h9 as Lock,
-  u9 as Mail,
-  f9 as MapPin,
-  p9 as Menu,
-  v2 as Merch,
-  w2 as Money,
-  x9 as Move,
-  v9 as Navigation,
-  t5 as Npl,
-  p5 as Odnoklassniki,
-  C5 as OneSomoni,
-  V2 as Online,
-  w9 as PaperClip,
+  i5 as Delete,
+  H9 as DepositReplenishment,
+  r5 as Doc,
+  t5 as DocEmpty,
+  o9 as DocumentExecution,
+  V2 as Dollar,
+  q5 as DontWorkLarge,
+  I5 as DontWorkMedium,
+  U5 as DontWorkSmall,
+  n5 as Edit,
+  s5 as Expand,
+  G2 as EyeOff,
+  o5 as EyeOffAlt,
+  J2 as EyeOn,
+  f9 as Facebook,
+  z5 as Food,
+  a9 as Form,
+  X5 as Fridge,
+  e9 as Furniture,
+  Z9 as GooglePlay,
+  a5 as GridView,
+  d5 as HelpCircle,
+  L5 as Home,
+  i9 as IncomeSharing,
+  c5 as Info,
+  V9 as Instagram,
+  r9 as Insurance,
+  t9 as Investments,
+  Q5 as Jewelry,
+  O2 as LedtDown,
+  b2 as LeftArrow,
+  I2 as LeftPrev,
+  h5 as Link,
+  u9 as LinkedIn,
+  u5 as ListView,
+  f5 as Lock,
+  p5 as Mail,
+  V5 as MapPin,
+  x5 as Menu,
+  x2 as Merch,
+  v2 as Money,
+  v5 as Move,
+  w5 as Navigation,
+  n9 as Npl,
+  x9 as Odnoklassniki,
+  l9 as OneSomoni,
+  w2 as Online,
+  M5 as PaperClip,
   M2 as Percent,
-  X9 as PhonesAndAccessories,
-  M9 as Plus,
-  V9 as PlusRect,
-  j9 as Refresh,
-  g9 as RefreshCw,
-  Z9 as Repeat,
-  N2 as RightArrow,
-  q2 as RightNext,
-  T2 as RightTop,
-  G2 as Search,
-  I2 as SelectHideTop,
-  U2 as SelectOpenDown,
-  g2 as SendCard,
-  j2 as SendDoc,
-  m9 as Settings,
-  k9 as Slash,
-  R9 as Star,
-  u5 as Telegram,
-  Z2 as Terminal,
-  I9 as TerminalLarge,
-  U9 as TerminalMedium,
-  $9 as TerminalSmall,
-  a5 as Time,
+  C9 as PhonesAndAccessories,
+  g5 as Plus,
+  Z5 as PlusRect,
+  m5 as Refresh,
+  j5 as RefreshCw,
+  k5 as Repeat,
+  D2 as RightArrow,
+  U2 as RightNext,
+  P2 as RightTop,
+  K2 as Search,
+  $2 as SelectHideTop,
+  Y2 as SelectOpenDown,
+  Z2 as SendCard,
+  g2 as SendDoc,
+  R5 as Settings,
+  y5 as Slash,
+  F5 as Star,
+  p9 as Telegram,
+  j2 as Terminal,
+  $5 as TerminalLarge,
+  Y5 as TerminalMedium,
+  G5 as TerminalSmall,
+  L9 as Time,
   m2 as Transfers,
-  O2 as TrendingUp,
-  y9 as Tune,
-  x5 as Twitter,
-  F9 as Unlock,
-  B9 as User,
-  L5 as VKontakte,
-  d5 as Valuation,
+  q2 as TrendingUp,
+  _5 as Tune,
+  v9 as Twitter,
+  B5 as Unlock,
+  N5 as User,
+  h9 as VKontakte,
+  c9 as Valuation,
   k2 as Visa,
   F2 as Wallet,
   R2 as WalletPlus,
   y2 as WalletTransfer,
-  v5 as YouTube,
+  w9 as YouTube,
   o2 as Zp
 };
