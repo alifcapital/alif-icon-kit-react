@@ -73,6 +73,8 @@ import Visa from '../src/FinanceIcons/Visa';
 import WalletPlus from '../src/FinanceIcons/WalletPlus';
 import WalletTransfer from '../src/FinanceIcons/WalletTransfer';
 import Wallet from '../src/FinanceIcons/Wallet';
+import Banknote from '../src/FinanceIcons/Banknote';
+import CrossedBanknote from '../src/FinanceIcons/CrossedBanknote';
 import Bell from '../src/SystemIcons/Bell';
 
 import BonusLarge from '../src/MapIcons/BonusLarge';
@@ -194,6 +196,8 @@ const IconsWithProps = [
   WalletTransfer,
   Wallet,
   Bell,
+  Banknote,
+  CrossedBanknote,
 ];
 
 const IconsWithoutProps = [

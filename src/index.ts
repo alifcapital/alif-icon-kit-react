@@ -20,6 +20,8 @@ import Visa from './FinanceIcons/Visa';
 import WalletPlus from './FinanceIcons/WalletPlus';
 import WalletTransfer from './FinanceIcons/WalletTransfer';
 import Wallet from './FinanceIcons/Wallet';
+import Banknote from './FinanceIcons/Banknote';
+import CrossedBanknote from './FinanceIcons/CrossedBanknote';
 
 import ArrowDown from './NavigationIcons/ArrowDown';
 import ArrowUp from './NavigationIcons/ArrowUp';
@@ -216,6 +218,8 @@ export {
   WalletPlus,
   WalletTransfer,
   Wallet,
+  Banknote,
+  CrossedBanknote,
 };
 
 // Map Icons
