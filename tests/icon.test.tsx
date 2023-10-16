@@ -5,6 +5,7 @@ import EyeOff from '../src/SystemIcons/EyeOff';
 import EyeOn from '../src/SystemIcons/EyeOn';
 import Search from '../src/SystemIcons/Search';
 import Bill from '../src/SystemIcons/Bill';
+import Qr from '../src/SystemIcons/Qr';
 import Calendar from '../src/SystemIcons/Calendar';
 import Chat from '../src/SystemIcons/Chat';
 import Check from '../src/SystemIcons/Check';
@@ -127,6 +128,7 @@ const IconsWithProps = [
   EyeOn,
   Search,
   Bill,
+  Qr,
   Calendar,
   Chat,
   Check,
