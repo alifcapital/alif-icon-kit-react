@@ -43,6 +43,7 @@ import EyeOff from './SystemIcons/EyeOff';
 import EyeOn from './SystemIcons/EyeOn';
 import Search from './SystemIcons/Search';
 import Bill from './SystemIcons/Bill';
+import Qr from './SystemIcons/Qr';
 import Calendar from './SystemIcons/Calendar';
 import Chat from './SystemIcons/Chat';
 import Check from './SystemIcons/Check';
@@ -136,6 +137,7 @@ export {
   EyeOn,
   Search,
   Bill,
+  Qr,
   Calendar,
   Chat,
   Check,
