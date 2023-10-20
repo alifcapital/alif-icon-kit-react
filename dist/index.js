@@ -84,7 +84,7 @@ function n2() {
     function C1(e) {
       return e.displayName || "Context";
     }
-    function v(e) {
+    function w(e) {
       if (e == null)
         return null;
       if (typeof e.tag == "number" && u("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
@@ -117,11 +117,11 @@ function n2() {
             return b1(e, e.render, "ForwardRef");
           case x:
             var s = e.displayName || null;
-            return s !== null ? s : v(e.type) || "Memo";
+            return s !== null ? s : w(e.type) || "Memo";
           case Z: {
             var d = e, a = d._payload, o = d._init;
             try {
-              return v(o(a));
+              return w(o(a));
             } catch (n) {
               return null;
             }
@@ -236,29 +236,29 @@ function n2() {
           }), typeof Reflect == "object" && Reflect.construct) {
             try {
               Reflect.construct(o, []);
-            } catch (w) {
-              s = w;
+            } catch (v) {
+              s = v;
             }
             Reflect.construct(e, [], o);
           } else {
             try {
               o.call();
-            } catch (w) {
-              s = w;
+            } catch (v) {
+              s = v;
             }
             e.call(o.prototype);
           }
         } else {
           try {
             throw Error();
-          } catch (w) {
-            s = w;
+          } catch (v) {
+            s = v;
           }
           e();
         }
-      } catch (w) {
-        if (w && s && typeof w.stack == "string") {
-          for (var n = w.stack.split(`
+      } catch (v) {
+        if (v && s && typeof v.stack == "string") {
+          for (var n = v.stack.split(`
 `), f = s.stack.split(`
 `), L = n.length - 1, c = f.length - 1; L >= 1 && c >= 0 && n[L] !== f[c]; )
             c--;
@@ -393,8 +393,8 @@ function n2() {
     }
     function G1(e, i) {
       if (typeof e.ref == "string" && B.current && i && B.current.stateNode !== i) {
-        var H = v(B.current.type);
-        Y[H] || (u('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', v(B.current.type), e.ref), Y[H] = !0);
+        var H = w(B.current.type);
+        Y[H] || (u('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', w(B.current.type), e.ref), Y[H] = !0);
       }
     }
     function J1(e, i) {
@@ -482,7 +482,7 @@ function n2() {
     function p1() {
       {
         if (G.current) {
-          var e = v(G.current.type);
+          var e = w(G.current.type);
           if (e)
             return `
 
@@ -525,10 +525,10 @@ Check the top-level render call using <` + H + ">.");
           return;
         V1[H] = !0;
         var s = "";
-        e && e._owner && e._owner !== G.current && (s = " It was passed a child from " + v(e._owner.type) + "."), R(e), u('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', H, s), R(null);
+        e && e._owner && e._owner !== G.current && (s = " It was passed a child from " + w(e._owner.type) + "."), R(e), u('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', H, s), R(null);
       }
     }
-    function v1(e, i) {
+    function w1(e, i) {
       {
         if (typeof e != "object")
           return;
@@ -562,11 +562,11 @@ Check the top-level render call using <` + H + ">.");
         else
           return;
         if (H) {
-          var s = v(i);
+          var s = w(i);
           O1(H, e.props, "prop", s, e);
         } else if (i.PropTypes !== void 0 && !J) {
           J = !0;
-          var d = v(i);
+          var d = w(i);
           u("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", d || "Unknown");
         }
         typeof i.getDefaultProps == "function" && !i.getDefaultProps.isReactClassApproved && u("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
@@ -584,7 +584,7 @@ Check the top-level render call using <` + H + ">.");
         e.ref !== null && (R(e), u("Invalid attribute `ref` supplied to `React.Fragment`."), R(null));
       }
     }
-    function w1(e, i, H, s, d, a) {
+    function v1(e, i, H, s, d, a) {
       {
         var o = N1(e);
         if (!o) {
@@ -593,7 +593,7 @@ Check the top-level render call using <` + H + ">.");
           var f = Q1(d);
           f ? n += f : n += p1();
           var L;
-          e === null ? L = "null" : $(e) ? L = "array" : e !== void 0 && e.$$typeof === l ? (L = "<" + (v(e.type) || "Unknown") + " />", n = " Did you accidentally export a JSX literal instead of a component?") : L = typeof e, u("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", L, n);
+          e === null ? L = "null" : $(e) ? L = "array" : e !== void 0 && e.$$typeof === l ? (L = "<" + (w(e.type) || "Unknown") + " />", n = " Did you accidentally export a JSX literal instead of a component?") : L = typeof e, u("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", L, n);
         }
         var c = X1(e, i, H, d, a);
         if (c == null)
@@ -604,21 +604,21 @@ Check the top-level render call using <` + H + ">.");
             if (s)
               if ($(V)) {
                 for (var y = 0; y < V.length; y++)
-                  v1(V[y], e);
+                  w1(V[y], e);
                 Object.freeze && Object.freeze(V);
               } else
                 u("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              v1(V, e);
+              w1(V, e);
         }
         return e === j ? l2(c) : e2(c), c;
       }
     }
     function r2(e, i, H) {
-      return w1(e, i, H, !0);
+      return v1(e, i, H, !0);
     }
     function t2(e, i, H) {
-      return w1(e, i, H, !1);
+      return v1(e, i, H, !1);
     }
     var i2 = t2, H2 = r2;
     N.Fragment = j, N.jsx = i2, N.jsxs = H2;
@@ -924,7 +924,7 @@ const x2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
   }
 );
 x2.displayName = "Merch";
-const v2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+const w2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -943,8 +943,8 @@ const v2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-v2.displayName = "Money";
-const w2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+w2.displayName = "Money";
+const v2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -963,7 +963,7 @@ const w2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-w2.displayName = "Online";
+v2.displayName = "Online";
 const M2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
@@ -1832,7 +1832,7 @@ const Q2 = ({
   }
 );
 Q2.displayName = "Calendar";
-const C5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+const C9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -1849,8 +1849,8 @@ const C5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-C5.displayName = "Chat";
-const e5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+C9.displayName = "Chat";
+const e9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -1869,8 +1869,8 @@ const e5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-e5.displayName = "Check";
-const l5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+e9.displayName = "Check";
+const l9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -1889,8 +1889,8 @@ const l5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-l5.displayName = "Clock";
-const r5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+l9.displayName = "Clock";
+const r9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: r,
@@ -1922,8 +1922,8 @@ const r5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     ]
   }
 );
-r5.displayName = "Close";
-const t5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+r9.displayName = "Close";
+const t9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -1942,8 +1942,8 @@ const t5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-t5.displayName = "Copy";
-const i5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+t9.displayName = "Copy";
+const i9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -1962,8 +1962,8 @@ const i5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-i5.displayName = "Delete";
-const H5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+i9.displayName = "Delete";
+const H9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -1982,8 +1982,8 @@ const H5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-H5.displayName = "Doc";
-const s5 = ({
+H9.displayName = "Doc";
+const s9 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2006,8 +2006,8 @@ const s5 = ({
     )
   }
 );
-s5.displayName = "DocEmpty";
-const n5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+s9.displayName = "DocEmpty";
+const n9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2026,8 +2026,8 @@ const n5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-n5.displayName = "Edit";
-const o5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+n9.displayName = "Edit";
+const o9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2046,8 +2046,8 @@ const o5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-o5.displayName = "Expand";
-const d5 = ({
+o9.displayName = "Expand";
+const d9 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2071,8 +2071,8 @@ const d5 = ({
     )
   }
 );
-d5.displayName = "EyeOffAlt";
-const a5 = ({
+d9.displayName = "EyeOffAlt";
+const a9 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2095,8 +2095,8 @@ const a5 = ({
     )
   }
 );
-a5.displayName = "GridView";
-const L5 = ({
+a9.displayName = "GridView";
+const L9 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2119,8 +2119,8 @@ const L5 = ({
     )
   }
 );
-L5.displayName = "HelpCircle";
-const c5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+L9.displayName = "HelpCircle";
+const c9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2142,8 +2142,8 @@ const c5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-c5.displayName = "Home";
-const h5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+c9.displayName = "Home";
+const h9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2162,8 +2162,8 @@ const h5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-h5.displayName = "Info";
-const u5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+h9.displayName = "Info";
+const u9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2183,8 +2183,8 @@ const u5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-u5.displayName = "Link";
-const f5 = ({
+u9.displayName = "Link";
+const f9 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2208,8 +2208,8 @@ const f5 = ({
     )
   }
 );
-f5.displayName = "ListView";
-const p5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+f9.displayName = "ListView";
+const p9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2228,8 +2228,8 @@ const p5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-p5.displayName = "Lock";
-const V5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+p9.displayName = "Lock";
+const V9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2248,8 +2248,8 @@ const V5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-V5.displayName = "Mail";
-const x5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+V9.displayName = "Mail";
+const x9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2268,8 +2268,8 @@ const x5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-x5.displayName = "MapPin";
-const v5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+x9.displayName = "MapPin";
+const w9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: r,
@@ -2311,8 +2311,8 @@ const v5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     ]
   }
 );
-v5.displayName = "Menu";
-const w5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+w9.displayName = "Menu";
+const v9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2331,8 +2331,8 @@ const w5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-w5.displayName = "Move";
-const M5 = ({
+v9.displayName = "Move";
+const M9 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2355,8 +2355,8 @@ const M5 = ({
     )
   }
 );
-M5.displayName = "Navigation";
-const Z5 = ({
+M9.displayName = "Navigation";
+const Z9 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2379,8 +2379,8 @@ const Z5 = ({
     )
   }
 );
-Z5.displayName = "Paperclip";
-const g5 = ({
+Z9.displayName = "Paperclip";
+const g9 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2403,8 +2403,8 @@ const g5 = ({
     )
   }
 );
-g5.displayName = "PlusRect";
-const j5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+g9.displayName = "PlusRect";
+const j9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: r,
@@ -2436,8 +2436,8 @@ const j5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     ]
   }
 );
-j5.displayName = "Plus";
-const m5 = ({
+j9.displayName = "Plus";
+const m9 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2460,8 +2460,8 @@ const m5 = ({
     )
   }
 );
-m5.displayName = "RefreshCw";
-const k5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+m9.displayName = "RefreshCw";
+const k9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2480,8 +2480,8 @@ const k5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-k5.displayName = "Refresh";
-const R5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+k9.displayName = "Refresh";
+const R9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2500,8 +2500,8 @@ const R5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-R5.displayName = "Repeat";
-const y5 = ({
+R9.displayName = "Repeat";
+const y9 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2537,8 +2537,8 @@ const y5 = ({
     ]
   }
 );
-y5.displayName = "Settings";
-const F5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+y9.displayName = "Settings";
+const F9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2557,8 +2557,8 @@ const F5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-F5.displayName = "Slash";
-const _5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+F9.displayName = "Slash";
+const _9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2577,8 +2577,8 @@ const _5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-_5.displayName = "Star";
-const B5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+_9.displayName = "Star";
+const B9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2597,8 +2597,8 @@ const B5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-B5.displayName = "Tune";
-const E5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+B9.displayName = "Tune";
+const E9 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2617,8 +2617,8 @@ const E5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-E5.displayName = "Unlock";
-const N5 = ({ width: r = "24", height: l = "24", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+E9.displayName = "Unlock";
+const N9 = ({ width: r = "24", height: l = "24", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -2636,31 +2636,28 @@ const N5 = ({ width: r = "24", height: l = "24", color: t = "currentColor" }) =>
     ]
   }
 );
-N5.displayName = "Bell";
-const b5 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+N9.displayName = "Bell";
+const b9 = ({ width: r = 28, height: l = 28, color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
+    xmlns: "http://www.w3.org/2000/svg",
     width: r,
     height: l,
-    viewBox: "0 0 40 40",
+    viewBox: "0 0 24 24",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
-    children: [
-      /* @__PURE__ */ C.jsx("rect", { width: r, height: l, rx: "20", fill: "#86E19F", fillOpacity: "0.16" }),
-      /* @__PURE__ */ C.jsx(
-        "path",
-        {
-          fillRule: "evenodd",
-          clipRule: "evenodd",
-          d: "M16.4991 15.5C16.4991 13.5669 18.0659 12 19.9985 12C21.931 12 23.4979 13.5669 23.4979 15.5C23.4979 17.4331 21.931 19 19.9985 19C18.0659 19 16.4991 17.4331 16.4991 15.5ZM19.9985 10C16.9611 10 14.4991 12.4626 14.4991 15.5C14.4991 18.5374 16.9611 21 19.9985 21C23.0358 21 25.4979 18.5374 25.4979 15.5C25.4979 12.4626 23.0358 10 19.9985 10ZM12.0091 27.8347C11.9513 27.2905 12.1501 26.2913 13.2155 25.3977C14.2886 24.4976 16.3201 23.6464 19.9988 23.6464C23.6775 23.6464 25.709 24.4976 26.7822 25.3977C27.8476 26.2914 28.0464 27.2905 27.9887 27.8347L27.9831 27.8873V27.9359L27.9826 27.9398C27.9816 27.9464 27.9798 27.955 27.977 27.9645C27.9741 27.9737 27.971 27.9814 27.9682 27.9871C27.9648 27.9881 27.9602 27.9894 27.9542 27.9907C27.9371 27.9944 27.9067 27.9989 27.8601 27.9989H27.8547H27.8491H27.8434H27.8374H27.8312H27.8248H27.8182H27.8114H27.8044H27.7972H27.7898H27.7822H27.7744H27.7664H27.7582H27.7498H27.7412H27.7324H27.7234H27.7142H27.7048H27.6952H27.6855H27.6755H27.6653H27.655H27.6445H27.6337H27.6228H27.6117H27.6004H27.5889H27.5773H27.5654H27.5534H27.5411H27.5287H27.5161H27.5034H27.4904H27.4773H27.4639H27.4504H27.4367H27.4229H27.4088H27.3946H27.3802H27.3656H27.3509H27.3359H27.3208H27.3056H27.2901H27.2745H27.2587H27.2427H27.2266H27.2103H27.1938H27.1771H27.1603H27.1433H27.1262H27.1089H27.0914H27.0737H27.0559H27.0379H27.0198H27.0015H26.983H26.9643H26.9456H26.9266H26.9075H26.8882H26.8688H26.8492H26.8294H26.8095H26.7895H26.7692H26.7489H26.7283H26.7077H26.6868H26.6658H26.6447H26.6234H26.602H26.5804H26.5587H26.5368H26.5147H26.4926H26.4702H26.4478H26.4251H26.4024H26.3795H26.3564H26.3332H26.3099H26.2864H26.2628H26.239H26.2151H26.1911H26.1669H26.1426H26.1182H26.0936H26.0688H26.044H26.019H25.9939H25.9686H25.9432H25.9177H25.892H25.8662H25.8403H25.8143H25.7881H25.7618H25.7354H25.7088H25.6821H25.6553H25.6284H25.6013H25.5741H25.5468H25.5194H25.4918H25.4642H25.4364H25.4085H25.3804H25.3523H25.324H25.2956H25.2671H25.2385H25.2097H25.1809H25.1519H25.1228H25.0937H25.0644H25.0349H25.0054H24.9758H24.946H24.9162H24.8862H24.8561H24.8259H24.7956H24.7652H24.7347H24.7041H24.6734H24.6426H24.6117H24.5807H24.5496H24.5183H24.487H24.4556H24.4241H24.3925H24.3607H24.3289H24.297H24.265H24.2329H24.2007H24.1684H24.136H24.1035H24.071H24.0383H24.0056H23.9727H23.9398H23.9068H23.8737H23.8405H23.8072H23.7738H23.7403H23.7068H23.6732H23.6395H23.6057H23.5718H23.5378H23.5038H23.4697H23.4355H23.4012H23.3668H23.3324H23.2979H23.2633H23.2286H23.1938H23.159H23.1241H23.0892H23.0541H23.019H22.9838H22.9486H22.9132H22.8778H22.8424H22.8068H22.7712H22.7355H22.6998H22.664H22.6281H22.5922H22.5562H22.5201H22.484H22.4478H22.4115H22.3752H22.3389H22.3024H22.2659H22.2294H22.1928H22.1561H22.1194H22.0826H22.0458H22.0089H21.9719H21.9349H21.8979H21.8608H21.8236H21.7864H21.7491H21.7118H21.6745H21.6371H21.5996H21.5621H21.5246H21.487H21.4493H21.4116H21.3739H21.3361H21.2983H21.2605H21.2226H21.1846H21.1467H21.1086H21.0706H21.0325H20.9943H20.9562H20.918H20.8797H20.8414H20.8031H20.7648H20.7264H20.688H20.6495H20.6111H20.5725H20.534H20.4954H20.4568H20.4182H20.3796H20.3409H20.3022H20.2634H20.2247H20.1859H20.1471H20.1083H20.0694H20.0305H19.9916H19.9527H19.9138H19.8748H19.8359H19.7969H19.7578H19.7188H19.6798H19.6407H19.6016H19.5625H19.5234H19.4843H19.4452H19.4061H19.3669H19.3277H19.2886H19.2494H19.2102H19.171H19.1318H19.0926H19.0534H19.0141H18.9749H18.9357H18.8964H18.8572H18.818H18.7787H18.7395H18.7002H18.661H18.6217H18.5825H18.5432H18.504H18.4648H18.4255H18.3863H18.3471H18.3079H18.2686H18.2294H18.1903H18.1511H18.1119H18.0727H18.0336H17.9944H17.9553H17.9162H17.877H17.8379H17.7989H17.7598H17.7207H17.6817H17.6427H17.6037H17.5647H17.5257H17.4868H17.4478H17.4089H17.3701H17.3312H17.2923H17.2535H17.2147H17.176H17.1372H17.0985H17.0598H17.0211H16.9825H16.9439H16.9053H16.8667H16.8282H16.7897H16.7512H16.7128H16.6744H16.636H16.5977H16.5594H16.5211H16.4829H16.4447H16.4065H16.3684H16.3303H16.2923H16.2543H16.2163H16.1784H16.1405H16.1027H16.0649H16.0271H15.9894H15.9518H15.9142H15.8766H15.8391H15.8016H15.7641H15.7268H15.6894H15.6521H15.6149H15.5777H15.5406H15.5035H15.4665H15.4295H15.3926H15.3557H15.3189H15.2821H15.2454H15.2088H15.1722H15.1357H15.0992H15.0628H15.0264H14.9901H14.9539H14.9177H14.8816H14.8456H14.8096H14.7737H14.7379H14.7021H14.6664H14.6307H14.5952H14.5597H14.5242H14.4888H14.4535H14.4183H14.3832H14.3481H14.3131H14.2781H14.2433H14.2085H14.1738H14.1391H14.1046H14.0701H14.0357H14.0013H13.9671H13.9329H13.8988H13.8648H13.8309H13.7971H13.7633H13.7296H13.696H13.6625H13.6291H13.5958H13.5625H13.5294H13.4963H13.4633H13.4304H13.3976H13.3649H13.3323H13.2997H13.2673H13.235H13.2027H13.1705H13.1385H13.1065H13.0746H13.0429H13.0112H12.9796H12.9481H12.9168H12.8855H12.8543H12.8232H12.7922H12.7614H12.7306H12.6999H12.6694H12.6389H12.6086H12.5783H12.5482H12.5182H12.4882H12.4584H12.4287H12.3991H12.3696H12.3403H12.311H12.2819H12.2528H12.2239H12.1951H12.1664H12.1379L12.1361 27.9989L12.1309 27.9986C12.1263 27.9983 12.1204 27.9978 12.1132 27.9968C12.0985 27.9949 12.0817 27.9917 12.0645 27.987C12.0435 27.9814 12.0273 27.9751 12.0158 27.9698C12.0152 27.9621 12.0147 27.9523 12.0147 27.9402V27.8873L12.0091 27.8347ZM19.9988 21.6464C16.041 21.6464 13.4868 22.5597 11.9302 23.8654C10.3871 25.1597 9.90391 26.7805 10.0153 27.9956C10.0324 28.7423 10.3949 29.2893 10.8743 29.6146C11.3121 29.9118 11.8021 29.9989 12.1379 29.9989H12.1664H12.1951H12.2239H12.2528H12.2819H12.311H12.3403H12.3696H12.3991H12.4287H12.4584H12.4882H12.5182H12.5482H12.5783H12.6086H12.6389H12.6694H12.6999H12.7306H12.7614H12.7922H12.8232H12.8543H12.8855H12.9168H12.9481H12.9796H13.0112H13.0429H13.0746H13.1065H13.1385H13.1705H13.2027H13.235H13.2673H13.2997H13.3323H13.3649H13.3976H13.4304H13.4633H13.4963H13.5294H13.5625H13.5958H13.6291H13.6625H13.696H13.7296H13.7633H13.7971H13.8309H13.8648H13.8988H13.9329H13.9671H14.0013H14.0357H14.0701H14.1046H14.1391H14.1738H14.2085H14.2433H14.2781H14.3131H14.3481H14.3832H14.4183H14.4535H14.4888H14.5242H14.5597H14.5952H14.6307H14.6664H14.7021H14.7379H14.7737H14.8096H14.8456H14.8816H14.9177H14.9539H14.9901H15.0264H15.0628H15.0992H15.1357H15.1722H15.2088H15.2454H15.2821H15.3189H15.3557H15.3926H15.4295H15.4665H15.5035H15.5406H15.5777H15.6149H15.6521H15.6894H15.7268H15.7641H15.8016H15.8391H15.8766H15.9142H15.9518H15.9894H16.0271H16.0649H16.1027H16.1405H16.1784H16.2163H16.2543H16.2923H16.3303H16.3684H16.4065H16.4447H16.4829H16.5211H16.5594H16.5977H16.636H16.6744H16.7128H16.7512H16.7897H16.8282H16.8667H16.9053H16.9439H16.9825H17.0211H17.0598H17.0985H17.1372H17.176H17.2147H17.2535H17.2923H17.3312H17.3701H17.4089H17.4478H17.4868H17.5257H17.5647H17.6037H17.6427H17.6817H17.7207H17.7598H17.7989H17.8379H17.877H17.9162H17.9553H17.9944H18.0336H18.0727H18.1119H18.1511H18.1903H18.2294H18.2686H18.3079H18.3471H18.3863H18.4255H18.4648H18.504H18.5432H18.5825H18.6217H18.661H18.7002H18.7395H18.7787H18.818H18.8572H18.8964H18.9357H18.9749H19.0141H19.0534H19.0926H19.1318H19.171H19.2102H19.2494H19.2886H19.3277H19.3669H19.4061H19.4452H19.4843H19.5234H19.5625H19.6016H19.6407H19.6798H19.7188H19.7578H19.7969H19.8359H19.8748H19.9138H19.9527H19.9916H20.0305H20.0694H20.1083H20.1471H20.1859H20.2247H20.2634H20.3022H20.3409H20.3796H20.4182H20.4568H20.4954H20.534H20.5725H20.6111H20.6495H20.688H20.7264H20.7648H20.8031H20.8414H20.8797H20.918H20.9562H20.9943H21.0325H21.0706H21.1086H21.1467H21.1846H21.2226H21.2605H21.2983H21.3361H21.3739H21.4116H21.4493H21.487H21.5246H21.5621H21.5996H21.6371H21.6745H21.7118H21.7491H21.7864H21.8236H21.8608H21.8979H21.9349H21.9719H22.0089H22.0458H22.0826H22.1194H22.1561H22.1928H22.2294H22.2659H22.3024H22.3389H22.3752H22.4115H22.4478H22.484H22.5201H22.5562H22.5922H22.6281H22.664H22.6998H22.7355H22.7712H22.8068H22.8424H22.8778H22.9132H22.9486H22.9838H23.019H23.0541H23.0892H23.1241H23.159H23.1938H23.2286H23.2633H23.2979H23.3324H23.3668H23.4012H23.4355H23.4697H23.5038H23.5378H23.5718H23.6057H23.6395H23.6732H23.7068H23.7403H23.7738H23.8072H23.8405H23.8737H23.9068H23.9398H23.9727H24.0056H24.0383H24.071H24.1035H24.136H24.1684H24.2007H24.2329H24.265H24.297H24.3289H24.3607H24.3925H24.4241H24.4556H24.487H24.5183H24.5496H24.5807H24.6117H24.6426H24.6734H24.7041H24.7347H24.7652H24.7956H24.8259H24.8561H24.8862H24.9162H24.946H24.9758H25.0054H25.0349H25.0644H25.0937H25.1228H25.1519H25.1809H25.2097H25.2385H25.2671H25.2956H25.324H25.3523H25.3804H25.4085H25.4364H25.4642H25.4918H25.5194H25.5468H25.5741H25.6013H25.6284H25.6553H25.6821H25.7088H25.7354H25.7618H25.7881H25.8143H25.8403H25.8662H25.892H25.9177H25.9432H25.9686H25.9939H26.019H26.044H26.0688H26.0936H26.1182H26.1426H26.1669H26.1911H26.2151H26.239H26.2628H26.2864H26.3099H26.3332H26.3564H26.3795H26.4024H26.4251H26.4478H26.4702H26.4926H26.5147H26.5368H26.5587H26.5804H26.602H26.6234H26.6447H26.6658H26.6868H26.7077H26.7283H26.7489H26.7692H26.7895H26.8095H26.8294H26.8492H26.8688H26.8882H26.9075H26.9266H26.9456H26.9643H26.983H27.0015H27.0198H27.0379H27.0559H27.0737H27.0914H27.1089H27.1262H27.1433H27.1603H27.1771H27.1938H27.2103H27.2266H27.2427H27.2587H27.2745H27.2901H27.3056H27.3208H27.3359H27.3509H27.3656H27.3802H27.3946H27.4088H27.4229H27.4367H27.4504H27.4639H27.4773H27.4904H27.5034H27.5161H27.5287H27.5411H27.5534H27.5654H27.5773H27.5889H27.6004H27.6117H27.6228H27.6337H27.6445H27.655H27.6653H27.6755H27.6855H27.6952H27.7048H27.7142H27.7234H27.7324H27.7412H27.7498H27.7582H27.7664H27.7744H27.7822H27.7898H27.7972H27.8044H27.8114H27.8182H27.8248H27.8312H27.8374H27.8434H27.8491H27.8547H27.8601C28.6111 29.9989 29.1897 29.6849 29.5532 29.2088C29.8627 28.8036 29.9711 28.343 29.9822 27.9991C30.0947 26.7836 29.612 25.1609 28.0674 23.8654C26.5108 22.5597 23.9566 21.6464 19.9988 21.6464Z",
-          fill: "#00AF66"
-        }
-      )
-    ]
+    children: /* @__PURE__ */ C.jsx(
+      "path",
+      {
+        fillRule: "evenodd",
+        clipRule: "evenodd",
+        d: "M8.49906 7.5C8.49906 5.56688 10.0659 4 11.9985 4C13.931 4 15.4979 5.56688 15.4979 7.5C15.4979 9.43312 13.931 11 11.9985 11C10.0659 11 8.49906 9.43312 8.49906 7.5ZM11.9985 2C8.96111 2 6.49906 4.46256 6.49906 7.5C6.49906 10.5374 8.96111 13 11.9985 13C15.0358 13 17.4979 10.5374 17.4979 7.5C17.4979 4.46256 15.0358 2 11.9985 2ZM4.00907 19.8347C3.95135 19.2905 4.1501 18.2913 5.21548 17.3977C6.28859 16.4976 8.32005 15.6464 11.9988 15.6464C15.6775 15.6464 17.709 16.4976 18.7822 17.3977C19.8476 18.2914 20.0464 19.2905 19.9887 19.8347L19.9831 19.8873V19.9359L19.9826 19.9398C19.9816 19.9464 19.9798 19.955 19.977 19.9645C19.9741 19.9737 19.971 19.9814 19.9682 19.9871C19.9648 19.9881 19.9602 19.9894 19.9542 19.9907C19.9371 19.9944 19.9067 19.9989 19.8601 19.9989H19.8547H19.8491H19.8434H19.8374H19.8312H19.8248H19.8182H19.8114H19.8044H19.7972H19.7898H19.7822H19.7744H19.7664H19.7582H19.7498H19.7412H19.7324H19.7234H19.7142H19.7048H19.6952H19.6855H19.6755H19.6653H19.655H19.6445H19.6337H19.6228H19.6117H19.6004H19.5889H19.5773H19.5654H19.5534H19.5411H19.5287H19.5161H19.5034H19.4904H19.4773H19.4639H19.4504H19.4367H19.4229H19.4088H19.3946H19.3802H19.3656H19.3509H19.3359H19.3208H19.3056H19.2901H19.2745H19.2587H19.2427H19.2266H19.2103H19.1938H19.1771H19.1603H19.1433H19.1262H19.1089H19.0914H19.0737H19.0559H19.0379H19.0198H19.0015H18.983H18.9643H18.9456H18.9266H18.9075H18.8882H18.8688H18.8492H18.8294H18.8095H18.7895H18.7692H18.7489H18.7283H18.7077H18.6868H18.6658H18.6447H18.6234H18.602H18.5804H18.5587H18.5368H18.5147H18.4926H18.4702H18.4478H18.4251H18.4024H18.3795H18.3564H18.3332H18.3099H18.2864H18.2628H18.239H18.2151H18.1911H18.1669H18.1426H18.1182H18.0936H18.0688H18.044H18.019H17.9939H17.9686H17.9432H17.9177H17.892H17.8662H17.8403H17.8143H17.7881H17.7618H17.7354H17.7088H17.6821H17.6553H17.6284H17.6013H17.5741H17.5468H17.5194H17.4918H17.4642H17.4364H17.4085H17.3804H17.3523H17.324H17.2956H17.2671H17.2385H17.2097H17.1809H17.1519H17.1228H17.0937H17.0644H17.0349H17.0054H16.9758H16.946H16.9162H16.8862H16.8561H16.8259H16.7956H16.7652H16.7347H16.7041H16.6734H16.6426H16.6117H16.5807H16.5496H16.5183H16.487H16.4556H16.4241H16.3925H16.3607H16.3289H16.297H16.265H16.2329H16.2007H16.1684H16.136H16.1035H16.071H16.0383H16.0056H15.9727H15.9398H15.9068H15.8737H15.8405H15.8072H15.7738H15.7403H15.7068H15.6732H15.6395H15.6057H15.5718H15.5378H15.5038H15.4697H15.4355H15.4012H15.3668H15.3324H15.2979H15.2633H15.2286H15.1938H15.159H15.1241H15.0892H15.0541H15.019H14.9838H14.9486H14.9132H14.8778H14.8424H14.8068H14.7712H14.7355H14.6998H14.664H14.6281H14.5922H14.5562H14.5201H14.484H14.4478H14.4115H14.3752H14.3389H14.3024H14.2659H14.2294H14.1928H14.1561H14.1194H14.0826H14.0458H14.0089H13.9719H13.9349H13.8979H13.8608H13.8236H13.7864H13.7491H13.7118H13.6745H13.6371H13.5996H13.5621H13.5246H13.487H13.4493H13.4116H13.3739H13.3361H13.2983H13.2605H13.2226H13.1846H13.1467H13.1086H13.0706H13.0325H12.9943H12.9562H12.918H12.8797H12.8414H12.8031H12.7648H12.7264H12.688H12.6495H12.6111H12.5725H12.534H12.4954H12.4568H12.4182H12.3796H12.3409H12.3022H12.2634H12.2247H12.1859H12.1471H12.1083H12.0694H12.0305H11.9916H11.9527H11.9138H11.8748H11.8359H11.7969H11.7578H11.7188H11.6798H11.6407H11.6016H11.5625H11.5234H11.4843H11.4452H11.4061H11.3669H11.3277H11.2886H11.2494H11.2102H11.171H11.1318H11.0926H11.0534H11.0141H10.9749H10.9357H10.8964H10.8572H10.818H10.7787H10.7395H10.7002H10.661H10.6217H10.5825H10.5432H10.504H10.4648H10.4255H10.3863H10.3471H10.3079H10.2686H10.2294H10.1903H10.1511H10.1119H10.0727H10.0336H9.99441H9.95528H9.91615H9.87704H9.83794H9.79886H9.75979H9.72074H9.6817H9.64268H9.60368H9.56469H9.52572H9.48677H9.44785H9.40894H9.37005H9.33118H9.29234H9.25352H9.21472H9.17595H9.1372H9.09848H9.05979H9.02112H8.98247H8.94386H8.90527H8.86672H8.82819H8.78969H8.75123H8.7128H8.6744H8.63603H8.59769H8.55939H8.52113H8.4829H8.44471H8.40655H8.36843H8.33035H8.29231H8.2543H8.21634H8.17842H8.14054H8.1027H8.0649H8.02715H7.98944H7.95178H7.91416H7.87658H7.83905H7.80157H7.76414H7.72675H7.68942H7.65213H7.61489H7.57771H7.54057H7.50349H7.46646H7.42948H7.39256H7.35569H7.31888H7.28212H7.24542H7.20877H7.17219H7.13566H7.09919H7.06278H7.02643H6.99014H6.95391H6.91775H6.88165H6.84561H6.80963H6.77372H6.73788H6.7021H6.66639H6.63074H6.59517H6.55966H6.52422H6.48885H6.45355H6.41832H6.38316H6.34808H6.31307H6.27813H6.24326H6.20847H6.17376H6.13912H6.10456H6.07008H6.03567H6.00134H5.96709H5.93293H5.89884H5.86483H5.83091H5.79706H5.7633H5.72963H5.69604H5.66253H5.62911H5.59577H5.56252H5.52936H5.49629H5.4633H5.43041H5.3976H5.36489H5.33227H5.29973H5.2673H5.23495H5.2027H5.17054H5.13848H5.10651H5.07464H5.04287H5.01119H4.97961H4.94813H4.91675H4.88547H4.85429H4.82322H4.79224H4.76137H4.7306H4.69993H4.66937H4.63891H4.60856H4.57832H4.54818H4.51815H4.48823H4.45842H4.42872H4.39912H4.36964H4.34027H4.31101H4.28187H4.25284H4.22392H4.19511H4.16643H4.13785L4.13608 19.9989L4.13088 19.9986C4.12634 19.9983 4.12037 19.9978 4.1132 19.9968C4.09851 19.9949 4.08172 19.9917 4.06449 19.987C4.0435 19.9814 4.02734 19.9751 4.01582 19.9698C4.01515 19.9621 4.01465 19.9523 4.01465 19.9402V19.8873L4.00907 19.8347ZM11.9988 13.6464C8.041 13.6464 5.48681 14.5597 3.93019 15.8654C2.38712 17.1597 1.90391 18.7805 2.01528 19.9956C2.03241 20.7423 2.39494 21.2893 2.87432 21.6146C3.31215 21.9118 3.80211 21.9989 4.13785 21.9989H4.16643H4.19511H4.22392H4.25284H4.28187H4.31101H4.34027H4.36964H4.39912H4.42872H4.45842H4.48823H4.51815H4.54818H4.57832H4.60856H4.63891H4.66937H4.69993H4.7306H4.76137H4.79224H4.82322H4.85429H4.88547H4.91675H4.94813H4.97961H5.01119H5.04287H5.07464H5.10651H5.13848H5.17054H5.2027H5.23495H5.2673H5.29973H5.33227H5.36489H5.3976H5.43041H5.4633H5.49629H5.52936H5.56252H5.59577H5.62911H5.66253H5.69604H5.72963H5.7633H5.79706H5.83091H5.86483H5.89884H5.93293H5.96709H6.00134H6.03567H6.07008H6.10456H6.13912H6.17376H6.20847H6.24326H6.27813H6.31307H6.34808H6.38316H6.41832H6.45355H6.48885H6.52422H6.55966H6.59517H6.63074H6.66639H6.7021H6.73788H6.77372H6.80963H6.84561H6.88165H6.91775H6.95391H6.99014H7.02643H7.06278H7.09919H7.13566H7.17219H7.20877H7.24542H7.28212H7.31888H7.35569H7.39256H7.42948H7.46646H7.50349H7.54057H7.57771H7.61489H7.65213H7.68942H7.72675H7.76414H7.80157H7.83905H7.87658H7.91416H7.95178H7.98944H8.02715H8.0649H8.1027H8.14054H8.17842H8.21634H8.2543H8.29231H8.33035H8.36843H8.40655H8.44471H8.4829H8.52113H8.55939H8.59769H8.63603H8.6744H8.7128H8.75123H8.78969H8.82819H8.86672H8.90527H8.94386H8.98247H9.02112H9.05979H9.09848H9.1372H9.17595H9.21472H9.25352H9.29234H9.33118H9.37005H9.40894H9.44785H9.48677H9.52572H9.56469H9.60368H9.64268H9.6817H9.72074H9.75979H9.79886H9.83794H9.87704H9.91615H9.95528H9.99441H10.0336H10.0727H10.1119H10.1511H10.1903H10.2294H10.2686H10.3079H10.3471H10.3863H10.4255H10.4648H10.504H10.5432H10.5825H10.6217H10.661H10.7002H10.7395H10.7787H10.818H10.8572H10.8964H10.9357H10.9749H11.0141H11.0534H11.0926H11.1318H11.171H11.2102H11.2494H11.2886H11.3277H11.3669H11.4061H11.4452H11.4843H11.5234H11.5625H11.6016H11.6407H11.6798H11.7188H11.7578H11.7969H11.8359H11.8748H11.9138H11.9527H11.9916H12.0305H12.0694H12.1083H12.1471H12.1859H12.2247H12.2634H12.3022H12.3409H12.3796H12.4182H12.4568H12.4954H12.534H12.5725H12.6111H12.6495H12.688H12.7264H12.7648H12.8031H12.8414H12.8797H12.918H12.9562H12.9943H13.0325H13.0706H13.1086H13.1467H13.1846H13.2226H13.2605H13.2983H13.3361H13.3739H13.4116H13.4493H13.487H13.5246H13.5621H13.5996H13.6371H13.6745H13.7118H13.7491H13.7864H13.8236H13.8608H13.8979H13.9349H13.9719H14.0089H14.0458H14.0826H14.1194H14.1561H14.1928H14.2294H14.2659H14.3024H14.3389H14.3752H14.4115H14.4478H14.484H14.5201H14.5562H14.5922H14.6281H14.664H14.6998H14.7355H14.7712H14.8068H14.8424H14.8778H14.9132H14.9486H14.9838H15.019H15.0541H15.0892H15.1241H15.159H15.1938H15.2286H15.2633H15.2979H15.3324H15.3668H15.4012H15.4355H15.4697H15.5038H15.5378H15.5718H15.6057H15.6395H15.6732H15.7068H15.7403H15.7738H15.8072H15.8405H15.8737H15.9068H15.9398H15.9727H16.0056H16.0383H16.071H16.1035H16.136H16.1684H16.2007H16.2329H16.265H16.297H16.3289H16.3607H16.3925H16.4241H16.4556H16.487H16.5183H16.5496H16.5807H16.6117H16.6426H16.6734H16.7041H16.7347H16.7652H16.7956H16.8259H16.8561H16.8862H16.9162H16.946H16.9758H17.0054H17.0349H17.0644H17.0937H17.1228H17.1519H17.1809H17.2097H17.2385H17.2671H17.2956H17.324H17.3523H17.3804H17.4085H17.4364H17.4642H17.4918H17.5194H17.5468H17.5741H17.6013H17.6284H17.6553H17.6821H17.7088H17.7354H17.7618H17.7881H17.8143H17.8403H17.8662H17.892H17.9177H17.9432H17.9686H17.9939H18.019H18.044H18.0688H18.0936H18.1182H18.1426H18.1669H18.1911H18.2151H18.239H18.2628H18.2864H18.3099H18.3332H18.3564H18.3795H18.4024H18.4251H18.4478H18.4702H18.4926H18.5147H18.5368H18.5587H18.5804H18.602H18.6234H18.6447H18.6658H18.6868H18.7077H18.7283H18.7489H18.7692H18.7895H18.8095H18.8294H18.8492H18.8688H18.8882H18.9075H18.9266H18.9456H18.9643H18.983H19.0015H19.0198H19.0379H19.0559H19.0737H19.0914H19.1089H19.1262H19.1433H19.1603H19.1771H19.1938H19.2103H19.2266H19.2427H19.2587H19.2745H19.2901H19.3056H19.3208H19.3359H19.3509H19.3656H19.3802H19.3946H19.4088H19.4229H19.4367H19.4504H19.4639H19.4773H19.4904H19.5034H19.5161H19.5287H19.5411H19.5534H19.5654H19.5773H19.5889H19.6004H19.6117H19.6228H19.6337H19.6445H19.655H19.6653H19.6755H19.6855H19.6952H19.7048H19.7142H19.7234H19.7324H19.7412H19.7498H19.7582H19.7664H19.7744H19.7822H19.7898H19.7972H19.8044H19.8114H19.8182H19.8248H19.8312H19.8374H19.8434H19.8491H19.8547H19.8601C20.6111 21.9989 21.1897 21.6849 21.5532 21.2088C21.8627 20.8036 21.9711 20.343 21.9822 19.9991C22.0947 18.7836 21.612 17.1609 20.0674 15.8654C18.5108 14.5597 15.9566 13.6464 11.9988 13.6464Z",
+        fill: t
+      }
+    )
   }
 );
-b5.displayName = "User";
-const D5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+b9.displayName = "User";
+const D9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2678,8 +2675,8 @@ const D5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-D5.displayName = "BonusLarge";
-const W5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+D9.displayName = "BonusLarge";
+const W9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2697,8 +2694,8 @@ const W5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-W5.displayName = "BonusMedium";
-const A5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+W9.displayName = "BonusMedium";
+const A9 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     fillRule: "evenodd",
@@ -2707,8 +2704,8 @@ const A5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewB
     fill: "#222222"
   }
 ) });
-A5.displayName = "BonusSmall";
-const S5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+A9.displayName = "BonusSmall";
+const S9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2726,8 +2723,8 @@ const S5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-S5.displayName = "CashoutLarge";
-const T5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+S9.displayName = "CashoutLarge";
+const T9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2745,8 +2742,8 @@ const T5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-T5.displayName = "CashoutMedium";
-const O5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+T9.displayName = "CashoutMedium";
+const O9 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     fillRule: "evenodd",
@@ -2755,8 +2752,8 @@ const O5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewB
     fill: "#222222"
   }
 ) });
-O5.displayName = "CashoutSmall";
-const P5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+O9.displayName = "CashoutSmall";
+const P9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2775,8 +2772,8 @@ const P5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-P5.displayName = "Check";
-const q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+P9.displayName = "Check";
+const q9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2794,8 +2791,8 @@ const q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-q5.displayName = "Close";
-const I5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+q9.displayName = "Close";
+const I9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2813,8 +2810,8 @@ const I5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-I5.displayName = "DontWorkMedium";
-const U5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+I9.displayName = "DontWorkMedium";
+const U9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2832,8 +2829,8 @@ const U5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-U5.displayName = "DontWorkLarge";
-const $5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+U9.displayName = "DontWorkLarge";
+const $9 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     fillRule: "evenodd",
@@ -2842,8 +2839,8 @@ const $5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewB
     fill: "#222222"
   }
 ) });
-$5.displayName = "DontWorkSmall";
-const Y5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+$9.displayName = "DontWorkSmall";
+const Y9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2859,8 +2856,8 @@ const Y5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-Y5.displayName = "TerminalLarge";
-const G5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+Y9.displayName = "TerminalLarge";
+const G9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2876,16 +2873,16 @@ const G5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-G5.displayName = "TerminalMedium";
-const J5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+G9.displayName = "TerminalMedium";
+const J9 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     d: "M6.875 3.14773V10H5.13636V3.14773H6.875ZM2.75 3.54545V2H9.25V3.54545H2.75Z",
     fill: "#222222"
   }
 ) });
-J5.displayName = "TerminalSmall";
-const K5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+J9.displayName = "TerminalSmall";
+const K9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2914,8 +2911,8 @@ const K5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   ),
   /* @__PURE__ */ C.jsx("path", { d: "M58.5566 28.312H35.2979", stroke: "#48587D", strokeWidth: "3.14286" })
 ] });
-K5.displayName = "Clothing";
-const z5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+K9.displayName = "Clothing";
+const z9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2927,8 +2924,8 @@ const z5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "11", y: "14", width: "68.6075", height: "26.158", rx: "4.9998", fill: "#00AF66" }),
   /* @__PURE__ */ C.jsx("rect", { x: "40.3037", y: "65.563", width: "10", height: "20", rx: "2", fill: "#48587D" })
 ] });
-z5.displayName = "ConstructionMaterials";
-const X5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+z9.displayName = "ConstructionMaterials";
+const X9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2957,8 +2954,8 @@ const X5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-X5.displayName = "Food";
-const Q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+X9.displayName = "Food";
+const Q9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "59.5586", y: "75.1758", width: "6.35318", height: "14.8241", rx: "2", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx(
     "rect",
@@ -2987,8 +2984,8 @@ const Q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "30", y: "19.7981", width: "4.0746", height: "10.1865", rx: "0.985807", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx("rect", { x: "30", y: "48.3206", width: "4.0746", height: "18.7988", rx: "0.985807", fill: "#ECF0F3" })
 ] });
-Q5.displayName = "Fridge";
-const C9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+Q9.displayName = "Fridge";
+const C5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3143,8 +3140,8 @@ const C9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-C9.displayName = "Jewelry";
-const e9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+C5.displayName = "Jewelry";
+const e5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "rect",
     {
@@ -3169,8 +3166,8 @@ const e9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "26", y: "10.6721", width: "44", height: "61.1067", rx: "4.74376", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("rect", { x: "43.4473", y: "15.3491", width: "9.10702", height: "2.37188", rx: "1.18594", fill: "#48587D" })
 ] });
-e9.displayName = "PhonesAndAccessories";
-const l9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+e5.displayName = "PhonesAndAccessories";
+const l5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "rect",
     {
@@ -3208,8 +3205,8 @@ const l9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-l9.displayName = "Furniture";
-const r9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+l5.displayName = "Furniture";
+const r5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("circle", { cx: "52", cy: "48", r: "40", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "40", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "36", stroke: "#00AF66", strokeWidth: "8" }),
@@ -3221,8 +3218,8 @@ const r9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-r9.displayName = "OneSomoni";
-const t9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+r5.displayName = "OneSomoni";
+const t5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "9", y: "14.6382", width: "78", height: "28", rx: "3.25", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("rect", { x: "16", y: "21.6382", width: "64", height: "14", rx: "3.25", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx(
@@ -3262,8 +3259,8 @@ const t9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-t9.displayName = "DepositReplenishment";
-const i9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+t5.displayName = "DepositReplenishment";
+const i5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsxs("g", { clipPath: "url(#clip0_4359_16588)", children: [
     /* @__PURE__ */ C.jsx("g", { filter: "url(#filter0_b_4359_16588)", children: /* @__PURE__ */ C.jsx(
       "circle",
@@ -3383,8 +3380,8 @@ const i9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     /* @__PURE__ */ C.jsx("clipPath", { id: "clip0_4359_16588", children: /* @__PURE__ */ C.jsx("rect", { width: "96", height: "96", fill: "white" }) })
   ] })
 ] });
-i9.displayName = "IncomeSharing";
-const H9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+i5.displayName = "IncomeSharing";
+const H5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3476,8 +3473,8 @@ const H9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   ) })
 ] });
-H9.displayName = "Insurance";
-const s9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+H5.displayName = "Insurance";
+const s5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "6", y: "20.6792", width: "84", height: "66.0984", rx: "5.36839", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx(
     "path",
@@ -3502,8 +3499,8 @@ const s9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-s9.displayName = "Investments";
-const n9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+s5.displayName = "Investments";
+const n5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3544,8 +3541,8 @@ const n9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-n9.displayName = "Npl";
-const o9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+n5.displayName = "Npl";
+const o5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3628,8 +3625,8 @@ const o9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "67.2734", y: "23.5952", width: "1.72622", height: "8.63111", rx: "0.863111", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("rect", { x: "63.8213", y: "27.0476", width: "8.63111", height: "1.72622", rx: "0.863111", fill: "#ECF0F3" })
 ] });
-o9.displayName = "BuyCar";
-const d9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+o5.displayName = "BuyCar";
+const d5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3685,8 +3682,8 @@ const d9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-d9.displayName = "DocumentExecution";
-const a9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+d5.displayName = "DocumentExecution";
+const a5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3742,8 +3739,8 @@ const a9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-a9.displayName = "Form";
-const L9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+a5.displayName = "Form";
+const L5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3784,8 +3781,8 @@ const L9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-L9.displayName = "Money";
-const c9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+L5.displayName = "Money";
+const c5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "40", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "36", stroke: "#00AF66", strokeWidth: "8" }),
   /* @__PURE__ */ C.jsx("rect", { x: "45", y: "24.6082", width: "6", height: "24", fill: "#00AF66" }),
@@ -3802,8 +3799,8 @@ const c9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-c9.displayName = "Time";
-const h9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+c5.displayName = "Time";
+const h5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "17.3555", y: "9.69482", width: "61.2883", height: "76.6104", rx: "7.66104", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx(
     "path",
@@ -3847,8 +3844,8 @@ const h9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   ),
   /* @__PURE__ */ C.jsx("rect", { x: "36", y: "5.8645", width: "24", height: "7.66104", rx: "2", fill: "#48587D" })
 ] });
-h9.displayName = "Valuation";
-const u9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+h5.displayName = "Valuation";
+const u5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -3868,8 +3865,8 @@ const u9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-u9.displayName = "VKontakte";
-const f9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
+u5.displayName = "VKontakte";
+const f5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -3890,8 +3887,8 @@ const f9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
     ] })
   }
 );
-f9.displayName = "LinkedIn";
-const p9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+f5.displayName = "LinkedIn";
+const p5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: r,
@@ -3922,8 +3919,8 @@ const p9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-p9.displayName = "Facebook";
-const V9 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+p5.displayName = "Facebook";
+const V5 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: r,
@@ -3952,8 +3949,8 @@ const V9 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-V9.displayName = "Telegram";
-const x9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
+V5.displayName = "Telegram";
+const x5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -3976,8 +3973,8 @@ const x9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
     ] })
   }
 );
-x9.displayName = "Instagram";
-const v9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
+x5.displayName = "Instagram";
+const w5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -4010,8 +4007,8 @@ const v9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
     ] })
   }
 );
-v9.displayName = "Odnoklassniki";
-const w9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+w5.displayName = "Odnoklassniki";
+const v5 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: r,
@@ -4031,8 +4028,8 @@ const w9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-w9.displayName = "Twitter";
-const M9 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+v5.displayName = "Twitter";
+const M5 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -4055,8 +4052,8 @@ const M9 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-M9.displayName = "YouTube";
-const Z9 = ({ width: r = "121", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+M5.displayName = "YouTube";
+const Z5 = ({ width: r = "121", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -4139,8 +4136,8 @@ const Z9 = ({ width: r = "121", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-Z9.displayName = "AppleAppStore";
-const g9 = ({ width: r = "136", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+Z5.displayName = "AppleAppStore";
+const g5 = ({ width: r = "136", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -4188,101 +4185,101 @@ const g9 = ({ width: r = "136", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-g9.displayName = "GooglePlay";
+g5.displayName = "GooglePlay";
 export {
   d2 as Analytics,
-  Z9 as AppleAppStore,
+  Z5 as AppleAppStore,
   E2 as ArrowDown,
   N2 as ArrowUp,
-  L9 as AutoCreditMoney,
+  L5 as AutoCreditMoney,
   a2 as Bank,
   _2 as Banknote,
-  N5 as Bell,
+  N9 as Bell,
   z2 as Bill,
-  D5 as BonusLarge,
-  W5 as BonusMedium,
-  A5 as BonusSmall,
-  o9 as BuyCar,
+  D9 as BonusLarge,
+  W9 as BonusMedium,
+  A9 as BonusSmall,
+  o5 as BuyCar,
   Q2 as Calendar,
   L2 as CardSalom,
   c2 as Cash,
-  S5 as CashoutLarge,
-  T5 as CashoutMedium,
-  O5 as CashoutSmall,
-  C5 as Chat,
-  e5 as Check,
-  P5 as CheckCircle,
+  S9 as CashoutLarge,
+  T9 as CashoutMedium,
+  O9 as CashoutSmall,
+  C9 as Chat,
+  e9 as Check,
+  P9 as CheckCircle,
   W2 as ChevronDown,
   A2 as ChevronLeft,
   S2 as ChevronRight,
   T2 as ChevronUp,
-  l5 as Clock,
-  r5 as Close,
-  q5 as CloseCircle,
-  K5 as Clothing,
-  z5 as ConstructionMaterials,
-  t5 as Copy,
+  l9 as Clock,
+  r9 as Close,
+  q9 as CloseCircle,
+  K9 as Clothing,
+  z9 as ConstructionMaterials,
+  t9 as Copy,
   h2 as CreditCard,
   B2 as CrossedBanknote,
   u2 as CurrencyDollar,
   f2 as CurrencyLira,
   p2 as CurrencyRuble,
-  i5 as Delete,
-  t9 as DepositReplenishment,
-  H5 as Doc,
-  s5 as DocEmpty,
-  d9 as DocumentExecution,
+  i9 as Delete,
+  t5 as DepositReplenishment,
+  H9 as Doc,
+  s9 as DocEmpty,
+  d5 as DocumentExecution,
   V2 as Dollar,
-  I5 as DontWorkLarge,
-  U5 as DontWorkMedium,
-  $5 as DontWorkSmall,
-  n5 as Edit,
-  o5 as Expand,
+  I9 as DontWorkLarge,
+  U9 as DontWorkMedium,
+  $9 as DontWorkSmall,
+  n9 as Edit,
+  o9 as Expand,
   G2 as EyeOff,
-  d5 as EyeOffAlt,
+  d9 as EyeOffAlt,
   J2 as EyeOn,
-  p9 as Facebook,
-  X5 as Food,
-  a9 as Form,
-  Q5 as Fridge,
-  l9 as Furniture,
-  g9 as GooglePlay,
-  a5 as GridView,
-  L5 as HelpCircle,
-  c5 as Home,
-  i9 as IncomeSharing,
-  h5 as Info,
-  x9 as Instagram,
-  H9 as Insurance,
-  s9 as Investments,
-  C9 as Jewelry,
+  p5 as Facebook,
+  X9 as Food,
+  a5 as Form,
+  Q9 as Fridge,
+  l5 as Furniture,
+  g5 as GooglePlay,
+  a9 as GridView,
+  L9 as HelpCircle,
+  c9 as Home,
+  i5 as IncomeSharing,
+  h9 as Info,
+  x5 as Instagram,
+  H5 as Insurance,
+  s5 as Investments,
+  C5 as Jewelry,
   O2 as LedtDown,
   b2 as LeftArrow,
   I2 as LeftPrev,
-  u5 as Link,
-  f9 as LinkedIn,
-  f5 as ListView,
-  p5 as Lock,
-  V5 as Mail,
-  x5 as MapPin,
-  v5 as Menu,
+  u9 as Link,
+  f5 as LinkedIn,
+  f9 as ListView,
+  p9 as Lock,
+  V9 as Mail,
+  x9 as MapPin,
+  w9 as Menu,
   x2 as Merch,
-  v2 as Money,
-  w5 as Move,
-  M5 as Navigation,
-  n9 as Npl,
-  v9 as Odnoklassniki,
-  r9 as OneSomoni,
-  w2 as Online,
-  Z5 as PaperClip,
+  w2 as Money,
+  v9 as Move,
+  M9 as Navigation,
+  n5 as Npl,
+  w5 as Odnoklassniki,
+  r5 as OneSomoni,
+  v2 as Online,
+  Z9 as PaperClip,
   M2 as Percent,
-  e9 as PhonesAndAccessories,
-  j5 as Plus,
-  g5 as PlusRect,
+  e5 as PhonesAndAccessories,
+  j9 as Plus,
+  g9 as PlusRect,
   X2 as Qr,
-  k5 as Refresh,
-  m5 as RefreshCw,
-  R5 as Repeat,
+  k9 as Refresh,
+  m9 as RefreshCw,
+  R9 as Repeat,
   D2 as RightArrow,
   U2 as RightNext,
   P2 as RightTop,
@@ -4291,27 +4288,27 @@ export {
   Y2 as SelectOpenDown,
   Z2 as SendCard,
   g2 as SendDoc,
-  y5 as Settings,
-  F5 as Slash,
-  _5 as Star,
-  V9 as Telegram,
+  y9 as Settings,
+  F9 as Slash,
+  _9 as Star,
+  V5 as Telegram,
   j2 as Terminal,
-  Y5 as TerminalLarge,
-  G5 as TerminalMedium,
-  J5 as TerminalSmall,
-  c9 as Time,
+  Y9 as TerminalLarge,
+  G9 as TerminalMedium,
+  J9 as TerminalSmall,
+  c5 as Time,
   m2 as Transfers,
   q2 as TrendingUp,
-  B5 as Tune,
-  w9 as Twitter,
-  E5 as Unlock,
-  b5 as User,
-  u9 as VKontakte,
-  h9 as Valuation,
+  B9 as Tune,
+  v5 as Twitter,
+  E9 as Unlock,
+  b9 as User,
+  u5 as VKontakte,
+  h5 as Valuation,
   k2 as Visa,
   F2 as Wallet,
   R2 as WalletPlus,
   y2 as WalletTransfer,
-  M9 as YouTube,
+  M5 as YouTube,
   o2 as Zp
 };
