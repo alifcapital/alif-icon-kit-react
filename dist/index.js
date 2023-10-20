@@ -1856,7 +1856,42 @@ const C5 = ({ width: t = "24", height: l = "24", color: r = "currentColor" }) =>
   }
 );
 C5.displayName = "Limits";
-const e5 = ({ width: t = "24", height: l = "24", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+const e5 = ({
+  width: t = "24",
+  height: l = "24",
+  color: r = "currentColor"
+}) => /* @__PURE__ */ C.jsxs(
+  "svg",
+  {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: t,
+    height: l,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    children: [
+      /* @__PURE__ */ C.jsx("path", { d: "M12 2.5V4V5.5L14 4L12 2.5Z", fill: r }),
+      /* @__PURE__ */ C.jsx(
+        "path",
+        {
+          d: "M5.07026 16C4.38958 14.8233 4 13.4571 4 12C4 7.58172 7.58172 4 12 4V2.5M12 2.5V5.5L14 4L12 2.5Z",
+          stroke: r,
+          strokeWidth: "2"
+        }
+      ),
+      /* @__PURE__ */ C.jsx("path", { d: "M12 21.5V20V18.5L10 20L12 21.5Z", fill: r }),
+      /* @__PURE__ */ C.jsx(
+        "path",
+        {
+          d: "M18.9297 8C19.6104 9.17669 20 10.5429 20 12C20 16.4183 16.4183 20 12 20V21.5M12 21.5V18.5L10 20L12 21.5Z",
+          stroke: r,
+          strokeWidth: "2"
+        }
+      )
+    ]
+  }
+);
+e5.displayName = "Subscription";
+const l5 = ({ width: t = "24", height: l = "24", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -1875,8 +1910,8 @@ const e5 = ({ width: t = "24", height: l = "24", color: r = "currentColor" }) =>
     )
   }
 );
-e5.displayName = "LogOut";
-const l5 = ({
+l5.displayName = "LogOut";
+const t5 = ({
   width: t = "25",
   height: l = "25",
   color: r = "currentColor"
@@ -1932,8 +1967,8 @@ const l5 = ({
     ]
   }
 );
-l5.displayName = "Calendar";
-const t5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+t5.displayName = "Calendar";
+const r5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -1950,8 +1985,8 @@ const t5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-t5.displayName = "Chat";
-const r5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+r5.displayName = "Chat";
+const i5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -1970,8 +2005,8 @@ const r5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-r5.displayName = "Check";
-const i5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+i5.displayName = "Check";
+const H5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -1990,8 +2025,8 @@ const i5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-i5.displayName = "Clock";
-const H5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+H5.displayName = "Clock";
+const s5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: t,
@@ -2023,8 +2058,8 @@ const H5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     ]
   }
 );
-H5.displayName = "Close";
-const s5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+s5.displayName = "Close";
+const n5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2043,8 +2078,8 @@ const s5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-s5.displayName = "Copy";
-const n5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+n5.displayName = "Copy";
+const o5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2063,8 +2098,8 @@ const n5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-n5.displayName = "Delete";
-const o5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+o5.displayName = "Delete";
+const d5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2083,8 +2118,8 @@ const o5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-o5.displayName = "Doc";
-const d5 = ({
+d5.displayName = "Doc";
+const a5 = ({
   width: t = "25",
   height: l = "25",
   color: r = "currentColor"
@@ -2107,8 +2142,8 @@ const d5 = ({
     )
   }
 );
-d5.displayName = "DocEmpty";
-const a5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+a5.displayName = "DocEmpty";
+const L5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2127,8 +2162,8 @@ const a5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-a5.displayName = "Edit";
-const L5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+L5.displayName = "Edit";
+const c5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2147,8 +2182,8 @@ const L5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-L5.displayName = "Expand";
-const c5 = ({
+c5.displayName = "Expand";
+const h5 = ({
   width: t = "25",
   height: l = "25",
   color: r = "currentColor"
@@ -2172,8 +2207,8 @@ const c5 = ({
     )
   }
 );
-c5.displayName = "EyeOffAlt";
-const h5 = ({
+h5.displayName = "EyeOffAlt";
+const u5 = ({
   width: t = "25",
   height: l = "25",
   color: r = "currentColor"
@@ -2196,8 +2231,8 @@ const h5 = ({
     )
   }
 );
-h5.displayName = "GridView";
-const u5 = ({
+u5.displayName = "GridView";
+const f5 = ({
   width: t = "25",
   height: l = "25",
   color: r = "currentColor"
@@ -2220,8 +2255,8 @@ const u5 = ({
     )
   }
 );
-u5.displayName = "HelpCircle";
-const f5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+f5.displayName = "HelpCircle";
+const p5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2243,8 +2278,8 @@ const f5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-f5.displayName = "Home";
-const p5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+p5.displayName = "Home";
+const V5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2263,8 +2298,8 @@ const p5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-p5.displayName = "Info";
-const V5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+V5.displayName = "Info";
+const x5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2284,8 +2319,8 @@ const V5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-V5.displayName = "Link";
-const x5 = ({
+x5.displayName = "Link";
+const w5 = ({
   width: t = "25",
   height: l = "25",
   color: r = "currentColor"
@@ -2309,8 +2344,8 @@ const x5 = ({
     )
   }
 );
-x5.displayName = "ListView";
-const w5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+w5.displayName = "ListView";
+const v5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2329,8 +2364,8 @@ const w5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-w5.displayName = "Lock";
-const v5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+v5.displayName = "Lock";
+const M5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2349,8 +2384,8 @@ const v5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-v5.displayName = "Mail";
-const M5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+M5.displayName = "Mail";
+const Z5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2369,8 +2404,8 @@ const M5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-M5.displayName = "MapPin";
-const Z5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+Z5.displayName = "MapPin";
+const g5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: t,
@@ -2412,8 +2447,8 @@ const Z5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     ]
   }
 );
-Z5.displayName = "Menu";
-const g5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+g5.displayName = "Menu";
+const j5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2432,8 +2467,8 @@ const g5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-g5.displayName = "Move";
-const j5 = ({
+j5.displayName = "Move";
+const m5 = ({
   width: t = "25",
   height: l = "25",
   color: r = "currentColor"
@@ -2456,8 +2491,8 @@ const j5 = ({
     )
   }
 );
-j5.displayName = "Navigation";
-const m5 = ({
+m5.displayName = "Navigation";
+const k5 = ({
   width: t = "25",
   height: l = "25",
   color: r = "currentColor"
@@ -2480,8 +2515,8 @@ const m5 = ({
     )
   }
 );
-m5.displayName = "Paperclip";
-const k5 = ({
+k5.displayName = "Paperclip";
+const R5 = ({
   width: t = "25",
   height: l = "25",
   color: r = "currentColor"
@@ -2504,8 +2539,8 @@ const k5 = ({
     )
   }
 );
-k5.displayName = "PlusRect";
-const R5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+R5.displayName = "PlusRect";
+const y5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: t,
@@ -2537,8 +2572,8 @@ const R5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     ]
   }
 );
-R5.displayName = "Plus";
-const y5 = ({
+y5.displayName = "Plus";
+const F5 = ({
   width: t = "25",
   height: l = "25",
   color: r = "currentColor"
@@ -2561,8 +2596,8 @@ const y5 = ({
     )
   }
 );
-y5.displayName = "RefreshCw";
-const F5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+F5.displayName = "RefreshCw";
+const _5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2581,8 +2616,8 @@ const F5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-F5.displayName = "Refresh";
-const _5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+_5.displayName = "Refresh";
+const B5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2601,8 +2636,8 @@ const _5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-_5.displayName = "Repeat";
-const B5 = ({
+B5.displayName = "Repeat";
+const E5 = ({
   width: t = "25",
   height: l = "25",
   color: r = "currentColor"
@@ -2638,8 +2673,8 @@ const B5 = ({
     ]
   }
 );
-B5.displayName = "Settings";
-const E5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+E5.displayName = "Settings";
+const N5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2658,8 +2693,8 @@ const E5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-E5.displayName = "Slash";
-const N5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+N5.displayName = "Slash";
+const b5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2678,8 +2713,8 @@ const N5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-N5.displayName = "Star";
-const b5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+b5.displayName = "Star";
+const D5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2698,8 +2733,8 @@ const b5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-b5.displayName = "Tune";
-const D5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
+D5.displayName = "Tune";
+const W5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -2718,8 +2753,8 @@ const D5 = ({ width: t = "25", height: l = "25", color: r = "currentColor" }) =>
     )
   }
 );
-D5.displayName = "Unlock";
-const W5 = ({ width: t = "24", height: l = "24", color: r = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+W5.displayName = "Unlock";
+const A5 = ({ width: t = "24", height: l = "24", color: r = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -2737,8 +2772,8 @@ const W5 = ({ width: t = "24", height: l = "24", color: r = "currentColor" }) =>
     ]
   }
 );
-W5.displayName = "Bell";
-const A5 = ({ width: t = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+A5.displayName = "Bell";
+const S5 = ({ width: t = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: t,
@@ -2760,8 +2795,8 @@ const A5 = ({ width: t = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-A5.displayName = "User";
-const S5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+S5.displayName = "User";
+const T5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2779,8 +2814,8 @@ const S5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-S5.displayName = "BonusLarge";
-const T5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+T5.displayName = "BonusLarge";
+const O5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2798,8 +2833,8 @@ const T5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-T5.displayName = "BonusMedium";
-const O5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+O5.displayName = "BonusMedium";
+const P5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     fillRule: "evenodd",
@@ -2808,8 +2843,8 @@ const O5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewB
     fill: "#222222"
   }
 ) });
-O5.displayName = "BonusSmall";
-const P5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+P5.displayName = "BonusSmall";
+const q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2827,8 +2862,8 @@ const P5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-P5.displayName = "CashoutLarge";
-const q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+q5.displayName = "CashoutLarge";
+const I5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2846,8 +2881,8 @@ const q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-q5.displayName = "CashoutMedium";
-const I5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+I5.displayName = "CashoutMedium";
+const U5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     fillRule: "evenodd",
@@ -2856,8 +2891,8 @@ const I5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewB
     fill: "#222222"
   }
 ) });
-I5.displayName = "CashoutSmall";
-const U5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+U5.displayName = "CashoutSmall";
+const $5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2876,8 +2911,8 @@ const U5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-U5.displayName = "Check";
-const $5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+$5.displayName = "Check";
+const Y5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2895,8 +2930,8 @@ const $5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-$5.displayName = "Close";
-const Y5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+Y5.displayName = "Close";
+const G5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2914,8 +2949,8 @@ const Y5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-Y5.displayName = "DontWorkMedium";
-const G5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+G5.displayName = "DontWorkMedium";
+const J5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2933,8 +2968,8 @@ const G5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-G5.displayName = "DontWorkLarge";
-const J5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+J5.displayName = "DontWorkLarge";
+const K5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     fillRule: "evenodd",
@@ -2943,8 +2978,8 @@ const J5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewB
     fill: "#222222"
   }
 ) });
-J5.displayName = "DontWorkSmall";
-const K5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+K5.displayName = "DontWorkSmall";
+const z5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2960,8 +2995,8 @@ const K5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-K5.displayName = "TerminalLarge";
-const z5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+z5.displayName = "TerminalLarge";
+const X5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2977,16 +3012,16 @@ const z5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-z5.displayName = "TerminalMedium";
-const X5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+X5.displayName = "TerminalMedium";
+const Q5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     d: "M6.875 3.14773V10H5.13636V3.14773H6.875ZM2.75 3.54545V2H9.25V3.54545H2.75Z",
     fill: "#222222"
   }
 ) });
-X5.displayName = "TerminalSmall";
-const Q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+Q5.displayName = "TerminalSmall";
+const C9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3015,8 +3050,8 @@ const Q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   ),
   /* @__PURE__ */ C.jsx("path", { d: "M58.5566 28.312H35.2979", stroke: "#48587D", strokeWidth: "3.14286" })
 ] });
-Q5.displayName = "Clothing";
-const C9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+C9.displayName = "Clothing";
+const e9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3028,8 +3063,8 @@ const C9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "11", y: "14", width: "68.6075", height: "26.158", rx: "4.9998", fill: "#00AF66" }),
   /* @__PURE__ */ C.jsx("rect", { x: "40.3037", y: "65.563", width: "10", height: "20", rx: "2", fill: "#48587D" })
 ] });
-C9.displayName = "ConstructionMaterials";
-const e9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+e9.displayName = "ConstructionMaterials";
+const l9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3058,8 +3093,8 @@ const e9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-e9.displayName = "Food";
-const l9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+l9.displayName = "Food";
+const t9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "59.5586", y: "75.1758", width: "6.35318", height: "14.8241", rx: "2", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx(
     "rect",
@@ -3088,8 +3123,8 @@ const l9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "30", y: "19.7981", width: "4.0746", height: "10.1865", rx: "0.985807", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx("rect", { x: "30", y: "48.3206", width: "4.0746", height: "18.7988", rx: "0.985807", fill: "#ECF0F3" })
 ] });
-l9.displayName = "Fridge";
-const t9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+t9.displayName = "Fridge";
+const r9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3244,8 +3279,8 @@ const t9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-t9.displayName = "Jewelry";
-const r9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+r9.displayName = "Jewelry";
+const i9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "rect",
     {
@@ -3270,8 +3305,8 @@ const r9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "26", y: "10.6721", width: "44", height: "61.1067", rx: "4.74376", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("rect", { x: "43.4473", y: "15.3491", width: "9.10702", height: "2.37188", rx: "1.18594", fill: "#48587D" })
 ] });
-r9.displayName = "PhonesAndAccessories";
-const i9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+i9.displayName = "PhonesAndAccessories";
+const H9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "rect",
     {
@@ -3309,8 +3344,8 @@ const i9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-i9.displayName = "Furniture";
-const H9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+H9.displayName = "Furniture";
+const s9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("circle", { cx: "52", cy: "48", r: "40", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "40", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "36", stroke: "#00AF66", strokeWidth: "8" }),
@@ -3322,8 +3357,8 @@ const H9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-H9.displayName = "OneSomoni";
-const s9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+s9.displayName = "OneSomoni";
+const n9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "9", y: "14.6382", width: "78", height: "28", rx: "3.25", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("rect", { x: "16", y: "21.6382", width: "64", height: "14", rx: "3.25", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx(
@@ -3363,8 +3398,8 @@ const s9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-s9.displayName = "DepositReplenishment";
-const n9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+n9.displayName = "DepositReplenishment";
+const o9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsxs("g", { clipPath: "url(#clip0_4359_16588)", children: [
     /* @__PURE__ */ C.jsx("g", { filter: "url(#filter0_b_4359_16588)", children: /* @__PURE__ */ C.jsx(
       "circle",
@@ -3484,8 +3519,8 @@ const n9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     /* @__PURE__ */ C.jsx("clipPath", { id: "clip0_4359_16588", children: /* @__PURE__ */ C.jsx("rect", { width: "96", height: "96", fill: "white" }) })
   ] })
 ] });
-n9.displayName = "IncomeSharing";
-const o9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+o9.displayName = "IncomeSharing";
+const d9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3577,8 +3612,8 @@ const o9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   ) })
 ] });
-o9.displayName = "Insurance";
-const d9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+d9.displayName = "Insurance";
+const a9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "6", y: "20.6792", width: "84", height: "66.0984", rx: "5.36839", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx(
     "path",
@@ -3603,8 +3638,8 @@ const d9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-d9.displayName = "Investments";
-const a9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+a9.displayName = "Investments";
+const L9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3645,8 +3680,8 @@ const a9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-a9.displayName = "Npl";
-const L9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+L9.displayName = "Npl";
+const c9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3729,8 +3764,8 @@ const L9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "67.2734", y: "23.5952", width: "1.72622", height: "8.63111", rx: "0.863111", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("rect", { x: "63.8213", y: "27.0476", width: "8.63111", height: "1.72622", rx: "0.863111", fill: "#ECF0F3" })
 ] });
-L9.displayName = "BuyCar";
-const c9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+c9.displayName = "BuyCar";
+const h9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3786,8 +3821,8 @@ const c9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-c9.displayName = "DocumentExecution";
-const h9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+h9.displayName = "DocumentExecution";
+const u9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3843,8 +3878,8 @@ const h9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-h9.displayName = "Form";
-const u9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+u9.displayName = "Form";
+const f9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3885,8 +3920,8 @@ const u9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-u9.displayName = "Money";
-const f9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+f9.displayName = "Money";
+const p9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "40", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "36", stroke: "#00AF66", strokeWidth: "8" }),
   /* @__PURE__ */ C.jsx("rect", { x: "45", y: "24.6082", width: "6", height: "24", fill: "#00AF66" }),
@@ -3903,8 +3938,8 @@ const f9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-f9.displayName = "Time";
-const p9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+p9.displayName = "Time";
+const V9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "17.3555", y: "9.69482", width: "61.2883", height: "76.6104", rx: "7.66104", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx(
     "path",
@@ -3948,8 +3983,8 @@ const p9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   ),
   /* @__PURE__ */ C.jsx("rect", { x: "36", y: "5.8645", width: "24", height: "7.66104", rx: "2", fill: "#48587D" })
 ] });
-p9.displayName = "Valuation";
-const V9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+V9.displayName = "Valuation";
+const x9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -3969,8 +4004,8 @@ const V9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-V9.displayName = "VKontakte";
-const x9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
+x9.displayName = "VKontakte";
+const w9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -3991,8 +4026,8 @@ const x9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
     ] })
   }
 );
-x9.displayName = "LinkedIn";
-const w9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+w9.displayName = "LinkedIn";
+const v9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: t,
@@ -4023,8 +4058,8 @@ const w9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-w9.displayName = "Facebook";
-const v9 = ({ width: t = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+v9.displayName = "Facebook";
+const M9 = ({ width: t = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: t,
@@ -4053,8 +4088,8 @@ const v9 = ({ width: t = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-v9.displayName = "Telegram";
-const M9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
+M9.displayName = "Telegram";
+const Z9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -4077,8 +4112,8 @@ const M9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
     ] })
   }
 );
-M9.displayName = "Instagram";
-const Z9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
+Z9.displayName = "Instagram";
+const g9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: t,
@@ -4111,8 +4146,8 @@ const Z9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
     ] })
   }
 );
-Z9.displayName = "Odnoklassniki";
-const g9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+g9.displayName = "Odnoklassniki";
+const j9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: t,
@@ -4132,8 +4167,8 @@ const g9 = ({ width: t = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-g9.displayName = "Twitter";
-const j9 = ({ width: t = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+j9.displayName = "Twitter";
+const m9 = ({ width: t = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -4156,8 +4191,8 @@ const j9 = ({ width: t = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-j9.displayName = "YouTube";
-const m9 = ({ width: t = "121", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+m9.displayName = "YouTube";
+const k9 = ({ width: t = "121", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -4240,8 +4275,8 @@ const m9 = ({ width: t = "121", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-m9.displayName = "AppleAppStore";
-const k9 = ({ width: t = "136", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+k9.displayName = "AppleAppStore";
+const R9 = ({ width: t = "136", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -4289,104 +4324,104 @@ const k9 = ({ width: t = "136", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-k9.displayName = "GooglePlay";
+R9.displayName = "GooglePlay";
 export {
   d2 as Analytics,
-  m9 as AppleAppStore,
+  k9 as AppleAppStore,
   E2 as ArrowDown,
   N2 as ArrowUp,
-  u9 as AutoCreditMoney,
+  f9 as AutoCreditMoney,
   a2 as Bank,
   _2 as Banknote,
-  W5 as Bell,
+  A5 as Bell,
   z2 as Bill,
-  S5 as BonusLarge,
-  T5 as BonusMedium,
-  O5 as BonusSmall,
-  L9 as BuyCar,
-  l5 as Calendar,
+  T5 as BonusLarge,
+  O5 as BonusMedium,
+  P5 as BonusSmall,
+  c9 as BuyCar,
+  t5 as Calendar,
   L2 as CardSalom,
   c2 as Cash,
-  P5 as CashoutLarge,
-  q5 as CashoutMedium,
-  I5 as CashoutSmall,
-  t5 as Chat,
-  r5 as Check,
-  U5 as CheckCircle,
+  q5 as CashoutLarge,
+  I5 as CashoutMedium,
+  U5 as CashoutSmall,
+  r5 as Chat,
+  i5 as Check,
+  $5 as CheckCircle,
   W2 as ChevronDown,
   A2 as ChevronLeft,
   S2 as ChevronRight,
   T2 as ChevronUp,
-  i5 as Clock,
-  H5 as Close,
-  $5 as CloseCircle,
-  Q5 as Clothing,
-  C9 as ConstructionMaterials,
-  s5 as Copy,
+  H5 as Clock,
+  s5 as Close,
+  Y5 as CloseCircle,
+  C9 as Clothing,
+  e9 as ConstructionMaterials,
+  n5 as Copy,
   h2 as CreditCard,
   B2 as CrossedBanknote,
   u2 as CurrencyDollar,
   f2 as CurrencyLira,
   p2 as CurrencyRuble,
-  n5 as Delete,
-  s9 as DepositReplenishment,
-  o5 as Doc,
-  d5 as DocEmpty,
-  c9 as DocumentExecution,
+  o5 as Delete,
+  n9 as DepositReplenishment,
+  d5 as Doc,
+  a5 as DocEmpty,
+  h9 as DocumentExecution,
   V2 as Dollar,
-  Y5 as DontWorkLarge,
-  G5 as DontWorkMedium,
-  J5 as DontWorkSmall,
-  a5 as Edit,
-  L5 as Expand,
+  G5 as DontWorkLarge,
+  J5 as DontWorkMedium,
+  K5 as DontWorkSmall,
+  L5 as Edit,
+  c5 as Expand,
   G2 as EyeOff,
-  c5 as EyeOffAlt,
+  h5 as EyeOffAlt,
   J2 as EyeOn,
-  w9 as Facebook,
-  e9 as Food,
-  h9 as Form,
-  l9 as Fridge,
-  i9 as Furniture,
-  k9 as GooglePlay,
-  h5 as GridView,
-  u5 as HelpCircle,
-  f5 as Home,
-  n9 as IncomeSharing,
-  p5 as Info,
-  M9 as Instagram,
-  o9 as Insurance,
-  d9 as Investments,
-  t9 as Jewelry,
+  v9 as Facebook,
+  l9 as Food,
+  u9 as Form,
+  t9 as Fridge,
+  H9 as Furniture,
+  R9 as GooglePlay,
+  u5 as GridView,
+  f5 as HelpCircle,
+  p5 as Home,
+  o9 as IncomeSharing,
+  V5 as Info,
+  Z9 as Instagram,
+  d9 as Insurance,
+  a9 as Investments,
+  r9 as Jewelry,
   O2 as LedtDown,
   b2 as LeftArrow,
   I2 as LeftPrev,
   C5 as Limits,
-  V5 as Link,
-  x9 as LinkedIn,
-  x5 as ListView,
-  w5 as Lock,
-  e5 as LogOut,
-  v5 as Mail,
-  M5 as MapPin,
-  Z5 as Menu,
+  x5 as Link,
+  w9 as LinkedIn,
+  w5 as ListView,
+  v5 as Lock,
+  l5 as LogOut,
+  M5 as Mail,
+  Z5 as MapPin,
+  g5 as Menu,
   x2 as Merch,
   w2 as Money,
-  g5 as Move,
-  j5 as Navigation,
-  a9 as Npl,
-  Z9 as Odnoklassniki,
-  H9 as OneSomoni,
+  j5 as Move,
+  m5 as Navigation,
+  L9 as Npl,
+  g9 as Odnoklassniki,
+  s9 as OneSomoni,
   v2 as Online,
-  m5 as PaperClip,
+  k5 as PaperClip,
   Q2 as Passport,
   M2 as Percent,
-  r9 as PhonesAndAccessories,
-  R5 as Plus,
-  k5 as PlusRect,
+  i9 as PhonesAndAccessories,
+  y5 as Plus,
+  R5 as PlusRect,
   X2 as Qr,
-  F5 as Refresh,
-  y5 as RefreshCw,
-  _5 as Repeat,
+  _5 as Refresh,
+  F5 as RefreshCw,
+  B5 as Repeat,
   D2 as RightArrow,
   U2 as RightNext,
   P2 as RightTop,
@@ -4395,27 +4430,28 @@ export {
   Y2 as SelectOpenDown,
   Z2 as SendCard,
   g2 as SendDoc,
-  B5 as Settings,
-  E5 as Slash,
-  N5 as Star,
-  v9 as Telegram,
+  E5 as Settings,
+  N5 as Slash,
+  b5 as Star,
+  e5 as Subscription,
+  M9 as Telegram,
   j2 as Terminal,
-  K5 as TerminalLarge,
-  z5 as TerminalMedium,
-  X5 as TerminalSmall,
-  f9 as Time,
+  z5 as TerminalLarge,
+  X5 as TerminalMedium,
+  Q5 as TerminalSmall,
+  p9 as Time,
   m2 as Transfers,
   q2 as TrendingUp,
-  b5 as Tune,
-  g9 as Twitter,
-  D5 as Unlock,
-  A5 as User,
-  V9 as VKontakte,
-  p9 as Valuation,
+  D5 as Tune,
+  j9 as Twitter,
+  W5 as Unlock,
+  S5 as User,
+  x9 as VKontakte,
+  V9 as Valuation,
   k2 as Visa,
   F2 as Wallet,
   R2 as WalletPlus,
   y2 as WalletTransfer,
-  j9 as YouTube,
+  m9 as YouTube,
   o2 as Zp
 };

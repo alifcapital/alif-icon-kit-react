@@ -46,6 +46,7 @@ import Bill from './SystemIcons/Bill';
 import Qr from './SystemIcons/Qr';
 import Passport from './SystemIcons/Passport';
 import Limits from './SystemIcons/Limits';
+import Subscription from './SystemIcons/Subscription';
 import LogOut from './SystemIcons/LogOut';
 import Calendar from './SystemIcons/Calendar';
 import Chat from './SystemIcons/Chat';
@@ -144,6 +145,7 @@ export {
   Passport,
   Limits,
   LogOut,
+  Subscription,
   Calendar,
   Chat,
   Check,
