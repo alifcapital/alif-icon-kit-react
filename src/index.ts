@@ -44,6 +44,10 @@ import EyeOn from './SystemIcons/EyeOn';
 import Search from './SystemIcons/Search';
 import Bill from './SystemIcons/Bill';
 import Qr from './SystemIcons/Qr';
+import Passport from './SystemIcons/Passport';
+import Limits from './SystemIcons/Limits';
+import Subscription from './SystemIcons/Subscription';
+import LogOut from './SystemIcons/LogOut';
 import Calendar from './SystemIcons/Calendar';
 import Chat from './SystemIcons/Chat';
 import Check from './SystemIcons/Check';
@@ -138,6 +142,10 @@ export {
   Search,
   Bill,
   Qr,
+  Passport,
+  Limits,
+  LogOut,
+  Subscription,
   Calendar,
   Chat,
   Check,
