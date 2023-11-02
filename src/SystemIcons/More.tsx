@@ -2,7 +2,7 @@ import React from 'react';
 
 import { IIconProps } from '../types';
 
-const More: React.FC<IIconProps> = ({ width = '25', height = '25', color = 'currentColor' }) => (
+const More: React.FC<IIconProps> = ({ width = '24', height = '24', color = 'currentColor' }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}
