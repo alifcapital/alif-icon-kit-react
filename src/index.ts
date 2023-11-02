@@ -71,6 +71,7 @@ import Mail from './SystemIcons/Mail';
 import MapPin from './SystemIcons/MapPin';
 import Menu from './SystemIcons/Menu';
 import Move from './SystemIcons/Move';
+import More from './SystemIcons/More';
 import Navigation from './SystemIcons/Navigation';
 import PaperClip from './SystemIcons/Paperclip';
 import PlusRect from './SystemIcons/PlusRect';
@@ -168,6 +169,7 @@ export {
   Mail,
   MapPin,
   Menu,
+  More,
   Move,
   Navigation,
   PaperClip,
