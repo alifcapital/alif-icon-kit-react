@@ -32,6 +32,7 @@ import Lock from '../src/SystemIcons/Lock';
 import Mail from '../src/SystemIcons/Mail';
 import MapPin from '../src/SystemIcons/MapPin';
 import Menu from '../src/SystemIcons/Menu';
+import More from '../src/SystemIcons/More';
 import Move from '../src/SystemIcons/Move';
 import Navigation from '../src/SystemIcons/Navigation';
 import PaperClip from '../src/SystemIcons/Paperclip';
@@ -159,6 +160,7 @@ const IconsWithProps = [
   Mail,
   MapPin,
   Menu,
+  More,
   Move,
   Navigation,
   PaperClip,
