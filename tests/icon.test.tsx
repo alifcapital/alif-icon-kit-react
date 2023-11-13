@@ -57,6 +57,8 @@ import ChevronUp from '../src/NavigationIcons/ChevronUp';
 import LedtDown from '../src/NavigationIcons/LedtDown';
 import RightTop from '../src/NavigationIcons/RightTop';
 import TrendingUp from '../src/NavigationIcons/TrendingUp';
+import KeyboardArrowRight from '../src/NavigationIcons/KeyboardArrowRight';
+import KeyboardArrowLeft from '../src/NavigationIcons/KeyboardArrowLeft';
 import Zp from '../src/FinanceIcons/Zp';
 import Analytics from '../src/FinanceIcons/Analytics';
 import Bank from '../src/FinanceIcons/Bank';
@@ -184,6 +186,8 @@ const IconsWithProps = [
   ChevronUp,
   LedtDown,
   RightTop,
+  KeyboardArrowRight,
+  KeyboardArrowLeft,
   TrendingUp,
   Zp,
   Analytics,

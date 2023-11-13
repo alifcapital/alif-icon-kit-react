@@ -38,6 +38,8 @@ import LeftPrev from './NavigationIcons/LeftPrev';
 import RightNext from './NavigationIcons/RightNext';
 import SelectHideTop from './NavigationIcons/SelectHideTop';
 import SelectOpenDown from './NavigationIcons/SelectOpenDown';
+import KeyboardArrowLeft from './NavigationIcons/KeyboardArrowLeft';
+import KeyboardArrowRight from './NavigationIcons/KeyboardArrowRight';
 
 import EyeOff from './SystemIcons/EyeOff';
 import EyeOn from './SystemIcons/EyeOn';
@@ -204,6 +206,8 @@ export {
   RightNext,
   SelectHideTop,
   SelectOpenDown,
+  KeyboardArrowLeft,
+  KeyboardArrowRight,
 };
 
 // Finance Icons
