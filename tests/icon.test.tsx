@@ -26,6 +26,7 @@ import GridView from '../src/SystemIcons/GridView';
 import HelpCircle from '../src/SystemIcons/HelpCircle';
 import Home from '../src/SystemIcons/Home';
 import Info from '../src/SystemIcons/Info';
+import InfoContained from '../src/SystemIcons/InfoContained';
 import Link from '../src/SystemIcons/Link';
 import ListView from '../src/SystemIcons/ListView';
 import Lock from '../src/SystemIcons/Lock';
@@ -154,6 +155,7 @@ const IconsWithProps = [
   HelpCircle,
   Home,
   Info,
+  InfoContained,
   Link,
   ListView,
   Lock,

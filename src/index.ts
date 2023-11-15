@@ -64,6 +64,7 @@ import GridView from './SystemIcons/GridView';
 import HelpCircle from './SystemIcons/HelpCircle';
 import Home from './SystemIcons/Home';
 import Info from './SystemIcons/Info';
+import InfoContained from './SystemIcons/InfoContained';
 import Link from './SystemIcons/Link';
 import ListView from './SystemIcons/ListView';
 import Lock from './SystemIcons/Lock';
@@ -163,6 +164,7 @@ export {
   HelpCircle,
   Home,
   Info,
+  InfoContained,
   Link,
   ListView,
   Lock,
