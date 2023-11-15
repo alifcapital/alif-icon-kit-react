@@ -16,14 +16,14 @@ function s2() {
   Z1 = 1;
   var r = j1, l = Symbol.for("react.element"), t = Symbol.for("react.fragment"), j = Object.prototype.hasOwnProperty, b = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, D = { key: !0, ref: !0, __self: !0, __source: !0 };
   function F(M, h, m) {
-    var f, x = {}, Z = null, W = null;
+    var f, V = {}, Z = null, W = null;
     m !== void 0 && (Z = "" + m), h.key !== void 0 && (Z = "" + h.key), h.ref !== void 0 && (W = h.ref);
     for (f in h)
-      j.call(h, f) && !D.hasOwnProperty(f) && (x[f] = h[f]);
+      j.call(h, f) && !D.hasOwnProperty(f) && (V[f] = h[f]);
     if (M && M.defaultProps)
       for (f in h = M.defaultProps, h)
-        x[f] === void 0 && (x[f] = h[f]);
-    return { $$typeof: l, type: M, key: Z, ref: W, props: x, _owner: b.current };
+        V[f] === void 0 && (V[f] = h[f]);
+    return { $$typeof: l, type: M, key: Z, ref: W, props: V, _owner: b.current };
   }
   return E.Fragment = t, E.jsx = F, E.jsxs = F, E;
 }
@@ -40,7 +40,7 @@ var N = {};
 var g1;
 function n2() {
   return g1 || (g1 = 1, process.env.NODE_ENV !== "production" && function() {
-    var r = j1, l = Symbol.for("react.element"), t = Symbol.for("react.portal"), j = Symbol.for("react.fragment"), b = Symbol.for("react.strict_mode"), D = Symbol.for("react.profiler"), F = Symbol.for("react.provider"), M = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), m = Symbol.for("react.suspense"), f = Symbol.for("react.suspense_list"), x = Symbol.for("react.memo"), Z = Symbol.for("react.lazy"), W = Symbol.for("react.offscreen"), X = Symbol.iterator, m1 = "@@iterator";
+    var r = j1, l = Symbol.for("react.element"), t = Symbol.for("react.portal"), j = Symbol.for("react.fragment"), b = Symbol.for("react.strict_mode"), D = Symbol.for("react.profiler"), F = Symbol.for("react.provider"), M = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), m = Symbol.for("react.suspense"), f = Symbol.for("react.suspense_list"), V = Symbol.for("react.memo"), Z = Symbol.for("react.lazy"), W = Symbol.for("react.offscreen"), X = Symbol.iterator, m1 = "@@iterator";
     function k1(e) {
       if (e === null || typeof e != "object")
         return null;
@@ -68,7 +68,7 @@ function n2() {
     var y1 = !1, F1 = !1, _1 = !1, B1 = !1, E1 = !1, Q;
     Q = Symbol.for("react.module.reference");
     function N1(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === j || e === D || E1 || e === b || e === m || e === f || B1 || e === W || y1 || F1 || _1 || typeof e == "object" && e !== null && (e.$$typeof === Z || e.$$typeof === x || e.$$typeof === F || e.$$typeof === M || e.$$typeof === h || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === j || e === D || E1 || e === b || e === m || e === f || B1 || e === W || y1 || F1 || _1 || typeof e == "object" && e !== null && (e.$$typeof === Z || e.$$typeof === V || e.$$typeof === F || e.$$typeof === M || e.$$typeof === h || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -115,7 +115,7 @@ function n2() {
             return C1(H._context) + ".Provider";
           case h:
             return b1(e, e.render, "ForwardRef");
-          case x:
+          case V:
             var s = e.displayName || null;
             return s !== null ? s : w(e.type) || "Memo";
           case Z: {
@@ -267,9 +267,9 @@ function n2() {
               if (L !== 1 || c !== 1)
                 do
                   if (L--, c--, c < 0 || n[L] !== p[c]) {
-                    var V = `
+                    var x = `
 ` + n[L].replace(" at new ", " at ");
-                    return e.displayName && V.includes("<anonymous>") && (V = V.replace("<anonymous>", e.displayName)), typeof e == "function" && S.set(e, V), V;
+                    return e.displayName && x.includes("<anonymous>") && (x = x.replace("<anonymous>", e.displayName)), typeof e == "function" && S.set(e, x), x;
                   }
                 while (L >= 1 && c >= 0);
               break;
@@ -305,7 +305,7 @@ function n2() {
         switch (e.$$typeof) {
           case h:
             return S1(e.render);
-          case x:
+          case V:
             return T(e.type, i, H);
           case Z: {
             var s = e, d = s._payload, a = s._init;
@@ -502,7 +502,7 @@ Check your code at ` + i + ":" + H + ".";
         return "";
       }
     }
-    var V1 = {};
+    var x1 = {};
     function C2(e) {
       {
         var i = f1();
@@ -515,15 +515,15 @@ Check the top-level render call using <` + H + ">.");
         return i;
       }
     }
-    function x1(e, i) {
+    function V1(e, i) {
       {
         if (!e._store || e._store.validated || e.key != null)
           return;
         e._store.validated = !0;
         var H = C2(i);
-        if (V1[H])
+        if (x1[H])
           return;
-        V1[H] = !0;
+        x1[H] = !0;
         var s = "";
         e && e._owner && e._owner !== G.current && (s = " It was passed a child from " + w(e._owner.type) + "."), R(e), u('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', H, s), R(null);
       }
@@ -535,7 +535,7 @@ Check the top-level render call using <` + H + ">.");
         if ($(e))
           for (var H = 0; H < e.length; H++) {
             var s = e[H];
-            K(s) && x1(s, i);
+            K(s) && V1(s, i);
           }
         else if (K(e))
           e._store && (e._store.validated = !0);
@@ -543,7 +543,7 @@ Check the top-level render call using <` + H + ">.");
           var d = k1(e);
           if (typeof d == "function" && d !== e.entries)
             for (var a = d.call(e), o; !(o = a.next()).done; )
-              K(o.value) && x1(o.value, i);
+              K(o.value) && V1(o.value, i);
         }
       }
     }
@@ -557,7 +557,7 @@ Check the top-level render call using <` + H + ">.");
           H = i.propTypes;
         else if (typeof i == "object" && (i.$$typeof === h || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        i.$$typeof === x))
+        i.$$typeof === V))
           H = i.propTypes;
         else
           return;
@@ -599,17 +599,17 @@ Check the top-level render call using <` + H + ">.");
         if (c == null)
           return c;
         if (o) {
-          var V = i.children;
-          if (V !== void 0)
+          var x = i.children;
+          if (x !== void 0)
             if (s)
-              if ($(V)) {
-                for (var y = 0; y < V.length; y++)
-                  w1(V[y], e);
-                Object.freeze && Object.freeze(V);
+              if ($(x)) {
+                for (var y = 0; y < x.length; y++)
+                  w1(x[y], e);
+                Object.freeze && Object.freeze(x);
               } else
                 u("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              w1(V, e);
+              w1(x, e);
         }
         return e === j ? l2(c) : e2(c), c;
       }
@@ -866,7 +866,7 @@ const f2 = ({
   }
 );
 f2.displayName = "CurrencyRuble";
-const V2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+const x2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: r,
@@ -903,8 +903,8 @@ const V2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     ]
   }
 );
-V2.displayName = "Dollar";
-const x2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+x2.displayName = "Dollar";
+const V2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -923,7 +923,7 @@ const x2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-x2.displayName = "Merch";
+V2.displayName = "Merch";
 const w2 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
@@ -2279,7 +2279,7 @@ const f5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
   }
 );
 f5.displayName = "Home";
-const V5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+const x5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2298,8 +2298,28 @@ const V5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-V5.displayName = "Info";
-const x5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+x5.displayName = "Info";
+const V5 = ({
+  width: r = "25",
+  height: l = "25",
+  color: t = "currentColor"
+}) => /* @__PURE__ */ C.jsxs(
+  "svg",
+  {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: r,
+    height: l,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    children: [
+      /* @__PURE__ */ C.jsx("circle", { cx: "8", cy: "8", r: "8", fill: t }),
+      /* @__PURE__ */ C.jsx("path", { d: "M8 11.8L8 7", stroke: "white", strokeWidth: "1.5", strokeLinejoin: "round" }),
+      /* @__PURE__ */ C.jsx("path", { d: "M8 6L8 4.2", stroke: "white", strokeWidth: "1.5", strokeLinejoin: "round" })
+    ]
+  }
+);
+V5.displayName = "InfoContained";
+const w5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2319,8 +2339,8 @@ const x5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-x5.displayName = "Link";
-const w5 = ({
+w5.displayName = "Link";
+const v5 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2344,8 +2364,8 @@ const w5 = ({
     )
   }
 );
-w5.displayName = "ListView";
-const v5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+v5.displayName = "ListView";
+const M5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2364,8 +2384,8 @@ const v5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-v5.displayName = "Lock";
-const M5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+M5.displayName = "Lock";
+const Z5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2384,8 +2404,8 @@ const M5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-M5.displayName = "Mail";
-const Z5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+Z5.displayName = "Mail";
+const g5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2404,8 +2424,8 @@ const Z5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-Z5.displayName = "MapPin";
-const g5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+g5.displayName = "MapPin";
+const j5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: r,
@@ -2447,8 +2467,8 @@ const g5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     ]
   }
 );
-g5.displayName = "Menu";
-const j5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+j5.displayName = "Menu";
+const m5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2467,8 +2487,8 @@ const j5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-j5.displayName = "Move";
-const m5 = ({ width: r = "24", height: l = "24", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+m5.displayName = "Move";
+const k5 = ({ width: r = "24", height: l = "24", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -2486,8 +2506,8 @@ const m5 = ({ width: r = "24", height: l = "24", color: t = "currentColor" }) =>
     ]
   }
 );
-m5.displayName = "More";
-const k5 = ({
+k5.displayName = "More";
+const R5 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2510,8 +2530,8 @@ const k5 = ({
     )
   }
 );
-k5.displayName = "Navigation";
-const R5 = ({
+R5.displayName = "Navigation";
+const y5 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2534,8 +2554,8 @@ const R5 = ({
     )
   }
 );
-R5.displayName = "Paperclip";
-const y5 = ({
+y5.displayName = "Paperclip";
+const F5 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2558,8 +2578,8 @@ const y5 = ({
     )
   }
 );
-y5.displayName = "PlusRect";
-const F5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+F5.displayName = "PlusRect";
+const _5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: r,
@@ -2591,8 +2611,8 @@ const F5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     ]
   }
 );
-F5.displayName = "Plus";
-const _5 = ({
+_5.displayName = "Plus";
+const B5 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2615,8 +2635,8 @@ const _5 = ({
     )
   }
 );
-_5.displayName = "RefreshCw";
-const B5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+B5.displayName = "RefreshCw";
+const E5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2635,8 +2655,8 @@ const B5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-B5.displayName = "Refresh";
-const E5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+E5.displayName = "Refresh";
+const N5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2655,8 +2675,8 @@ const E5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-E5.displayName = "Repeat";
-const N5 = ({
+N5.displayName = "Repeat";
+const b5 = ({
   width: r = "25",
   height: l = "25",
   color: t = "currentColor"
@@ -2692,8 +2712,8 @@ const N5 = ({
     ]
   }
 );
-N5.displayName = "Settings";
-const b5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+b5.displayName = "Settings";
+const D5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2712,8 +2732,8 @@ const b5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-b5.displayName = "Slash";
-const D5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+D5.displayName = "Slash";
+const W5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2732,8 +2752,8 @@ const D5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-D5.displayName = "Star";
-const W5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+W5.displayName = "Star";
+const A5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2752,8 +2772,8 @@ const W5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-W5.displayName = "Tune";
-const A5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+A5.displayName = "Tune";
+const S5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -2772,8 +2792,8 @@ const A5 = ({ width: r = "25", height: l = "25", color: t = "currentColor" }) =>
     )
   }
 );
-A5.displayName = "Unlock";
-const S5 = ({ width: r = "24", height: l = "24", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
+S5.displayName = "Unlock";
+const T5 = ({ width: r = "24", height: l = "24", color: t = "currentColor" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -2791,8 +2811,8 @@ const S5 = ({ width: r = "24", height: l = "24", color: t = "currentColor" }) =>
     ]
   }
 );
-S5.displayName = "Bell";
-const T5 = ({ width: r = 24, height: l = 24, color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
+T5.displayName = "Bell";
+const O5 = ({ width: r = 24, height: l = 24, color: t = "currentColor" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -2811,8 +2831,8 @@ const T5 = ({ width: r = 24, height: l = 24, color: t = "currentColor" }) => /* 
     )
   }
 );
-T5.displayName = "User";
-const O5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+O5.displayName = "User";
+const P5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2830,8 +2850,8 @@ const O5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-O5.displayName = "BonusLarge";
-const P5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+P5.displayName = "BonusLarge";
+const q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2849,8 +2869,8 @@ const P5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-P5.displayName = "BonusMedium";
-const q5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+q5.displayName = "BonusMedium";
+const I5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     fillRule: "evenodd",
@@ -2859,8 +2879,8 @@ const q5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewB
     fill: "#222222"
   }
 ) });
-q5.displayName = "BonusSmall";
-const I5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+I5.displayName = "BonusSmall";
+const U5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2878,8 +2898,8 @@ const I5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-I5.displayName = "CashoutLarge";
-const U5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+U5.displayName = "CashoutLarge";
+const $5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2897,8 +2917,8 @@ const U5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-U5.displayName = "CashoutMedium";
-const $5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+$5.displayName = "CashoutMedium";
+const Y5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     fillRule: "evenodd",
@@ -2907,8 +2927,8 @@ const $5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewB
     fill: "#222222"
   }
 ) });
-$5.displayName = "CashoutSmall";
-const Y5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+Y5.displayName = "CashoutSmall";
+const G5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2927,8 +2947,8 @@ const Y5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-Y5.displayName = "Check";
-const G5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+G5.displayName = "Check";
+const J5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2946,8 +2966,8 @@ const G5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-G5.displayName = "Close";
-const J5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+J5.displayName = "Close";
+const K5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2965,8 +2985,8 @@ const J5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-J5.displayName = "DontWorkMedium";
-const K5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+K5.displayName = "DontWorkMedium";
+const z5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -2984,8 +3004,8 @@ const K5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-K5.displayName = "DontWorkLarge";
-const z5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+z5.displayName = "DontWorkLarge";
+const X5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     fillRule: "evenodd",
@@ -2994,8 +3014,8 @@ const z5 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewB
     fill: "#222222"
   }
 ) });
-z5.displayName = "DontWorkSmall";
-const X5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+X5.displayName = "DontWorkSmall";
+const Q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3011,8 +3031,8 @@ const X5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "48", height: "48", view
     }
   )
 ] });
-X5.displayName = "TerminalLarge";
-const Q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+Q5.displayName = "TerminalLarge";
+const C9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3028,16 +3048,16 @@ const Q5 = () => /* @__PURE__ */ C.jsxs("svg", { width: "24", height: "24", view
     }
   )
 ] });
-Q5.displayName = "TerminalMedium";
-const C9 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
+C9.displayName = "TerminalMedium";
+const e9 = () => /* @__PURE__ */ C.jsx("svg", { width: "12", height: "12", viewBox: "0 0 12 12", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ C.jsx(
   "path",
   {
     d: "M6.875 3.14773V10H5.13636V3.14773H6.875ZM2.75 3.54545V2H9.25V3.54545H2.75Z",
     fill: "#222222"
   }
 ) });
-C9.displayName = "TerminalSmall";
-const e9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+e9.displayName = "TerminalSmall";
+const l9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3066,8 +3086,8 @@ const e9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   ),
   /* @__PURE__ */ C.jsx("path", { d: "M58.5566 28.312H35.2979", stroke: "#48587D", strokeWidth: "3.14286" })
 ] });
-e9.displayName = "Clothing";
-const l9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+l9.displayName = "Clothing";
+const t9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3079,8 +3099,8 @@ const l9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "11", y: "14", width: "68.6075", height: "26.158", rx: "4.9998", fill: "#00AF66" }),
   /* @__PURE__ */ C.jsx("rect", { x: "40.3037", y: "65.563", width: "10", height: "20", rx: "2", fill: "#48587D" })
 ] });
-l9.displayName = "ConstructionMaterials";
-const t9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+t9.displayName = "ConstructionMaterials";
+const r9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3109,8 +3129,8 @@ const t9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-t9.displayName = "Food";
-const r9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+r9.displayName = "Food";
+const i9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "59.5586", y: "75.1758", width: "6.35318", height: "14.8241", rx: "2", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx(
     "rect",
@@ -3139,8 +3159,8 @@ const r9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "30", y: "19.7981", width: "4.0746", height: "10.1865", rx: "0.985807", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx("rect", { x: "30", y: "48.3206", width: "4.0746", height: "18.7988", rx: "0.985807", fill: "#ECF0F3" })
 ] });
-r9.displayName = "Fridge";
-const i9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+i9.displayName = "Fridge";
+const H9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3295,8 +3315,8 @@ const i9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-i9.displayName = "Jewelry";
-const H9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+H9.displayName = "Jewelry";
+const s9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "rect",
     {
@@ -3321,8 +3341,8 @@ const H9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "26", y: "10.6721", width: "44", height: "61.1067", rx: "4.74376", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("rect", { x: "43.4473", y: "15.3491", width: "9.10702", height: "2.37188", rx: "1.18594", fill: "#48587D" })
 ] });
-H9.displayName = "PhonesAndAccessories";
-const s9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+s9.displayName = "PhonesAndAccessories";
+const n9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "rect",
     {
@@ -3360,8 +3380,8 @@ const s9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-s9.displayName = "Furniture";
-const n9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+n9.displayName = "Furniture";
+const o9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("circle", { cx: "52", cy: "48", r: "40", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "40", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "36", stroke: "#00AF66", strokeWidth: "8" }),
@@ -3373,8 +3393,8 @@ const n9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-n9.displayName = "OneSomoni";
-const o9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+o9.displayName = "OneSomoni";
+const d9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "9", y: "14.6382", width: "78", height: "28", rx: "3.25", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("rect", { x: "16", y: "21.6382", width: "64", height: "14", rx: "3.25", fill: "#48587D" }),
   /* @__PURE__ */ C.jsx(
@@ -3414,8 +3434,8 @@ const o9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-o9.displayName = "DepositReplenishment";
-const d9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+d9.displayName = "DepositReplenishment";
+const a9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsxs("g", { clipPath: "url(#clip0_4359_16588)", children: [
     /* @__PURE__ */ C.jsx("g", { filter: "url(#filter0_b_4359_16588)", children: /* @__PURE__ */ C.jsx(
       "circle",
@@ -3535,8 +3555,8 @@ const d9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     /* @__PURE__ */ C.jsx("clipPath", { id: "clip0_4359_16588", children: /* @__PURE__ */ C.jsx("rect", { width: "96", height: "96", fill: "white" }) })
   ] })
 ] });
-d9.displayName = "IncomeSharing";
-const a9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+a9.displayName = "IncomeSharing";
+const L9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3628,8 +3648,8 @@ const a9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   ) })
 ] });
-a9.displayName = "Insurance";
-const L9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+L9.displayName = "Insurance";
+const c9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "6", y: "20.6792", width: "84", height: "66.0984", rx: "5.36839", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx(
     "path",
@@ -3654,8 +3674,8 @@ const L9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-L9.displayName = "Investments";
-const c9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+c9.displayName = "Investments";
+const h9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3696,8 +3716,8 @@ const c9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-c9.displayName = "Npl";
-const h9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+h9.displayName = "Npl";
+const u9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3780,8 +3800,8 @@ const h9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   /* @__PURE__ */ C.jsx("rect", { x: "67.2734", y: "23.5952", width: "1.72622", height: "8.63111", rx: "0.863111", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("rect", { x: "63.8213", y: "27.0476", width: "8.63111", height: "1.72622", rx: "0.863111", fill: "#ECF0F3" })
 ] });
-h9.displayName = "BuyCar";
-const u9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+u9.displayName = "BuyCar";
+const p9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3837,8 +3857,8 @@ const u9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-u9.displayName = "DocumentExecution";
-const p9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+p9.displayName = "DocumentExecution";
+const f9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3894,8 +3914,8 @@ const p9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-p9.displayName = "Form";
-const f9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+f9.displayName = "Form";
+const x9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx(
     "path",
     {
@@ -3936,7 +3956,7 @@ const f9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
     }
   )
 ] });
-f9.displayName = "Money";
+x9.displayName = "Money";
 const V9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "40", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx("circle", { cx: "48", cy: "48", r: "36", stroke: "#00AF66", strokeWidth: "8" }),
@@ -3955,7 +3975,7 @@ const V9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   )
 ] });
 V9.displayName = "Time";
-const x9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
+const w9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", viewBox: "0 0 96 96", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
   /* @__PURE__ */ C.jsx("rect", { x: "17.3555", y: "9.69482", width: "61.2883", height: "76.6104", rx: "7.66104", fill: "#ECF0F3" }),
   /* @__PURE__ */ C.jsx(
     "path",
@@ -3999,8 +4019,8 @@ const x9 = () => /* @__PURE__ */ C.jsxs("svg", { width: "96", height: "96", view
   ),
   /* @__PURE__ */ C.jsx("rect", { x: "36", y: "5.8645", width: "24", height: "7.66104", rx: "2", fill: "#48587D" })
 ] });
-x9.displayName = "Valuation";
-const w9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+w9.displayName = "Valuation";
+const v9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -4020,8 +4040,8 @@ const w9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-w9.displayName = "VKontakte";
-const v9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
+v9.displayName = "VKontakte";
+const M9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -4042,8 +4062,8 @@ const v9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
     ] })
   }
 );
-v9.displayName = "LinkedIn";
-const M9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+M9.displayName = "LinkedIn";
+const Z9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: r,
@@ -4074,8 +4094,8 @@ const M9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-M9.displayName = "Facebook";
-const Z9 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+Z9.displayName = "Facebook";
+const g9 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: r,
@@ -4104,8 +4124,8 @@ const Z9 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-Z9.displayName = "Telegram";
-const g9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
+g9.displayName = "Telegram";
+const j9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -4128,8 +4148,8 @@ const g9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
     ] })
   }
 );
-g9.displayName = "Instagram";
-const j9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
+j9.displayName = "Instagram";
+const m9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
   "svg",
   {
     width: r,
@@ -4162,8 +4182,8 @@ const j9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsx(
     ] })
   }
 );
-j9.displayName = "Odnoklassniki";
-const m9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+m9.displayName = "Odnoklassniki";
+const k9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     width: r,
@@ -4183,8 +4203,8 @@ const m9 = ({ width: r = "41", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-m9.displayName = "Twitter";
-const k9 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+k9.displayName = "Twitter";
+const R9 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -4207,8 +4227,8 @@ const k9 = ({ width: r = "40", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-k9.displayName = "YouTube";
-const R9 = ({ width: r = "121", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+R9.displayName = "YouTube";
+const y9 = ({ width: r = "121", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -4291,8 +4311,8 @@ const R9 = ({ width: r = "121", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-R9.displayName = "AppleAppStore";
-const y9 = ({ width: r = "136", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
+y9.displayName = "AppleAppStore";
+const F9 = ({ width: r = "136", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -4340,39 +4360,39 @@ const y9 = ({ width: r = "136", height: l = "40" }) => /* @__PURE__ */ C.jsxs(
     ]
   }
 );
-y9.displayName = "GooglePlay";
+F9.displayName = "GooglePlay";
 export {
   d2 as Analytics,
-  R9 as AppleAppStore,
+  y9 as AppleAppStore,
   E2 as ArrowDown,
   N2 as ArrowUp,
-  f9 as AutoCreditMoney,
+  x9 as AutoCreditMoney,
   a2 as Bank,
   _2 as Banknote,
-  S5 as Bell,
+  T5 as Bell,
   z2 as Bill,
-  O5 as BonusLarge,
-  P5 as BonusMedium,
-  q5 as BonusSmall,
-  h9 as BuyCar,
+  P5 as BonusLarge,
+  q5 as BonusMedium,
+  I5 as BonusSmall,
+  u9 as BuyCar,
   t5 as Calendar,
   L2 as CardSalom,
   c2 as Cash,
-  I5 as CashoutLarge,
-  U5 as CashoutMedium,
-  $5 as CashoutSmall,
+  U5 as CashoutLarge,
+  $5 as CashoutMedium,
+  Y5 as CashoutSmall,
   r5 as Chat,
   i5 as Check,
-  Y5 as CheckCircle,
+  G5 as CheckCircle,
   W2 as ChevronDown,
   A2 as ChevronLeft,
   S2 as ChevronRight,
   T2 as ChevronUp,
   H5 as Clock,
   s5 as Close,
-  G5 as CloseCircle,
-  e9 as Clothing,
-  l9 as ConstructionMaterials,
+  J5 as CloseCircle,
+  l9 as Clothing,
+  t9 as ConstructionMaterials,
   n5 as Copy,
   h2 as CreditCard,
   B2 as CrossedBanknote,
@@ -4380,65 +4400,66 @@ export {
   p2 as CurrencyLira,
   f2 as CurrencyRuble,
   o5 as Delete,
-  o9 as DepositReplenishment,
+  d9 as DepositReplenishment,
   d5 as Doc,
   a5 as DocEmpty,
-  u9 as DocumentExecution,
-  V2 as Dollar,
-  J5 as DontWorkLarge,
-  K5 as DontWorkMedium,
-  z5 as DontWorkSmall,
+  p9 as DocumentExecution,
+  x2 as Dollar,
+  K5 as DontWorkLarge,
+  z5 as DontWorkMedium,
+  X5 as DontWorkSmall,
   L5 as Edit,
   c5 as Expand,
   G2 as EyeOff,
   h5 as EyeOffAlt,
   J2 as EyeOn,
-  M9 as Facebook,
-  t9 as Food,
-  p9 as Form,
-  r9 as Fridge,
-  s9 as Furniture,
-  y9 as GooglePlay,
+  Z9 as Facebook,
+  r9 as Food,
+  f9 as Form,
+  i9 as Fridge,
+  n9 as Furniture,
+  F9 as GooglePlay,
   u5 as GridView,
   p5 as HelpCircle,
   f5 as Home,
-  d9 as IncomeSharing,
-  V5 as Info,
-  g9 as Instagram,
-  a9 as Insurance,
-  L9 as Investments,
-  i9 as Jewelry,
+  a9 as IncomeSharing,
+  x5 as Info,
+  V5 as InfoContained,
+  j9 as Instagram,
+  L9 as Insurance,
+  c9 as Investments,
+  H9 as Jewelry,
   O2 as LedtDown,
   b2 as LeftArrow,
   I2 as LeftPrev,
   C5 as Limits,
-  x5 as Link,
-  v9 as LinkedIn,
-  w5 as ListView,
-  v5 as Lock,
+  w5 as Link,
+  M9 as LinkedIn,
+  v5 as ListView,
+  M5 as Lock,
   l5 as LogOut,
-  M5 as Mail,
-  Z5 as MapPin,
-  g5 as Menu,
-  x2 as Merch,
+  Z5 as Mail,
+  g5 as MapPin,
+  j5 as Menu,
+  V2 as Merch,
   w2 as Money,
-  m5 as More,
-  j5 as Move,
-  k5 as Navigation,
-  c9 as Npl,
-  j9 as Odnoklassniki,
-  n9 as OneSomoni,
+  k5 as More,
+  m5 as Move,
+  R5 as Navigation,
+  h9 as Npl,
+  m9 as Odnoklassniki,
+  o9 as OneSomoni,
   v2 as Online,
-  R5 as PaperClip,
+  y5 as PaperClip,
   Q2 as Passport,
   M2 as Percent,
-  H9 as PhonesAndAccessories,
-  F5 as Plus,
-  y5 as PlusRect,
+  s9 as PhonesAndAccessories,
+  _5 as Plus,
+  F5 as PlusRect,
   X2 as Qr,
-  B5 as Refresh,
-  _5 as RefreshCw,
-  E5 as Repeat,
+  E5 as Refresh,
+  B5 as RefreshCw,
+  N5 as Repeat,
   D2 as RightArrow,
   U2 as RightNext,
   P2 as RightTop,
@@ -4447,28 +4468,28 @@ export {
   Y2 as SelectOpenDown,
   Z2 as SendCard,
   g2 as SendDoc,
-  N5 as Settings,
-  b5 as Slash,
-  D5 as Star,
+  b5 as Settings,
+  D5 as Slash,
+  W5 as Star,
   e5 as Subscription,
-  Z9 as Telegram,
+  g9 as Telegram,
   j2 as Terminal,
-  X5 as TerminalLarge,
-  Q5 as TerminalMedium,
-  C9 as TerminalSmall,
+  Q5 as TerminalLarge,
+  C9 as TerminalMedium,
+  e9 as TerminalSmall,
   V9 as Time,
   m2 as Transfers,
   q2 as TrendingUp,
-  W5 as Tune,
-  m9 as Twitter,
-  A5 as Unlock,
-  T5 as User,
-  w9 as VKontakte,
-  x9 as Valuation,
+  A5 as Tune,
+  k9 as Twitter,
+  S5 as Unlock,
+  O5 as User,
+  v9 as VKontakte,
+  w9 as Valuation,
   k2 as Visa,
   F2 as Wallet,
   R2 as WalletPlus,
   y2 as WalletTransfer,
-  k9 as YouTube,
+  R9 as YouTube,
   o2 as Zp
 };
