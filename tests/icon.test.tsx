@@ -83,6 +83,9 @@ import Wallet from '../src/FinanceIcons/Wallet';
 import Banknote from '../src/FinanceIcons/Banknote';
 import CrossedBanknote from '../src/FinanceIcons/CrossedBanknote';
 import Bell from '../src/SystemIcons/Bell';
+import Cancel from '../src/SystemIcons/Cancel';
+import CheckCircleV2 from '../src/SystemIcons/CheckCircle';
+import EmptyHistory from '../src/SystemIcons/EmptyHistory';
 
 import BonusLarge from '../src/MapIcons/BonusLarge';
 import BonusMedium from '../src/MapIcons/BonusMedium';
@@ -212,6 +215,9 @@ const IconsWithProps = [
   Bell,
   Banknote,
   CrossedBanknote,
+  Cancel,
+  CheckCircleV2,
+  EmptyHistory,
 ];
 
 const IconsWithoutProps = [

@@ -87,6 +87,9 @@ import Tune from './SystemIcons/Tune';
 import Unlock from './SystemIcons/Unlock';
 import Bell from './SystemIcons/Bell';
 import User from './SystemIcons/User';
+import Cancel from './SystemIcons/Cancel';
+import CheckCircleV2 from './SystemIcons/CheckCircle';
+import EmptyHistory from './SystemIcons/EmptyHistory';
 
 import BonusLarge from './MapIcons/BonusLarge';
 import BonusMedium from './MapIcons/BonusMedium';
@@ -187,6 +190,9 @@ export {
   Unlock,
   User,
   Bell,
+  Cancel,
+  CheckCircleV2,
+  EmptyHistory,
 };
 
 // Navigation Icons
